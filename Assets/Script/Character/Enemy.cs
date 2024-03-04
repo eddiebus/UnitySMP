@@ -1,0 +1,30 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Splines;
+
+
+public class Enemy : Character
+{
+    public static Enemy[] All => FindObjectsByType<Enemy>(
+        FindObjectsInactive.Include,
+        FindObjectsSortMode.InstanceID
+        );
+
+    public int ScoreValue;
+    // Start is called before the first frame update
+    void Start()
+    {
+        this.OnDeath.AddListener(()=>{
+            Player.Score += ScoreValue;
+            Debug.Log($"Score chenged to {Player.Score}");
+        });
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+}
