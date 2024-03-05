@@ -44,7 +44,7 @@ public class EnemySpawner : MonoBehaviour
                         if (EnemySets.Count > 0)
                         {
                             // Spawn random set. Do not edit list
-                            int selectIndex = UnityEngine.Random.Range(0,EnemySets.Count-1);
+                            int selectIndex = UnityEngine.Random.Range(0,EnemySets.Count);
                             EnemySets[selectIndex].SpawnSet();
                             _TimeTillSpawn = TimeDelay;
                         }

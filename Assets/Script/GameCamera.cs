@@ -57,13 +57,17 @@ public class GameCamera : MonoBehaviour
         transform.position = camPosition;
     }
 
-
+    public Bounds GetBounds() => new Bounds (
+        Vector3.zero,
+        new Vector3(TargetRatio.x,TargetRatio.y,1000)
+    );
+    
     void OnDrawGizmos(){
         Gizmos.color = Color.red;
         float depth = 10.0f;
         Gizmos.DrawWireCube(
             Vector3.forward * (depth/2),
-            new Vector3(9,TargetRatio.y,depth)
+            new Vector3(TargetRatio.x,TargetRatio.y,depth)
         );
     }
 }

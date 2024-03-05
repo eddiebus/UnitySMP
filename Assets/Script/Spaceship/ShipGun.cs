@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ShipGun : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class ShipGun : MonoBehaviour
 
     public float FireDelay = 0.2f;
     public float _CurrentFireDelay;
+
+    public UnityEvent OnFire;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +39,7 @@ public class ShipGun : MonoBehaviour
             var newBullet = GameObject.Instantiate(BulletPrefab);
             newBullet.transform.position = transform.position;
             _CurrentFireDelay = FireDelay;
+            OnFire.Invoke();
         }
     }
 

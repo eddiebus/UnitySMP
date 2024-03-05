@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RigidBody2DBounds
@@ -8,6 +9,21 @@ public class RigidBody2DBounds
     private Bounds _ResultBounds;
     public Bounds Bounds => _ResultBounds;
 
+
+    public static Bounds Get(Rigidbody2D Body)
+    {
+        Bounds totalBounds = new Bounds(Body.position, Vector3.zero);
+        if (Body != null)
+        {
+            var colliders = Body.gameObject.GetComponentsInChildren<Collider2D>();
+
+            foreach (var c in colliders)
+            {
+                totalBounds.Encapsulate(c.bounds);
+            }
+        }
+        return totalBounds;
+    }
     public RigidBody2DBounds(Rigidbody2D ownerBody)
     {
         _body = ownerBody;

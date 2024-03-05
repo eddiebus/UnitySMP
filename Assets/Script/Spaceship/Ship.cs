@@ -8,7 +8,7 @@ public class Ship : MonoBehaviour
     protected Rigidbody2D _ShipRigidbody;
     public ShipGun[] _Guns;
 
-    public Bounds ShipBounds => new RigidBody2DBounds(_ShipRigidbody).Bounds;
+    public Bounds ShipBounds => RigidBody2DBounds.Get(_ShipRigidbody);
     protected void _ShipInit(){
         _ShipRigidbody = GetComponent<Rigidbody2D>();
         _Guns = GetComponentsInChildren<ShipGun>();
