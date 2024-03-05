@@ -21,5 +21,7 @@ public class EnemyPawnShip : Ship
         if (transform.position.y < -GameCamera.TargetRatio.y ){
             GameObject.Destroy(gameObject);
         }
+
+        _ShipFixPositionWithinCamera(CameraBoundFixAxis.Horizontal);
     }
 }

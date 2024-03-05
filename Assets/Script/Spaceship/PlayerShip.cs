@@ -16,7 +16,7 @@ public class PlayerShip : Ship
     {
         _ShipSetRigidbody();
         _HandleMoveMent();
-        _FixPosition();
+        _ShipFixPositionWithinCamera(CameraBoundFixAxis.Both);
         _HandleFire();
     }
 

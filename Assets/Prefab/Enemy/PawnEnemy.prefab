@@ -1,5 +1,89 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2909045939885879549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4798942789427544484}
+  m_Layer: 0
+  m_Name: SFX_Speaker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4798942789427544484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2909045939885879549}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8642443876760704183}
+  - {fileID: 1197866317359197784}
+  m_Father: {fileID: 2264107777724519212}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4088726150487782358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8642443876760704183}
+  - component: {fileID: 5551107406586066925}
+  m_Layer: 0
+  m_Name: Hurt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8642443876760704183
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4088726150487782358}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4798942789427544484}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5551107406586066925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4088726150487782358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec3ad36527d65834e9ab29fa2669428b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Volume: 0
+  Clips:
+  - {fileID: 8300000, guid: 59cba03db7de7a84995ffcf91564e8f8, type: 3}
+  - {fileID: 8300000, guid: 353c3f97c4216984aa9694873f5a5bd4, type: 3}
+  - {fileID: 8300000, guid: 47e3c63fcd9e66e4496bbff1c5a230fb, type: 3}
+  - {fileID: 8300000, guid: 9302066bed6795f43a5e43e51a5ed493, type: 3}
+  - {fileID: 8300000, guid: 204ff58834da38246b228245011e4ad1, type: 3}
 --- !u!1 &6570032691430829534
 GameObject:
   m_ObjectHideFlags: 0
@@ -15,6 +99,8 @@ GameObject:
   - component: {fileID: 2607583658628317160}
   - component: {fileID: 3615151930065654120}
   - component: {fileID: 3135385774834984582}
+  - component: {fileID: 6684979274900050982}
+  - component: {fileID: 3259169298876487214}
   m_Layer: 0
   m_Name: PawnEnemy
   m_TagString: Untagged
@@ -34,7 +120,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 4798942789427544484}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &66048620690564544
@@ -102,10 +189,21 @@ MonoBehaviour:
   Health: 1
   Invincible: 0
   CharacterTag: EmptyCharacter
-  DamageSFX: []
   OnDeath:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1551620620542559888}
+        m_TargetAssemblyTypeName: SoundFXSpeaker, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 4128465319775840217}
         m_TargetAssemblyTypeName: Character, Assembly-CSharp
         m_MethodName: DestroyObj
@@ -118,10 +216,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnDamage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5551107406586066925}
+        m_TargetAssemblyTypeName: SoundFXSpeaker, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnDestroy:
     m_PersistentCalls:
       m_Calls: []
-  ScoreValue: 10
+  ScoreValue: 7
 --- !u!114 &2607583658628317160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,3 +323,96 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6684979274900050982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6570032691430829534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec3ad36527d65834e9ab29fa2669428b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Volume: 0
+  Clips:
+  - {fileID: 8300000, guid: 59cba03db7de7a84995ffcf91564e8f8, type: 3}
+  - {fileID: 8300000, guid: 353c3f97c4216984aa9694873f5a5bd4, type: 3}
+  - {fileID: 8300000, guid: 47e3c63fcd9e66e4496bbff1c5a230fb, type: 3}
+  - {fileID: 8300000, guid: 9302066bed6795f43a5e43e51a5ed493, type: 3}
+  - {fileID: 8300000, guid: 204ff58834da38246b228245011e4ad1, type: 3}
+--- !u!114 &3259169298876487214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6570032691430829534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec3ad36527d65834e9ab29fa2669428b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Volume: 0
+  Clips:
+  - {fileID: 8300000, guid: d2fc93e6ae4f54f4386c2b2470568fcc, type: 3}
+  - {fileID: 8300000, guid: 7a58dc9395e015d4d928d550fca553a3, type: 3}
+  - {fileID: 8300000, guid: badec046351e2a34a94e775a3c9836c1, type: 3}
+  - {fileID: 8300000, guid: 09f4851430adb704d84fe33d7f65f475, type: 3}
+  - {fileID: 8300000, guid: eb3e7c03c0c75f048a44e86a8bea3f5b, type: 3}
+  - {fileID: 8300000, guid: e1d4fd0caf6db0c4e878650d2274b221, type: 3}
+  - {fileID: 8300000, guid: d14ac67a8802b8945a3b902208fc6b52, type: 3}
+--- !u!1 &9027476210562268301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1197866317359197784}
+  - component: {fileID: 1551620620542559888}
+  m_Layer: 0
+  m_Name: Explosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1197866317359197784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9027476210562268301}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4798942789427544484}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1551620620542559888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9027476210562268301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec3ad36527d65834e9ab29fa2669428b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Volume: 0
+  Clips:
+  - {fileID: 8300000, guid: d2fc93e6ae4f54f4386c2b2470568fcc, type: 3}
+  - {fileID: 8300000, guid: 7a58dc9395e015d4d928d550fca553a3, type: 3}
+  - {fileID: 8300000, guid: badec046351e2a34a94e775a3c9836c1, type: 3}
+  - {fileID: 8300000, guid: 09f4851430adb704d84fe33d7f65f475, type: 3}
+  - {fileID: 8300000, guid: eb3e7c03c0c75f048a44e86a8bea3f5b, type: 3}
+  - {fileID: 8300000, guid: e1d4fd0caf6db0c4e878650d2274b221, type: 3}
+  - {fileID: 8300000, guid: d14ac67a8802b8945a3b902208fc6b52, type: 3}
