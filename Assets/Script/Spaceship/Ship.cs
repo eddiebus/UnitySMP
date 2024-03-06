@@ -30,21 +30,22 @@ public class Ship : MonoBehaviour
         {
             if ((ShipBounds.center.y - ShipBounds.extents.y) < (playarea.center.y - playarea.extents.y))
             {
-                float diff =
-                (playarea.center.y - playarea.extents.y) -
-                (ShipBounds.center.y - ShipBounds.extents.y);
-
-                _ShipRigidbody.position = _ShipRigidbody.position + (Vector2.up * diff);
+                float yPos = playarea.center.y - playarea.extents.y + ShipBounds.extents.y;
+                _ShipRigidbody.position = new Vector2(
+                    _ShipRigidbody.position.x,
+                    yPos
+                );
             }
             else if (
                 (ShipBounds.center.y + ShipBounds.extents.y) >
                 (playarea.center.y + playarea.extents.y)
             )
             {
-                float diff =
-                (playarea.center.y + playarea.extents.y) -
-                (ShipBounds.center.y + ShipBounds.extents.y);
-                _ShipRigidbody.position = _ShipRigidbody.position - (Vector2.down * diff);
+                float yPos = playarea.center.y - playarea.extents.y - ShipBounds.extents.y;
+                _ShipRigidbody.position = new Vector2(
+                    _ShipRigidbody.position.x,
+                    yPos
+                );
             }
         }
 
@@ -52,22 +53,22 @@ public class Ship : MonoBehaviour
         {
             if ((ShipBounds.center.x - ShipBounds.extents.x) < (playarea.center.x - playarea.extents.x))
             {
-                float diff =
-                (ShipBounds.center.x - ShipBounds.extents.x) -
-                 (playarea.center.x - playarea.extents.x);
-
-                _ShipRigidbody.position = _ShipRigidbody.position - (Vector2.right * diff);
+                float xPos = playarea.center.x - playarea.extents.x + ShipBounds.extents.y;
+                _ShipRigidbody.position = new Vector2(
+                    xPos,
+                    _ShipRigidbody.position.y
+                );
             }
             else if (
                 (ShipBounds.center.x + ShipBounds.extents.x) >
                 (playarea.center.x + playarea.extents.x)
             )
             {
-                float diff =
-                (ShipBounds.center.x + ShipBounds.extents.x) -
-                 (playarea.center.x + playarea.extents.x);
-
-                _ShipRigidbody.position = _ShipRigidbody.position + (Vector2.left * diff);
+                float xPos = playarea.center.x + playarea.extents.x - ShipBounds.extents.y;
+                _ShipRigidbody.position = new Vector2(
+                    xPos,
+                    _ShipRigidbody.position.y
+                );
             }
 
         }
@@ -101,9 +102,4 @@ public class Ship : MonoBehaviour
         _ShipInit();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

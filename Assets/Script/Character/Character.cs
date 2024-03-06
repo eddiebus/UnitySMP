@@ -12,12 +12,13 @@ public static class CharacterNames
 
 public class Character : MonoBehaviour
 {
+    public GameObject CharacterRoot; // Root Object of Character
     public float Health = 1.0f;
     public bool Invincible;
     public string CharacterTag = "EmptyCharacter";
     public static string GameObjectTagName = "Character";
 
-    public UnityEvent OnDeath;
+
     public UnityEvent OnDamage;
     public UnityEvent OnDestroy;
     // Start is called before the first frame update
@@ -26,17 +27,19 @@ public class Character : MonoBehaviour
         tag = GameObjectTagName;
     }
 
+    public GameObject GetCharacterRootObj()
+    {
+        if (CharacterRoot) return CharacterRoot;
+        else return this.gameObject;
+    }
+
     public void Damage(float Ammount)
     {
         if (Invincible) return;
-        bool canDie = Health > 0;
         Health -= Ammount;
         OnDamage.Invoke();
-        if (canDie && Health < 0){
-            OnDeath.Invoke();
-        }
     }
-    
+
     public static Character[] FindCharactersWithTag(string TargetTag)
     {
         List<Character> returnList = new List<Character>();
@@ -63,11 +66,18 @@ public class Character : MonoBehaviour
     }
 
     public void DestroyObj(GameObject obj) => GameObject.Destroy(obj);
-    
+
     public void Destroy()
     {
         OnDestroy.Invoke();
-        GameObject.Destroy(transform.root.gameObject);
+        if (CharacterRoot)
+        {
+            GameObject.Destroy(CharacterRoot);
+        }
+        else
+        {
+            GameObject.Destroy(gameObject);
+        }
     }
 
 

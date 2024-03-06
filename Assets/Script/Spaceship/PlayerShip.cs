@@ -15,8 +15,9 @@ public class PlayerShip : Ship
     void Update()
     {
         _ShipSetRigidbody();
-        _HandleMoveMent();
         _ShipFixPositionWithinCamera(CameraBoundFixAxis.Both);
+        _HandleMoveMent();
+        
         _HandleFire();
     }
 

@@ -16,7 +16,7 @@ public class Enemy : Character
     // Start is called before the first frame update
     void Start()
     {
-        this.OnDeath.AddListener(()=>{
+        this.OnDestroy.AddListener(()=>{
             Player.Score += ScoreValue;
             Debug.Log($"Score chenged to {Player.Score}");
         });
@@ -25,6 +25,8 @@ public class Enemy : Character
     // Update is called once per frame
     void Update()
     {
-
+        if (Health < 0){
+            this.Destroy();
+        }
     }
 }

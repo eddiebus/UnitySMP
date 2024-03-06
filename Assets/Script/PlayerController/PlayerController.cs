@@ -129,10 +129,33 @@ public class PlayerController
                     var rightTrigger = _gamepad.rightTrigger.ReadValue();
                     var leftTrigger = _gamepad.leftTrigger.ReadValue();
 
+                    var up = _gamepad.dpad.up.isPressed;
+                    var down = _gamepad.dpad.down.isPressed;
+                    var left = _gamepad.dpad.left.isPressed;
+                    var right = _gamepad.dpad.right.isPressed;
+
                     _AimPoint += rightStick * Time.deltaTime;
                     if (leftStick.magnitude > 0.1f)
                     {
                         _MoveVector = leftStick;
+                    }
+                    else{
+                         
+                        if (up) {
+                            _MoveVector += Vector2.up;
+                        }
+                        else if (down){
+                            _MoveVector += Vector2.down;
+                        }
+
+                        if (left){
+                            _MoveVector += Vector2.left;
+                        }
+                        else if (right){
+                            _MoveVector += Vector2.right;
+                        }
+
+
                     }
                     if (rightStick.magnitude > 0.1f)
                     {

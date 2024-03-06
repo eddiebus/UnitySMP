@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyPawnShip : Ship
 {
+    public Enemy _EnemyComp;
     public Player _player;
     // Start is called before the first frame update
     void Start()
@@ -18,10 +19,10 @@ public class EnemyPawnShip : Ship
         _ShipSetRigidbody();
         Move(Vector3.down);
 
-        if (transform.position.y < -GameCamera.TargetRatio.y ){
-            GameObject.Destroy(gameObject);
-        }
-
         _ShipFixPositionWithinCamera(CameraBoundFixAxis.Horizontal);
+
+        if (transform.position.y < -GameCamera.TargetRatio.y ){
+            Destroy(_EnemyComp.GetCharacterRootObj());
+        }
     }
 }

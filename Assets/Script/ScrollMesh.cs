@@ -19,9 +19,16 @@ public class ScrollMesh : MonoBehaviour
     public GameObject up;
     public GameObject down;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-
+        Selection.selectionChanged += () =>
+        {
+            if (Selection.activeGameObject.transform.root.gameObject.GetComponentInChildren<ScrollMesh>() == null)
+            {
+                ScrollMesh.EditRefresh();
+            }
+            Debug.Log("Hello Event");
+        };
     }
 
     // Update is called once per frame
@@ -32,17 +39,23 @@ public class ScrollMesh : MonoBehaviour
 
     public void Scroll()
     {
-        if (!transform.parent) { return; } // Need a parent to scroll by
+
+        if (!Application.isPlaying){
+                var selectTransform = Selection.activeGameObject.transform;
+                if (!transform.IsChildOf(selectTransform) && selectTransform != transform) return;
+        }
+        else if (!transform.parent) { return; } // Need a parent to scroll by
         else
         {
             if (Application.isPlaying)
             {
                 transform.position += ScrollVector * Time.deltaTime;
             }
+            
 
             Bounds Area = new Bounds(
                 transform.parent.position,
-                Vector3.one * 4
+                Vector3.one * 10
             );
             Bounds myBounds = MeshBounds.Get(gameObject);
 
@@ -54,15 +67,18 @@ public class ScrollMesh : MonoBehaviour
                     copyObj.transform.SetParent(transform.parent);
                     copyObj.transform.localPosition = this.transform.localPosition +
                     (Vector3.up * myBounds.size.y);
+                    copyObj.transform.localRotation = transform.localRotation;
                     copyObj.GetComponent<ScrollMesh>().originalObj = false;
                     copyObj.GetComponent<ScrollMesh>().down = this.gameObject;
                     up = copyObj;
                 }
-                else if (down == null){
+                else if (down == null)
+                {
                     GameObject copyObj = GameObject.Instantiate(gameObject);
                     copyObj.transform.SetParent(transform.parent);
                     copyObj.transform.localPosition = this.transform.localPosition +
                     (Vector3.down * myBounds.size.y);
+                    copyObj.transform.localRotation = transform.localRotation;
                     copyObj.GetComponent<ScrollMesh>().originalObj = false;
                     copyObj.GetComponent<ScrollMesh>().up = this.gameObject;
                     down = copyObj;
@@ -97,6 +113,47 @@ public class ScrollMesh : MonoBehaviour
         else
         {
             GameObject.DestroyImmediate(this.gameObject);
+        }
+    }
+
+    public static void EditRefresh()
+    {
+        foreach (var scrollMesh in FindObjectsByType<ScrollMesh>(
+            FindObjectsInactive.Include,
+            FindObjectsSortMode.InstanceID
+            ))
+        {
+            if (scrollMesh.originalObj)
+            {
+                var parentObj = scrollMesh.gameObject.transform.parent.gameObject;
+                var siblings = parentObj.GetComponentsInChildren<ScrollMesh>();
+                foreach (var component in siblings)
+                {
+                    if (component != scrollMesh)
+                    {
+                        GameObject.DestroyImmediate(component.gameObject);
+                    }
+                }
+            }
+            else
+            {
+                continue;
+            }
+        }
+    }
+    void _DestroyNonOrignal()
+    {
+        if (!transform.parent || !originalObj) return;
+        else
+        {
+            var allMesh = transform.parent.gameObject.GetComponentsInChildren<ScrollMesh>();
+            foreach (var meshComp in allMesh)
+            {
+                if (meshComp.originalObj == false)
+                {
+                    GameObject.Destroy(meshComp.gameObject);
+                }
+            }
         }
     }
 
