@@ -9,7 +9,7 @@ public class ObjectGroup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.childCount == 0 && Application.isPlaying)
+        if (GetComponentInChildren<Enemy>() == null && Application.isPlaying)
         {
             GameObject.Destroy(gameObject);
         }

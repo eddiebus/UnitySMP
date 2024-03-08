@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2264107777724519212}
   - component: {fileID: 4128465319775840217}
-  - component: {fileID: 2607583658628317160}
+  - component: {fileID: 3259268613832369678}
   - component: {fileID: 3615151930065654120}
   - component: {fileID: 3135385774834984582}
   - component: {fileID: 6148812118729602154}
@@ -171,7 +171,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   ScoreValue: 100
---- !u!114 &2607583658628317160
+--- !u!114 &3259268613832369678
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,13 +180,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 6570032691430829534}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9602d6cb78144d8449ce65d3e7441431, type: 3}
+  m_Script: {fileID: 11500000, guid: c46eb8b83ca584842aff2eeaa900a6b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 1
+  MoveSpeed: 2
   _Guns: []
-  _EnemyComp: {fileID: 4128465319775840217}
-  _player: {fileID: 0}
+  _EnemyComponent: {fileID: 4128465319775840217}
+  splineContainer: {fileID: 0}
+  Loop: 0
+  RotateInDirection: 1
+  TargetSplineIndex: 0
 --- !u!50 &3615151930065654120
 Rigidbody2D:
   serializedVersion: 4

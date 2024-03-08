@@ -177,15 +177,15 @@ MonoBehaviour:
   State: 1
   TimeDelay: 8
   EnemySets:
+  - Prefab: {fileID: 2026790830960624077, guid: 94dc9ff7423c0b54ea296e79e5af95f3, type: 3}
+    OnSpawn:
+      m_PersistentCalls:
+        m_Calls: []
   - Prefab: {fileID: 7622961479567508888, guid: 29f1d36fde3519f49bfae46b895b3031, type: 3}
     OnSpawn:
       m_PersistentCalls:
         m_Calls: []
-  - Prefab: {fileID: 2026790830960624077, guid: 94dc9ff7423c0b54ea296e79e5af95f3, type: 3}
-    OnSpawn:
-      m_PersistentCalls:
-        m_Calls: []
-  - Prefab: {fileID: 2026790830960624077, guid: 94dc9ff7423c0b54ea296e79e5af95f3, type: 3}
+  - Prefab: {fileID: 2026790830960624077, guid: 16059630cfcb0e8408781f8fdab6e8d6, type: 3}
     OnSpawn:
       m_PersistentCalls:
         m_Calls: []

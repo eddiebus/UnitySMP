@@ -38,37 +38,31 @@ public class ScrollMesh : MonoBehaviour
 
     protected static bool _CanEditPreview()
     {
-        if (Application.isPlaying == false
-        && Selection.activeGameObject != null
-        && PrefabStageUtility.GetCurrentPrefabStage() == null)
+        if (Application.isPlaying == false)
         {
-            var selectObj = Selection.activeObject;
-            if (selectObj.GetComponent<ScrollMesh>())
+            // In Edit mode, is scrollmesh selected?
+            if (
+                Selection.activeGameObject != null &&
+                PrefabStageUtility.GetCurrentPrefabStage() == null)
             {
-                return true;
+                var selectObj = Selection.activeObject;
+                if (selectObj.GetComponent<ScrollMesh>())
+                {
+                    return true;
+                }
             }
         }
-
-
+        // Not Edit Preview!
         return false;
     }
 
 
     protected void CheckSiblings()
     {
-        // Preview when selection scroll mesh
-        // Check if scroll mesh is selected
-        if (
-            !Application.isPlaying && Selection.activeGameObject != null
-        )
-        {
-            if (
-                Selection.activeGameObject.GetComponent<ScrollMesh>() == null
-            )
-            {
-                return;
-            }
+        if (!Application.isPlaying && !_CanEditPreview()){
+            return;
         }
+
         Bounds Area = new Bounds(
             transform.parent.position,
             Vector3.one * 10
@@ -133,7 +127,7 @@ public class ScrollMesh : MonoBehaviour
     // Refresh Scroll Mesh objects in Edit mode
     public static void EditRefresh()
     {
-        if (!_CanEditPreview())
+        if (!_CanEditPreview() && !Application.isPlaying)
         {
             Debug.Log("Should clear");
 

@@ -23,7 +23,7 @@ public class SplinePathedShip : Ship
     // Update is called once per frame
     void Update()
     {
-
+        _SplineShipMove();
     }
 
     protected void SplineShipInit()
@@ -91,7 +91,8 @@ public class SplinePathedShip : Ship
                 TargetSpline,
                 GetNormalisedPos()
             );
-            //truePos += splineContainer.transform.position;
+            
+            truePos += splineContainer.transform.position;
 
             _ShipRigidbody.transform.position = truePos;
 
@@ -117,8 +118,6 @@ public class SplinePathedShip : Ship
                     }
                 }
             }
-
-
 
         }
     }
