@@ -77,6 +77,7 @@ public class Ship : MonoBehaviour
     protected void _ShipSetRigidbody()
     {
         _ShipRigidbody.isKinematic = true;
+        _ShipRigidbody.useFullKinematicContacts = true;
     }
 
     public void Move(Vector2 moveVector)

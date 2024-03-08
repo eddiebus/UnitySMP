@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7818484589863667059}
   - component: {fileID: 4536274435295509411}
+  - component: {fileID: 3919276734436505128}
   - component: {fileID: 7287376895309147239}
   m_Layer: 0
   m_Name: Player
@@ -62,6 +63,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3919276734436505128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561182923304310200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f69a2df15a07ed44b8ec757fe653ae38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterRoot: {fileID: 0}
+  Health: 1
+  Invincible: 0
+  CharacterTag: EmptyCharacter
+  OnDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+  InvisibilityTime: 0
 --- !u!114 &7287376895309147239
 MonoBehaviour:
   m_ObjectHideFlags: 0
