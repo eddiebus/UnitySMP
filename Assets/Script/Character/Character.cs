@@ -18,14 +18,8 @@ public class Character : MonoBehaviour
     public string CharacterTag = "EmptyCharacter";
     public static string GameObjectTagName = "Character";
 
-
     public UnityEvent OnDamage;
     public UnityEvent OnDestroy;
-    // Start is called before the first frame update
-    void Start()
-    {
-        tag = GameObjectTagName;
-    }
 
     public GameObject GetCharacterRootObj()
     {
@@ -70,15 +64,24 @@ public class Character : MonoBehaviour
     public void Destroy()
     {
         OnDestroy.Invoke();
-        if (CharacterRoot)
-        {
-            GameObject.Destroy(CharacterRoot);
-        }
-        else
-        {
-            GameObject.Destroy(gameObject);
-        }
+        GameObject.Destroy(this.GetCharacterRootObj());
     }
 
+    // Destroy Character without invoking event
+    public void DestroySilent()
+    {
+        GameObject.Destroy(this.GetCharacterRootObj());
+    }
 
+    public void DestroyChildren()
+    {
+        var childCharacter = GetComponentsInChildren<Character>();
+        foreach (var character in childCharacter)
+        {
+            if (character != this)
+            {
+                character.Destroy();
+            }
+        }
+    }
 }

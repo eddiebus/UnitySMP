@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        _Rigibody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -63,6 +63,20 @@ public class Bullet : MonoBehaviour
                     if (!Pierce) GameObject.Destroy(gameObject);
                 }
             }
+        }
+    }
+
+
+    void OnDrawGizmos(){
+        Gizmos.color = Color.red;
+
+        if (_Rigibody){
+            var bodyBounds = RigidBody2DBounds.Get(_Rigibody);
+            
+            Gizmos.DrawLine(
+                _Rigibody.position,
+                _Rigibody.position + (Direction * bodyBounds.size.magnitude)
+            );
         }
     }
 }

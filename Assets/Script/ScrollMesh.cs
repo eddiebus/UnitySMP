@@ -129,8 +129,6 @@ public class ScrollMesh : MonoBehaviour
     {
         if (!_CanEditPreview() && !Application.isPlaying)
         {
-            Debug.Log("Should clear");
-
             // Delete non-original object
             foreach (var scrollMesh in FindObjectsByType<ScrollMesh>(
                 FindObjectsInactive.Include,

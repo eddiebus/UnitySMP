@@ -1,17 +1,26 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.Splines;
 
-
+public enum SplineShipDirection
+{
+    Forwards,
+    Backward
+}
 
 public class SplinePathedShip : Ship
 {
     public Enemy _EnemyComponent;
     public SplineContainer splineContainer;
     public bool Loop;
+    public SplineShipDirection PathDirection;
     public bool RotateInDirection;
     public int TargetSplineIndex;
+
+    public UnityEngine.Events.UnityEvent OnSplineComplete;
     protected Spline TargetSpline = null;
     protected float _DistanceCovered = 0;
     // Start is called before the first frame update
@@ -24,6 +33,7 @@ public class SplinePathedShip : Ship
     void Update()
     {
         _SplineShipMove();
+        _ShipSetRigidbody();
     }
 
     protected void SplineShipInit()
@@ -49,11 +59,56 @@ public class SplinePathedShip : Ship
         }
     }
 
-    protected float GetNormalisedPos()
+    protected bool HasFinishedPath()
+    {
+        // No Spline  so never completed
+        if (TargetSpline == null)
+        {
+            return false;
+        }
+        else
+        {
+            if (!Loop)
+            {
+                float splineLength = TargetSpline.GetLength();
+                if (_DistanceCovered >= splineLength)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                // Looping mode, Can Never Finish
+                return false;
+            }
+        }
+    }
+
+    protected float GetSplineLength()
     {
         if (TargetSpline == null)
         {
-            return 0.0f;
+            return 0;
+        }
+        else
+        {
+            return TargetSpline.GetLength();
+        }
+    }
+
+    protected float GetNormalisedPos()
+    {
+        float defaultPos = (float)Convert.ToDouble(
+                PathDirection == SplineShipDirection.Backward
+            );
+
+        if (TargetSpline == null)
+        {
+            return defaultPos;
         }
         else
         {
@@ -64,6 +119,13 @@ public class SplinePathedShip : Ship
                 PathIndexUnit.Distance,
                 PathIndexUnit.Normalized
                 );
+
+            if (
+                PathDirection == SplineShipDirection.Backward
+                )
+            {
+                normalizedPos = 1.0f - normalizedPos;
+            }
 
             return normalizedPos;
         }
@@ -81,43 +143,53 @@ public class SplinePathedShip : Ship
         }
     }
 
+    // Move the ship
     protected void _SplineShipMove()
     {
         if (TargetSpline == null) return;
         else
         {
+
+            // Before moving Ship could finish path
+            bool toCompleteSpline = !this.HasFinishedPath();
+
             _DistanceCovered += Time.deltaTime * MoveSpeed;
             Vector3 truePos = SplineUtility.EvaluatePosition(
                 TargetSpline,
                 GetNormalisedPos()
             );
-            
+            // Set Ship Position
             truePos += splineContainer.transform.position;
-
             _ShipRigidbody.transform.position = truePos;
 
 
+            // Rotate the object in direction of the spline
             if (RotateInDirection)
             {
                 Vector3 LookDir = GetCurrentTangent().normalized;
+                if (PathDirection == SplineShipDirection.Backward){
+                    LookDir *= -1;
+                }
                 _ShipRigidbody.transform.rotation = Quaternion.LookRotation(
                     LookDir,
                     Vector3.back
                 );
             }
 
-            if (GetNormalisedPos() >= 1.0f)
+            // Did the ship complete the spline after moving
+            if (toCompleteSpline && HasFinishedPath())
             {
-                if (Loop)
-                {
+                OnSplineComplete.Invoke();
+            }
+
+
+            if (Loop)
+            {
+                if (_DistanceCovered >= GetSplineLength()){
                     _DistanceCovered = 0;
                 }
-                else{
-                    if (_EnemyComponent){
-                        GameObject.Destroy(_EnemyComponent.GetCharacterRootObj());
-                    }
-                }
             }
+
 
         }
     }

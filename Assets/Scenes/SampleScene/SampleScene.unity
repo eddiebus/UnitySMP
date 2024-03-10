@@ -143,7 +143,7 @@ GameObject:
   m_Layer: 0
   m_Name: EnemySpawner
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -175,17 +175,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 1
-  TimeDelay: 8
+  TimeDelay: 4.5
   EnemySets:
-  - Prefab: {fileID: 2026790830960624077, guid: 94dc9ff7423c0b54ea296e79e5af95f3, type: 3}
+  - Prefab: {fileID: 7622961479567508888, guid: a781dec1801a2554e9a8bf848eaff769, type: 3}
     OnSpawn:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 758758513}
+          m_TargetAssemblyTypeName: EnemySpawner, Assembly-CSharp
+          m_MethodName: WaitForClear
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - Prefab: {fileID: 7622961479567508888, guid: 29f1d36fde3519f49bfae46b895b3031, type: 3}
     OnSpawn:
       m_PersistentCalls:
         m_Calls: []
-  - Prefab: {fileID: 2026790830960624077, guid: 16059630cfcb0e8408781f8fdab6e8d6, type: 3}
+  - Prefab: {fileID: 2026790830960624077, guid: 94dc9ff7423c0b54ea296e79e5af95f3, type: 3}
     OnSpawn:
       m_PersistentCalls:
         m_Calls: []
@@ -675,6 +687,71 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40f6230721583a44486d089e76201ae0, type: 3}
+--- !u!1001 &5982618376084835340
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1240763067926679528, guid: 6690529d80b469d4eb0cc0971eb82dcf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240763067926679528, guid: 6690529d80b469d4eb0cc0971eb82dcf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240763067926679528, guid: 6690529d80b469d4eb0cc0971eb82dcf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240763067926679528, guid: 6690529d80b469d4eb0cc0971eb82dcf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240763067926679528, guid: 6690529d80b469d4eb0cc0971eb82dcf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240763067926679528, guid: 6690529d80b469d4eb0cc0971eb82dcf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240763067926679528, guid: 6690529d80b469d4eb0cc0971eb82dcf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240763067926679528, guid: 6690529d80b469d4eb0cc0971eb82dcf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240763067926679528, guid: 6690529d80b469d4eb0cc0971eb82dcf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240763067926679528, guid: 6690529d80b469d4eb0cc0971eb82dcf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909148125320452411, guid: 6690529d80b469d4eb0cc0971eb82dcf, type: 3}
+      propertyPath: m_Name
+      value: EnemyBullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239893251342382328, guid: 6690529d80b469d4eb0cc0971eb82dcf, type: 3}
+      propertyPath: DamageValue
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239893251342382328, guid: 6690529d80b469d4eb0cc0971eb82dcf, type: 3}
+      propertyPath: MaxLifeTime
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6690529d80b469d4eb0cc0971eb82dcf, type: 3}
 --- !u!1001 &6055099021960406117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -842,3 +919,4 @@ SceneRoots:
   - {fileID: 4693327238964094682}
   - {fileID: 1471548705}
   - {fileID: 758758512}
+  - {fileID: 5982618376084835340}

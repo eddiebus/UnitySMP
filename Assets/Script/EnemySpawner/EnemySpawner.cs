@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -27,10 +28,15 @@ public enum EnemySpawnerState
 public class EnemySpawner : MonoBehaviour
 {
     public EnemySpawnerState State;
+    private EnemySpawnerState _OriginalMode;
     public float TimeDelay = 1.0f;
     protected float _TimeTillSpawn;
     public List<EnemySpawnSet> EnemySets;
 
+    void Start(){
+        
+        _OriginalMode = State;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -69,7 +75,7 @@ public class EnemySpawner : MonoBehaviour
                 {
                     if (Enemy.All.Length == 0)
                     {
-                        State = EnemySpawnerState.LevelMode;
+                        State = _OriginalMode;
                     }
                     break;
                 }

@@ -16,6 +16,7 @@ public class Enemy : Character
     // Start is called before the first frame update
     void Start()
     {
+        this.CharacterTag = CharacterNames.Enemy;
         this.OnDestroy.AddListener(()=>{
             Player.Score += ScoreValue;
             Debug.Log($"Score chenged to {Player.Score}");

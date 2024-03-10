@@ -235,12 +235,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3259268613832369678, guid: 1a47fe6ff3ca3ca439c3982bd920561c, type: 3}
+      propertyPath: PathDirection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3259268613832369678, guid: 1a47fe6ff3ca3ca439c3982bd920561c, type: 3}
       propertyPath: splineContainer
       value: 
       objectReference: {fileID: 2237704933556477958}
     - target: {fileID: 3259268613832369678, guid: 1a47fe6ff3ca3ca439c3982bd920561c, type: 3}
       propertyPath: TargetSplineIndex
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6570032691430829534, guid: 1a47fe6ff3ca3ca439c3982bd920561c, type: 3}
       propertyPath: m_Name

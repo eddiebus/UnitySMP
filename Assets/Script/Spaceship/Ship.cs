@@ -41,7 +41,7 @@ public class Ship : MonoBehaviour
                 (playarea.center.y + playarea.extents.y)
             )
             {
-                float yPos = playarea.center.y - playarea.extents.y - ShipBounds.extents.y;
+                float yPos = playarea.center.y + playarea.extents.y - ShipBounds.extents.y;
                 _ShipRigidbody.position = new Vector2(
                     _ShipRigidbody.position.x,
                     yPos
@@ -93,7 +93,9 @@ public class Ship : MonoBehaviour
     {
         if (_Guns.Length > 0)
         {
-            _Guns[0].Fire();
+            foreach (var gun in _Guns){
+                gun.Fire();
+            }
         }
     }
 
