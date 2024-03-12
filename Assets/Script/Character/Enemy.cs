@@ -19,7 +19,6 @@ public class Enemy : Character
         this.CharacterTag = CharacterNames.Enemy;
         this.OnDestroy.AddListener(()=>{
             Player.Score += ScoreValue;
-            Debug.Log($"Score chenged to {Player.Score}");
         });
     }
 
@@ -29,5 +28,6 @@ public class Enemy : Character
         if (Health < 0){
             this.Destroy();
         }
+
     }
 }

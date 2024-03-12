@@ -130,6 +130,7 @@ MonoBehaviour:
   MoveSpeed: 1
   _Guns: []
   _EnemyComponent: {fileID: 3092191818317922554}
+  AutoFire: 1
   splineContainer: {fileID: 0}
   Loop: 0
   PathDirection: 0
@@ -211,7 +212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GroupID: 0
   BulletPrefab: {fileID: 5909148125320452411, guid: 6690529d80b469d4eb0cc0971eb82dcf, type: 3}
-  FireDelay: 0
+  FireDelay: 1
   _CurrentFireDelay: 0
   OnFire:
     m_PersistentCalls:
@@ -262,7 +263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GroupID: 0
   BulletPrefab: {fileID: 5909148125320452411, guid: 6690529d80b469d4eb0cc0971eb82dcf, type: 3}
-  FireDelay: 0
+  FireDelay: 1
   _CurrentFireDelay: 0
   OnFire:
     m_PersistentCalls:
@@ -582,9 +583,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 3303817720149501573}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e3410b8ad0aae4e4689ac4d0c770890c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4372345218578270798}
     - targetCorrespondingSourceObject: {fileID: -4511914263455536701, guid: e3410b8ad0aae4e4689ac4d0c770890c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7325576702064338342}
@@ -635,39 +633,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e3410b8ad0aae4e4689ac4d0c770890c, type: 3}
   m_PrefabInstance: {fileID: 6200376654957912029}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6542956643094176396 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e3410b8ad0aae4e4689ac4d0c770890c, type: 3}
-  m_PrefabInstance: {fileID: 6200376654957912029}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4372345218578270798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6542956643094176396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9954789d260e094ebd23288760def7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EventName: Fire
-  OnInvoke:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7632879884800793275}
-        m_TargetAssemblyTypeName: Ship, Assembly-CSharp
-        m_MethodName: Fire
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!4 &9013182806618474613 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -6117740192527607896, guid: e3410b8ad0aae4e4689ac4d0c770890c, type: 3}

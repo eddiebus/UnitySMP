@@ -14,6 +14,7 @@ public enum SplineShipDirection
 public class SplinePathedShip : Ship
 {
     public Enemy _EnemyComponent;
+    public bool AutoFire; // To Constant Fire
     public SplineContainer splineContainer;
     public bool Loop;
     public SplineShipDirection PathDirection;
@@ -34,6 +35,8 @@ public class SplinePathedShip : Ship
     {
         _SplineShipMove();
         _ShipSetRigidbody();
+
+        Fire();
     }
 
     protected void SplineShipInit()

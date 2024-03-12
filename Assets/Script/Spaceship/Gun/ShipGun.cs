@@ -25,7 +25,7 @@ public class ShipGun : MonoBehaviour
         _GunTick();
     }
 
-    protected void _GunTick()
+    protected virtual void _GunTick()
     {
         if (_CurrentFireDelay > 0)
         {
