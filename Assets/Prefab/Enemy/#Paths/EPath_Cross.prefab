@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9119468650889816187}
   - component: {fileID: 9124918629303227164}
   m_Layer: 0
-  m_Name: Path_Cross
+  m_Name: EPath_Cross
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

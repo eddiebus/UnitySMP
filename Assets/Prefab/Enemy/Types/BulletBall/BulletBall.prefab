@@ -212,7 +212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GroupID: 0
   BulletPrefab: {fileID: 5909148125320452411, guid: 6690529d80b469d4eb0cc0971eb82dcf, type: 3}
-  FireDelay: 1
+  FireDelay: 0.5
   _CurrentFireDelay: 0
   OnFire:
     m_PersistentCalls:
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GroupID: 0
   BulletPrefab: {fileID: 5909148125320452411, guid: 6690529d80b469d4eb0cc0971eb82dcf, type: 3}
-  FireDelay: 1
+  FireDelay: 0.5
   _CurrentFireDelay: 0
   OnFire:
     m_PersistentCalls:

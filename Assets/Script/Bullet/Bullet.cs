@@ -8,12 +8,13 @@ public class Bullet : MonoBehaviour
 {
     [Range(0,1.0f)]
     public bool Pierce = false;
+    public bool Shrink = false;
     public float DamageValue;
     public Rigidbody2D _Rigibody;
     public Vector2 Direction;
     public float Speed;
 
-    [Range(1.0f,5.0f)]
+    [Range(1.0f,10.0f)]
     public float MaxLifeTime;
     private float _LifeTime;
     
@@ -30,6 +31,12 @@ public class Bullet : MonoBehaviour
         _SetBulletRigidbody(); 
         _BulletMove();
         _BulletTick();
+
+        float shrinklifeTime = MaxLifeTime * 0.9f;
+        if (Shrink && _LifeTime > shrinklifeTime){
+            float scale =  (MaxLifeTime - _LifeTime) / (MaxLifeTime - shrinklifeTime);
+            this.transform.localScale = Vector3.one * scale;
+        }
     }
 
     protected void _BulletTick(){

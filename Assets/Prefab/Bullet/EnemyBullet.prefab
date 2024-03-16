@@ -48,11 +48,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pierce: 0
-  DamageValue: 0
+  Shrink: 1
+  DamageValue: 0.1
   _Rigibody: {fileID: 7201373163434342373}
   Direction: {x: 0, y: 1}
   Speed: 3
-  MaxLifeTime: 5
+  MaxLifeTime: 6
   FriendlyTag:
   - Enemy
   - Other
@@ -161,7 +162,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295

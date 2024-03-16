@@ -28,6 +28,5 @@ public class Enemy : Character
         if (Health < 0){
             this.Destroy();
         }
-
     }
 }

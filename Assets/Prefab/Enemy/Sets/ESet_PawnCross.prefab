@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3117912801838326692}
   - component: {fileID: 6044057609439061784}
   m_Layer: 0
-  m_Name: PawnWall
+  m_Name: ESet_PawnCross
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57,7 +57,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2847295609240803549, guid: 63d90e2b678aed04486d5d1a3466c03d, type: 3}
       propertyPath: m_Name
-      value: Path_Cross
+      value: EPath_Cross
       objectReference: {fileID: 0}
     - target: {fileID: 9119468650889816187, guid: 63d90e2b678aed04486d5d1a3466c03d, type: 3}
       propertyPath: m_LocalPosition.x
