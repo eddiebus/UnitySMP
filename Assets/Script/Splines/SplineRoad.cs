@@ -13,9 +13,11 @@ public class SplineRoad : MonoBehaviour
 
 
     void Awake(){
+        #if UNITY_EDITOR
         UnityEditor.Splines.EditorSplineUtility.AfterSplineWasModified += (targetSpline)=>{
             _GenerateMesh();
         };
+        #endif
         ComponentCheck();
         _GenerateMesh();
     }

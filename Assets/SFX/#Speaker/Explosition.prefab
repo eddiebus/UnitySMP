@@ -44,7 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3ad36527d65834e9ab29fa2669428b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Volume: 0
+  Volume: 0.5
+  SoundLimit: 10
   Clips:
   - {fileID: 8300000, guid: d2fc93e6ae4f54f4386c2b2470568fcc, type: 3}
   - {fileID: 8300000, guid: 7a58dc9395e015d4d928d550fca553a3, type: 3}
@@ -53,3 +54,4 @@ MonoBehaviour:
   - {fileID: 8300000, guid: eb3e7c03c0c75f048a44e86a8bea3f5b, type: 3}
   - {fileID: 8300000, guid: e1d4fd0caf6db0c4e878650d2274b221, type: 3}
   - {fileID: 8300000, guid: d14ac67a8802b8945a3b902208fc6b52, type: 3}
+  SpawnedClips: []

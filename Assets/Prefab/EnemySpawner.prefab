@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 1
-  TimeDelay: 4.5
+  TimeDelay: 2.5
   EnemySets:
   - Prefab: {fileID: 1513780373124216264, guid: 8d200c5af27f98e4699f6ed9d4c2299c, type: 3}
     OnSpawn:
@@ -68,6 +68,10 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - Prefab: {fileID: 7622961479567508888, guid: 29f1d36fde3519f49bfae46b895b3031, type: 3}
+    OnSpawn:
+      m_PersistentCalls:
+        m_Calls: []
+  - Prefab: {fileID: 7622961479567508888, guid: a781dec1801a2554e9a8bf848eaff769, type: 3}
     OnSpawn:
       m_PersistentCalls:
         m_Calls: []

@@ -1,4 +1,5 @@
 using System;
+using System.Timers;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -7,7 +8,6 @@ public class SoundFX : MonoBehaviour
     public bool Loop;
     private AudioSource _SourceComp;
     public Action OnDestroy = new Action(()=>{
-        Debug.Log($"Sound Finished");
     });
     // Start is called before the first frame update
     void Start()
@@ -45,6 +45,7 @@ public class SoundFX : MonoBehaviour
 
         var audioSource = newObj.AddComponent<AudioSource>();
         audioSource.volume = Volume;
+
         audioSource.clip = Clip;
         audioSource.loop = Loop;
         audioSource.Play();

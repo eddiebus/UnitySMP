@@ -17,6 +17,7 @@ public class ObjectGroup : MonoBehaviour
 
     void OnDrawGizmos()
     {
+        #if UNITY_EDITOR
         if (Selection.activeObject == this.gameObject)
         {
             Gizmos.color = Color.red;
@@ -29,5 +30,6 @@ public class ObjectGroup : MonoBehaviour
                 ); 
             }
         }
+        #endif
     }
 }

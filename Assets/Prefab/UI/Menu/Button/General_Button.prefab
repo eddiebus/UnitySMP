@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Game Start
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5b63950c048356f4da2f18791af75ab7, type: 2}
-  m_sharedMaterial: {fileID: -4628845428951692699, guid: 5b63950c048356f4da2f18791af75ab7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3fb0b6a570820f848a49cdc13c5ba87a, type: 2}
+  m_sharedMaterial: {fileID: -4628845428951692699, guid: 3fb0b6a570820f848a49cdc13c5ba87a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -144,7 +144,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8495628603111242802}
   - component: {fileID: 5228026419046199845}
-  - component: {fileID: 711098509966451855}
   - component: {fileID: 7744150256180792609}
   - component: {fileID: 1351040797204736938}
   m_Layer: 5
@@ -182,26 +181,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5561123086075371070}
   m_CullTransparentMesh: 1
---- !u!114 &711098509966451855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5561123086075371070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a91c0278e1e5f241bbc132f0dab7947, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _AnimatorComponent: {fileID: 0}
-  _ButtonComp: {fileID: 1351040797204736938}
-  _ButtonImageComp: {fileID: 7744150256180792609}
-  _TextComp: {fileID: 5705279001434141455}
-  DefaultButtonColor: {r: 1, g: 1, b: 1, a: 1}
-  HoverButtonColor: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
-  ButtonSelectColor: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 1}
-  ColorAplha: 1
 --- !u!114 &7744150256180792609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,12 +205,12 @@ MonoBehaviour:
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 3
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 2
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 0.3
 --- !u!114 &1351040797204736938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,7 +238,7 @@ MonoBehaviour:
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
+    m_FadeDuration: 0.05
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}

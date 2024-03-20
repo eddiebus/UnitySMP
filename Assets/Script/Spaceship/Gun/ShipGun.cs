@@ -89,6 +89,7 @@ public class ShipGun : MonoBehaviour
 
     void OnDrawGizmos()
     {
+        #if UNITY_EDITOR
         if (Selection.activeGameObject == this.gameObject)
         {
             Gizmos.color = Color.yellow;
@@ -97,5 +98,6 @@ public class ShipGun : MonoBehaviour
                 transform.position + (transform.rotation * Vector2.up));
             Gizmos.DrawWireSphere(transform.position, 0.3f);
         }
+        #endif
     }
 }

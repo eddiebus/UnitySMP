@@ -20,12 +20,21 @@ public class OptionsMenu : MonoBehaviour
         {
             slider.onValueChanged.AddListener((float value) => { UpdateSettings(); });
         }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
 
+    }
+
+    public void LoadCurrentSettings(){
+        MasterVolSlider.value = SoundSettings.GetInstance().MasterVolume;
+        MusicVolSlider.value = SoundSettings.GetInstance().MusicVolume;
+        SFXVolSlider.value = SoundSettings.GetInstance().SFXVolume;
+
+        
     }
 
     private void UpdateSettings()

@@ -27,7 +27,7 @@ public class SoundFXSpeaker : MonoBehaviour
     {
         if (Clips.Length == 0 || SpawnedClips.Count > SoundLimit) return;
         var select = UnityEngine.Random.Range(0, Clips.Length);
-        var newSound = SoundFX.SpawnSound(this.transform.position, Clips[select], Volume * SoundSettings.GetInstance().SFXVolume);
+        var newSound = SoundFX.SpawnSound(this.transform.position, Clips[select], Volume * SoundSettings.GetInstance().SFXVolume * SoundSettings.GetInstance().MasterVolume);
 
         // Log New SoundFX
         SpawnedClips.Add(newSound);

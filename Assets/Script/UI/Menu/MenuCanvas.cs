@@ -39,6 +39,7 @@ public class MenuCanvas : MonoBehaviour
                 {
                     if (GetIndexInParent() == switcher.ActiveIndex){
                         this.IsOpen = true;
+                        OnMenuOpen.Invoke();
                         SetFocusWidget(DefaultObject);
                         
                     }

@@ -16,6 +16,7 @@ public class CanvasSwitcher : MonoBehaviour
     public Action OnCanvasSwitch = ()=>{};
 
     void Start(){
+        _Refresh();
         OnCanvasSwitch.Invoke();
     }
     
@@ -31,6 +32,7 @@ public class CanvasSwitcher : MonoBehaviour
     */
     private void _EditorRefresh()
     {
+        #if UNITY_EDITOR
         if (Application.isPlaying) return;
         if (Selection.activeGameObject)
         {
@@ -54,6 +56,7 @@ public class CanvasSwitcher : MonoBehaviour
         {
             transform.GetChild(i).gameObject.SetActive(i == ActiveIndex);
         }
+        #endif
 
     }
 
@@ -72,6 +75,7 @@ public class CanvasSwitcher : MonoBehaviour
     public void SetActiveIndex(int newIndex)
     {
         ActiveIndex = newIndex;
+        _Refresh();
         OnCanvasSwitch.Invoke();
     }
 

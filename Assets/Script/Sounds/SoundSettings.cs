@@ -11,9 +11,16 @@ public struct SoundSettingsInput{
 public class SoundSettings 
 {
     private static SoundSettings _Instance = null; 
-    public float MasterVolume = 1.0f;
-    public float MusicVolume  = 0.5f;
-    public float SFXVolume = 0.5f;
+    protected float _MasterVolume = 1.0f;
+    protected float _MusicVolume  = 0.5f;
+    protected float _SFXVolume = 0.5f;
+
+
+    public float MasterVolume => _MasterVolume;
+    public float SFXVolume => _SFXVolume ;
+    public float MusicVolume => _MusicVolume;
+    
+
 
     public  const string Pref_MasterVol = "Setting: MasterVolume";
     public const string Pref_MusicVol = "Setting: Music Volume";
@@ -26,39 +33,40 @@ public class SoundSettings
     public static SoundSettings GetInstance(){
         if (_Instance == null){
             _Instance = new SoundSettings();
+            _Instance.LoadSettings();
         }
         
         return _Instance;
     }
 
     private void LoadSettings(){
-        if (PlayerPrefs.HasKey(Pref_SFXVol)){
-            SFXVolume = PlayerPrefs.GetFloat(Pref_SFXVol);
-        }
+        _SFXVolume = PlayerPrefs.GetFloat(Pref_SFXVol);
+        _MasterVolume = PlayerPrefs.GetFloat(Pref_MasterVol);
+        _MusicVolume = PlayerPrefs.GetFloat(Pref_MusicVol);
     }
 
     public void SetSettings(SoundSettingsInput input){
-        MasterVolume = input.MasterVol;
-        MusicVolume = input.MusicVol;
-        SFXVolume = input.SFXVol;
-
-        Debug.Log($"Current SFX Volume = {SFXVolume}");
+        _MasterVolume = input.MasterVol;
+        _MusicVolume = input.MusicVol;
+        _SFXVolume = input.SFXVol;
     }
 
     public void SaveSettings(){
         PlayerPrefs.SetFloat(
             Pref_MasterVol,
-            MasterVolume
+            _MasterVolume
         );
 
         PlayerPrefs.SetFloat(
             Pref_MusicVol,
-            MusicVolume
+            _MusicVolume
         );
 
         PlayerPrefs.SetFloat(
             Pref_SFXVol,
-            SFXVolume
+            _SFXVolume
         );
+
+        PlayerPrefs.Save();
     }
 }

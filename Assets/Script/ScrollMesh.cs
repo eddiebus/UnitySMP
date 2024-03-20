@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
-using UnityEditor.EditorTools;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 
 
@@ -14,6 +10,7 @@ Endlessly scroll mesh object withing bounds of parent.
 [ExecuteAlways]
 public class ScrollMesh : MonoBehaviour
 {
+    
     public Vector3 ScrollVector = Vector3.down;
     protected bool originalObj = true; // Was this the 1st Obj (Not created by script)
     public GameObject up;
@@ -38,12 +35,13 @@ public class ScrollMesh : MonoBehaviour
 
     protected static bool _CanEditPreview()
     {
+        #if UNITY_EDITOR
         if (Application.isPlaying == false)
         {
             // In Edit mode, is scrollmesh selected?
             if (
                 Selection.activeGameObject != null &&
-                PrefabStageUtility.GetCurrentPrefabStage() == null)
+                UnityEditor.SceneManagement.PrefabStageUtility.GetCurrentPrefabStage() == null)
             {
                 var selectObj = Selection.activeObject;
                 if (selectObj.GetComponent<ScrollMesh>())
@@ -52,6 +50,7 @@ public class ScrollMesh : MonoBehaviour
                 }
             }
         }
+        #endif
         // Not Edit Preview!
         return false;
     }

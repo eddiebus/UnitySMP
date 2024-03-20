@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+
 public class Player : Character
 {
     public static int Score;
 
     public float InvisibilityTime = 0;
+
     // Update is called once per frame
     void Update()
     {

@@ -132,11 +132,12 @@ public class WebSpaceImage : MonoBehaviour
     }
 
     void OnDrawGizmos(){ 
-
+        #if UNITY_EDITOR
         if (Selection.activeObject == this.gameObject){
             Gizmos.color = Color.red;
             Gizmos.DrawLine(transform.position,
             transform.position + (MoveRotation * Vector3.forward) );
         }
+        #endif
     }
 }
