@@ -25,14 +25,18 @@ Shader "Unlit/UVCircle"
 
             #include "UnityCG.cginc"
 
+            #define PI 3.141592
+
             struct appdata
             {
                 float4 vertex : POSITION;
                 float2 uv : TEXCOORD0;
+                fixed4 color : COLOR0;
             };
 
             struct v2f
             {
+                fixed4 color : COLOR0;
                 float2 uv : TEXCOORD0;
                 UNITY_FOG_COORDS(1)
                 float4 vertex : SV_POSITION;
@@ -44,10 +48,12 @@ Shader "Unlit/UVCircle"
             float _MinRadius;
             float _Angle;
             float4 _MainTex_ST;
+            
 
             v2f vert (appdata v)
             {
                 v2f o;
+                o.color = v.color;
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 UNITY_TRANSFER_FOG(o,o.vertex);
@@ -64,26 +70,35 @@ Shader "Unlit/UVCircle"
             {
                 float2 relPosition = i.uv;
                 relPosition = (relPosition - float2(0.5f,0.5f)) * 6.0f;
-
+                float2 normalPos = normalize(relPosition);
                 float uvDistance = length(relPosition);
-                float angle = dot(
-                    normalize(float2(0,-1)),
-                    normalize(relPosition)
+
+                float2 defaultVec = float2(0,-1);
+
+                float dotprod = dot(
+                    defaultVec,
+                    normalPos
                 );
 
-                angle = acos(angle);
+                float determinant = defaultVec.x * normalPos.y - defaultVec.y * normalPos.x;
+
+                float angle = atan2(
+                    -determinant,
+                    dotprod
+                    ) ;
                 
 
                 fixed4 col = tex2D(_MainTex, i.uv);
                 if (
-                    uvDistance > _MaxRadius 
-                    || uvDistance < _MinRadius
-                    || angle > _Angle * 3.1415){
+                    uvDistance > (_MaxRadius * 3) 
+                    || uvDistance < (_MinRadius * 3)
+                    // 2 Pi = 1 full circle
+                    || (angle + PI) > (_Angle * PI) * 2 ){
                     col = float4(0,0,0,0);
                 }
 
                 //UNITY_APPLY_FOG(i.fogCoord, col);
-                return col * _Color;
+                return col * i.color;
             }
             ENDCG
         }

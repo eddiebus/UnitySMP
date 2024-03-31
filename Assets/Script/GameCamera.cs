@@ -15,6 +15,7 @@ public class GameCamera : MonoBehaviour
     public float zFar;
     public static Vector2 TargetRatio = new Vector2(9,16);
     public Camera _CamComponent;
+    public Camera CamComponent => _CamComponent;
     // Start is called before the first frame update
     void Start()
     {

@@ -9,7 +9,7 @@ public class RandomDestroy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (UnityEngine.Random.Range(0.0f,1.0f) < Chance)
+        if (UnityEngine.Random.Range(0.0f,1) < Chance)
         GameObject.Destroy(this.gameObject);
     }
 }
