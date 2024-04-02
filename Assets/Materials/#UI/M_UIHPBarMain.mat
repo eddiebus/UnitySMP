@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_UIHPBarTemplate
+  m_Name: M_UIHPBarMain
   m_Shader: {fileID: 4800000, guid: 4fcbc24112f20f647980cda464d2741e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -69,9 +69,9 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _MaxRadius: 1
+    - _MaxRadius: 0.55
     - _Metallic: 0
-    - _MinRadius: 0.7
+    - _MinRadius: 0.45
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02

@@ -10,19 +10,19 @@ using UnityEngine;
 [ExecuteAlways]
 public class CanvasSwitcher : MonoBehaviour
 {
-    // If you really wanted to use fields this is the way
-    [field: SerializeField]
-    public int ActiveIndex { get; private set; } = -1;
-    public Action OnCanvasSwitch = ()=>{};
+    public int DefaultIndex = 0;
+    public  int ActiveIndex => _ActiveIndex;
+    private int _ActiveIndex = -1;
+    public Action OnCanvasSwitch = () => { };
 
-    void Start(){
-        _Refresh();
+    void Start()
+    {
+        SetActiveIndex(DefaultIndex);
         OnCanvasSwitch.Invoke();
     }
-    
+
     private void Update()
     {
-        _Refresh();
         _EditorRefresh();
     }
 
@@ -32,7 +32,7 @@ public class CanvasSwitcher : MonoBehaviour
     */
     private void _EditorRefresh()
     {
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         if (Application.isPlaying) return;
         if (Selection.activeGameObject)
         {
@@ -45,19 +45,27 @@ public class CanvasSwitcher : MonoBehaviour
                     // Get Children
                     var childTransform = transform.GetChild(i);
                     bool selected = Selection.activeGameObject == childTransform.gameObject
-                    ||  Selection.activeGameObject.transform.IsChildOf(childTransform);
+                    || Selection.activeGameObject.transform.IsChildOf(childTransform);
                     childTransform.gameObject.SetActive(selected);
                 }
                 return;
+            }
+            // Keep "DefaultIndex" in range
+            else if (Selection.activeGameObject.transform != this.transform){
+                if (DefaultIndex < 0){
+                    DefaultIndex = 0;
+                }
+                else if (DefaultIndex > this.transform.childCount){
+                    DefaultIndex = this.transform.childCount - 1;
+                }
             }
         }
 
         for (int i = 0; i < transform.childCount; i++)
         {
-            transform.GetChild(i).gameObject.SetActive(i == ActiveIndex);
+            transform.GetChild(i).gameObject.SetActive(i == DefaultIndex);
         }
-        #endif
-
+#endif
     }
 
     private void _Refresh()
@@ -66,15 +74,14 @@ public class CanvasSwitcher : MonoBehaviour
         {
             for (int i = 0; i < transform.childCount; i++)
             {
-                var childObj = transform.GetChild(i).gameObject;
-                transform.GetChild(i).gameObject.SetActive(i == ActiveIndex);
+                transform.GetChild(i).gameObject.SetActive(i == _ActiveIndex);
             }
         }
     }
 
     public void SetActiveIndex(int newIndex)
     {
-        ActiveIndex = newIndex;
+        _ActiveIndex = newIndex;
         _Refresh();
         OnCanvasSwitch.Invoke();
     }

@@ -10,25 +10,17 @@ Circle HP Bar
 */
 public class PlayerHPBar : MonoBehaviour
 {
-    protected Material MainMat;
+    public Material MainMat;
     public CanvasGroup canvasGroup;
-    [Range(0.01f, 0.4f)]
-    public float Width;
     public Image MainBarObject_Image;
 
-    public float DisplayValue = 0.0f;
+    public float DisplayValue = 1.0f;
     public float Opacity = 1.0f;
     // Start is called before the first frame update
     void Start()
     {
-
+        MainMat = Object.Instantiate(MainMat);
         canvasGroup = GetComponent<CanvasGroup>();
-
-        MainMat = new Material(
-            Shader.Find("Unlit/UVCircle")
-        );
-        MainMat.SetFloat("_MaxRadius", 0.5f + Width);
-        MainMat.SetFloat("_MinRadius", 0.5f - Width);
     }
 
     // Update is called once per frame
@@ -44,24 +36,31 @@ public class PlayerHPBar : MonoBehaviour
                 currentPlayer.Health,
                 Time.deltaTime * 3
             );
-
-
-            MainMat.SetFloat("_MaxRadius", 0.5f + Width);
-            MainMat.SetFloat("_MinRadius", 0.5f - Width);
             MainBarObject_Image.material = MainMat;
             MainBarObject_Image.material.SetFloat("_Angle", DisplayValue);
 
             canvasGroup.alpha = Mathf.Lerp(canvasGroup.alpha,
             currentPlayer.InvisibilityTime,
             Time.deltaTime * 5);
-
             
 
-            if (GameCamera.Get()){
-                Vector3 newPos =  GameCamera.Get().CamComponent.WorldToScreenPoint(
+            GameCamera targetGameCam = GameCamera.Get();
+
+            if (targetGameCam){
+
+                RectTransform myTransform = GetComponent<RectTransform>();
+                Vector2 anchroPoint = Vector2.zero;
+                myTransform.anchorMin = anchroPoint;
+                myTransform.anchorMax = anchroPoint;
+                RectTransform parentTrasnform = myTransform.parent.gameObject.GetComponent<RectTransform>();
+                Vector3 screenPos =  targetGameCam.CamComponent.WorldToViewportPoint(
                     currentPlayer.transform.position
                     );
-                this.transform.position = newPos;
+                
+                Vector3 newPos = Vector2.zero;
+                newPos.x = screenPos.x * parentTrasnform.sizeDelta.x;
+                newPos.y = screenPos.y * parentTrasnform.sizeDelta.y;
+                myTransform.anchoredPosition = newPos;
             }
         }
     }

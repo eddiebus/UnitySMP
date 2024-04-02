@@ -34,6 +34,7 @@ Transform:
   m_Children:
   - {fileID: 6317819809768442380}
   - {fileID: 2101508688480977266}
+  - {fileID: 6972941671283695698}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &4536274435295509411
@@ -81,7 +82,19 @@ MonoBehaviour:
   CharacterTag: EmptyCharacter
   OnDamage:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4227655567309441116}
+        m_TargetAssemblyTypeName: SoundFXSpeaker, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnDestroy:
     m_PersistentCalls:
       m_Calls: []
@@ -100,6 +113,91 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 12
   _Guns: []
+--- !u!1 &3260937558999123316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6972941671283695698}
+  m_Layer: 0
+  m_Name: Speaker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6972941671283695698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3260937558999123316}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8154392080287226426}
+  m_Father: {fileID: 7818484589863667059}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5299480785009091370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8154392080287226426}
+  - component: {fileID: 4227655567309441116}
+  m_Layer: 0
+  m_Name: SFXSpeaker_Hurt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8154392080287226426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5299480785009091370}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6972941671283695698}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4227655567309441116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5299480785009091370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec3ad36527d65834e9ab29fa2669428b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Volume: 0.8
+  SoundLimit: 1
+  Clips:
+  - {fileID: 8300000, guid: 59cba03db7de7a84995ffcf91564e8f8, type: 3}
+  - {fileID: 8300000, guid: 353c3f97c4216984aa9694873f5a5bd4, type: 3}
+  - {fileID: 8300000, guid: 47e3c63fcd9e66e4496bbff1c5a230fb, type: 3}
+  - {fileID: 8300000, guid: 9302066bed6795f43a5e43e51a5ed493, type: 3}
+  - {fileID: 8300000, guid: 204ff58834da38246b228245011e4ad1, type: 3}
+  SpawnedClips: []
 --- !u!1 &7152175541911244697
 GameObject:
   m_ObjectHideFlags: 0

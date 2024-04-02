@@ -6,15 +6,9 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 
-public enum MenuCanvasState
-{
-    Opened,
-    Closed
-}
 
 public class MenuCanvas : MonoBehaviour
 {
-    protected MenuCanvasState MenuState = MenuCanvasState.Closed;
     public bool IsOpen = false;
     public GameObject DefaultObject = null;
     public UnityEvent OnMenuOpen;
@@ -30,6 +24,7 @@ public class MenuCanvas : MonoBehaviour
             SetFocusWidget(DefaultObject);
         }
 
+        // Check for CanvasSwitcher as Parent
         if (transform.parent)
         {
             var switcher = transform.parent.gameObject.GetComponent<CanvasSwitcher>();
@@ -41,13 +36,14 @@ public class MenuCanvas : MonoBehaviour
                         this.IsOpen = true;
                         OnMenuOpen.Invoke();
                         SetFocusWidget(DefaultObject);
-                        
                     }
                     else{
                         this.IsOpen = false;
                     }
-                    Debug.Log($"Hello Canvas Switcher from {gameObject.name}");
                 };
+            }
+            else{
+                this.IsOpen = true;
             }
         }
     }
@@ -84,6 +80,7 @@ public class MenuCanvas : MonoBehaviour
         }
     }
 
+    // Get what Index this transform is in parent
     private int GetIndexInParent()
     {
         if (transform.parent)
@@ -100,13 +97,6 @@ public class MenuCanvas : MonoBehaviour
         return -1;
     }
 
-    // Event Function for use only in Unity AnimationEvent
-    public void OpenMenu()
-    {
-        IsOpen = true;
-        SetFocusWidget(DefaultObject);
-        OnMenuOpen.Invoke();
-    }
 
     public void CloseMenu()
     {

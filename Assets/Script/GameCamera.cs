@@ -13,14 +13,13 @@ public class GameCamera : MonoBehaviour
     public float fov;
     [Range(10,1000)]
     public float zFar;
-    public static Vector2 TargetRatio = new Vector2(9,16);
+    public static Vector2 TargetRatio = new Vector2(9,18);
     public Camera _CamComponent;
     public Camera CamComponent => _CamComponent;
     // Start is called before the first frame update
     void Start()
     {
         _CamComponent = GetComponent<Camera>();
-
     }
 
     // Update is called once per frame
@@ -56,6 +55,9 @@ public class GameCamera : MonoBehaviour
         );
 
         transform.position = camPosition;
+        float currentWidthRatio = (float)Screen.width / Screen.height;
+        float targetWidthRatio = (float)TargetRatio.x / TargetRatio.y;
+        
     }
 
     public Bounds GetBounds() => new Bounds (

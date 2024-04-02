@@ -24,7 +24,7 @@ public class SceneLoader : MonoBehaviour
         {
             DelayTime += Time.deltaTime;
             if (DelayTime >= MinDelay){
-                loadOp.allowSceneActivation = true;
+                //loadOp.allowSceneActivation = true;
             }
         }
     }
@@ -38,6 +38,16 @@ public class SceneLoader : MonoBehaviour
         if (loadOp != null) return;
         loadOp = SceneManager.LoadSceneAsync(SceneName);
         loadOp.allowSceneActivation = false;
+    }
+
+    public static void SwitchToNewScene(){
+        if (IsLoading()){
+            loadOp.allowSceneActivation = true;
+        }
+    }
+
+    public static AsyncOperation  GetLoadingOperation(){
+        return loadOp;
     }
 
     public static bool IsLoading()

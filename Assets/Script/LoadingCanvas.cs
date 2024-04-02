@@ -23,6 +23,10 @@ public class LoadingCanvas : MonoBehaviour
             if (SceneLoader.IsLoading())
             {
                 TargetAlpha += Time.deltaTime * 5.0f;
+                if (TargetAlpha >= 0.99f){
+                    Debug.Log("Hello");
+                    SceneLoader.SwitchToNewScene();
+                }
             }
             else
             {
@@ -37,6 +41,7 @@ public class LoadingCanvas : MonoBehaviour
             canvasGroup.blocksRaycasts = canvasGroup.alpha > 0.4f;
             canvasGroup.interactable = false;
         }
+
         else{
             canvasGroup.blocksRaycasts = false;
             canvasGroup.alpha = 0.0f;
