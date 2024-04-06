@@ -40,9 +40,9 @@ public class SoundSettings
     }
 
     private void LoadSettings(){
-        _SFXVolume = PlayerPrefs.GetFloat(Pref_SFXVol);
-        _MasterVolume = PlayerPrefs.GetFloat(Pref_MasterVol);
-        _MusicVolume = PlayerPrefs.GetFloat(Pref_MusicVol);
+        _MasterVolume = PlayerPrefs.GetFloat(Pref_MasterVol,1.0f);
+        _MusicVolume = PlayerPrefs.GetFloat(Pref_MusicVol,0.7f);
+        _SFXVolume = PlayerPrefs.GetFloat(Pref_SFXVol,0.7f);
     }
 
     public void SetSettings(SoundSettingsInput input){

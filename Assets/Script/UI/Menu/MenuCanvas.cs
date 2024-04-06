@@ -16,7 +16,7 @@ public class MenuCanvas : MonoBehaviour
 
     public Animator _AnimatorComponent = null;
     protected static string AnimComp_MenuOpen = "MenuOpen";
-    void Start()
+    void Awake()
     {
         _AnimatorComponent = GetComponent<Animator>();
         if (IsOpen)
