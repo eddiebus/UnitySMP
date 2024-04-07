@@ -1,13 +1,12 @@
 using System;
-using System.Timers;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class SoundFX : MonoBehaviour
 {
     public bool Loop;
     private AudioSource _SourceComp;
-    public Action OnDestroy = new Action(()=>{
+    public Action OnDestroy = new Action(() =>
+    {
     });
     // Start is called before the first frame update
     void Start()

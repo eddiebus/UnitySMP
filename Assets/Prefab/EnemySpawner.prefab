@@ -63,15 +63,23 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    SpawnDelay: 3
+    HaltSpawning: 0
   - Prefab: {fileID: 2026790830960624077, guid: 94dc9ff7423c0b54ea296e79e5af95f3, type: 3}
     OnSpawn:
       m_PersistentCalls:
         m_Calls: []
+    SpawnDelay: 3
+    HaltSpawning: 0
   - Prefab: {fileID: 7622961479567508888, guid: 29f1d36fde3519f49bfae46b895b3031, type: 3}
     OnSpawn:
       m_PersistentCalls:
         m_Calls: []
+    SpawnDelay: 3
+    HaltSpawning: 0
   - Prefab: {fileID: 7622961479567508888, guid: a781dec1801a2554e9a8bf848eaff769, type: 3}
     OnSpawn:
       m_PersistentCalls:
         m_Calls: []
+    SpawnDelay: 0
+    HaltSpawning: 1

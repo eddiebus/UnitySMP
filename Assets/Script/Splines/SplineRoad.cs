@@ -12,12 +12,14 @@ public class SplineRoad : MonoBehaviour
     private Mesh _Mesh;
 
 
-    void Awake(){
-        #if UNITY_EDITOR
-        UnityEditor.Splines.EditorSplineUtility.AfterSplineWasModified += (targetSpline)=>{
+    void Awake()
+    {
+#if UNITY_EDITOR
+        UnityEditor.Splines.EditorSplineUtility.AfterSplineWasModified += (targetSpline) =>
+        {
             _GenerateMesh();
         };
-        #endif
+#endif
         ComponentCheck();
         _GenerateMesh();
     }
@@ -40,16 +42,18 @@ public class SplineRoad : MonoBehaviour
         if (!splineContainer) splineContainer = GetComponent<SplineContainer>();
     }
 
-    private Quaternion GetKnotRotation(SplineKnotIndex KnotInxdex){
+    private Quaternion GetKnotRotation(SplineKnotIndex KnotInxdex)
+    {
         var knot = splineContainer.Splines[KnotInxdex.Spline][KnotInxdex.Knot];
 
         var knotRot = knot.Rotation.value;
-        return new Quaternion(knotRot.x,knotRot.y,knotRot.z,knotRot.w);
+        return new Quaternion(knotRot.x, knotRot.y, knotRot.z, knotRot.w);
     }
 
-    private Vector3 GetKnotLocalPos(SplineKnotIndex KnotIndex){
+    private Vector3 GetKnotLocalPos(SplineKnotIndex KnotIndex)
+    {
         var Knot = splineContainer.Splines[KnotIndex.Spline][KnotIndex.Knot];
-        return Knot.Position; 
+        return Knot.Position;
     }
 
     // Find All Intersections
@@ -209,7 +213,7 @@ public class SplineRoad : MonoBehaviour
         _Mesh.uv = _MeshUV.ToArray();
         _Mesh.triangles = _MeshTriIndex.ToArray();
     }
-    
+
     void OnDrawGizmos()
     {
         float BallSize = RoadWidth * 0.5f;
@@ -333,7 +337,7 @@ public class SplineRoad : MonoBehaviour
                     var otherRelativePos = roadPoint - GetKnotLocalPos(IntersectionKnot);
                     var intersectRightVector = GetKnotRotation(IntersectionKnot) * Vector3.right;
                     var intersectForwardVector = GetKnotRotation(IntersectionKnot) * Vector3.forward;
-                    
+
 
                     // Linked Knot's Dot Protduct to Right of Intersection Vector
                     var LinkedKnotDotProduct = Vector3.Dot(

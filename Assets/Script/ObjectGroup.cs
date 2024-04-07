@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
@@ -17,7 +15,7 @@ public class ObjectGroup : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         if (Selection.activeObject == this.gameObject)
         {
             Gizmos.color = Color.red;
@@ -27,9 +25,9 @@ public class ObjectGroup : MonoBehaviour
                 Gizmos.DrawLine(
                     transform.position,
                     childTransform.position
-                ); 
+                );
             }
         }
-        #endif
+#endif
     }
 }

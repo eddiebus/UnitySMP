@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,7 +18,7 @@ public class OptionsMenu : MonoBehaviour
         {
             slider.onValueChanged.AddListener((float value) => { UpdateSettings(); });
         }
-        
+
     }
 
     // Update is called once per frame
@@ -29,12 +27,13 @@ public class OptionsMenu : MonoBehaviour
 
     }
 
-    public void LoadCurrentSettings(){
+    public void LoadCurrentSettings()
+    {
         MasterVolSlider.value = SoundSettings.GetInstance().MasterVolume;
         MusicVolSlider.value = SoundSettings.GetInstance().MusicVolume;
         SFXVolSlider.value = SoundSettings.GetInstance().SFXVolume;
 
-        
+
     }
 
     private void UpdateSettings()

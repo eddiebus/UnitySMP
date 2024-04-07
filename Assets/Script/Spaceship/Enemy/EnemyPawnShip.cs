@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyPawnShip : Ship
@@ -21,7 +19,8 @@ public class EnemyPawnShip : Ship
 
         _ShipFixPositionWithinCamera(CameraBoundFixAxis.Horizontal);
 
-        if (transform.position.y < -GameCamera.TargetRatio.y ){
+        if (transform.position.y < -GameCamera.TargetRatio.y)
+        {
             Destroy(_EnemyComp.GetCharacterRootObj());
         }
     }

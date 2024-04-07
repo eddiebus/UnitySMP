@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 
 [ExecuteAlways]
@@ -13,7 +10,7 @@ public class TerrainCamera : MonoBehaviour
     void Start()
     {
         _camComponent = GetComponent<Camera>();
-        Texture = new RenderTexture(640,640,32);
+        Texture = new RenderTexture(640, 640, 32);
         Texture.name = "Render Texture";
     }
 
@@ -21,16 +18,18 @@ public class TerrainCamera : MonoBehaviour
     void Update()
     {
         _UpdateCamera();
-        
+
     }
 
-    private void _UpdateCamera(){
-        if (!_camComponent)return;
+    private void _UpdateCamera()
+    {
+        if (!_camComponent) return;
         _camComponent.targetTexture = Texture;
     }
 
-    public static TerrainCamera[] GetAllCamera() {
-        return FindObjectsByType<TerrainCamera>(FindObjectsInactive.Exclude,FindObjectsSortMode.InstanceID).ToArray();
+    public static TerrainCamera[] GetAllCamera()
+    {
+        return FindObjectsByType<TerrainCamera>(FindObjectsInactive.Exclude, FindObjectsSortMode.InstanceID).ToArray();
     }
-    
+
 }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
@@ -67,30 +65,39 @@ public class WebSpaceImage : MonoBehaviour
         MeshRenderer meshRenderer = gameObject.AddComponent<MeshRenderer>();
         meshRenderer.material = _RenderMat;
         meshRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
-        
-        MoveRotation = Quaternion.Euler(0,UnityEngine.Random.Range(0,360),0);
+
+        MoveRotation = Quaternion.Euler(0, UnityEngine.Random.Range(0, 360), 0);
         _MoveToNewPosition();
     }
 
-    private void _MoveToNewPosition(){
+    private void _MoveToNewPosition()
+    {
         if (!_ParentCamera) return;
 
-        this.transform.position = 
+        this.transform.position =
         _ParentCamera.transform.position +
         _ParentCamera.transform.forward;
 
         float ortho = _ParentCamera.OrthoSize;
         var numGen = new System.Random();
         Vector3 Offset = new Vector3(
-            ((float)numGen.NextDouble() * ortho) - ortho /2,
+            ((float)numGen.NextDouble() * ortho) - ortho / 2,
             0,
-            ((float)numGen.NextDouble() * ortho) - ortho /2 
+
+            /* Unmerged change from project 'Assembly-CSharp.Player'
+            Before:
+                        ((float)numGen.NextDouble() * ortho) - ortho /2 
+            After:
+                        ((float)numGen.NextDouble() * ortho) - ortho / 2
+            */
+            ((float)numGen.NextDouble() * ortho) - ortho / 2
         );
         this.transform.position += Offset;
     }
-    
-    private void _Slide(){
-        this.transform.position += MoveRotation * Vector3.forward  * Time.deltaTime;
+
+    private void _Slide()
+    {
+        this.transform.position += MoveRotation * Vector3.forward * Time.deltaTime;
     }
     private void _UpdateMaterial()
     {
@@ -131,13 +138,15 @@ public class WebSpaceImage : MonoBehaviour
 
     }
 
-    void OnDrawGizmos(){ 
-        #if UNITY_EDITOR
-        if (Selection.activeObject == this.gameObject){
+    void OnDrawGizmos()
+    {
+#if UNITY_EDITOR
+        if (Selection.activeObject == this.gameObject)
+        {
             Gizmos.color = Color.red;
             Gizmos.DrawLine(transform.position,
-            transform.position + (MoveRotation * Vector3.forward) );
+            transform.position + (MoveRotation * Vector3.forward));
         }
-        #endif
+#endif
     }
 }

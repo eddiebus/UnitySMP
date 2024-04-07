@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -23,7 +21,8 @@ public class TerrainBackground : MonoBehaviour
     void Update()
     {
         if (!_Renderer) return;
-        else{
+        else
+        {
             _Renderer.material = RenderMat;
             var mat = _Renderer.material;
             var TCamera = FindFirstObjectByType<TerrainCamera>();

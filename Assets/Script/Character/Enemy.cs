@@ -1,8 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Splines;
 
 
 public class Enemy : Character
@@ -17,7 +13,8 @@ public class Enemy : Character
     void Start()
     {
         this.CharacterTag = CharacterNames.Enemy;
-        this.OnDestroy.AddListener(()=>{
+        this.OnDestroy.AddListener(() =>
+        {
             Player.Score += ScoreValue;
         });
     }
@@ -25,7 +22,8 @@ public class Enemy : Character
     // Update is called once per frame
     void Update()
     {
-        if (Health < 0){
+        if (Health < 0)
+        {
             this.Destroy();
         }
     }

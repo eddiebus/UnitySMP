@@ -8,6 +8,8 @@ public class EnemySpawnSet
 {
     public GameObject Prefab;
     public UnityEvent OnSpawn;
+    public float SpawnDelay = 3.0f;
+    public bool HaltSpawning = false;
     public void SpawnSet()
     {
         var newObj = GameObject.Instantiate(Prefab);
@@ -31,8 +33,9 @@ public class EnemySpawner : MonoBehaviour
     protected float _TimeTillSpawn;
     public List<EnemySpawnSet> EnemySets;
 
-    void Start(){
-        
+    void Start()
+    {
+
         _OriginalMode = State;
     }
     // Update is called once per frame
@@ -48,9 +51,10 @@ public class EnemySpawner : MonoBehaviour
                         if (EnemySets.Count > 0)
                         {
                             // Spawn random set. Do not edit list
-                            int selectIndex = UnityEngine.Random.Range(0,EnemySets.Count);
+                            int selectIndex = UnityEngine.Random.Range(0, EnemySets.Count);
                             EnemySets[selectIndex].SpawnSet();
-                            _TimeTillSpawn = TimeDelay;
+                            _TimeTillSpawn = EnemySets[selectIndex].SpawnDelay;
+                            if (EnemySets[selectIndex].HaltSpawning) State = EnemySpawnerState.WaitForClear;
                         }
                     }
                     break;
@@ -63,8 +67,9 @@ public class EnemySpawner : MonoBehaviour
                         {
                             // Spawn next set and remove from list
                             EnemySets[0].SpawnSet();
+                            _TimeTillSpawn = EnemySets[0].SpawnDelay;
+                            if (EnemySets[0].HaltSpawning) State = EnemySpawnerState.WaitForClear;
                             EnemySets.RemoveAt(0);
-                            _TimeTillSpawn = TimeDelay;
                         }
                     }
                     break;
@@ -73,6 +78,7 @@ public class EnemySpawner : MonoBehaviour
                 {
                     if (Enemy.All.Length == 0)
                     {
+                        // Return to original mode
                         State = _OriginalMode;
                     }
                     break;

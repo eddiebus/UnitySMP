@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
@@ -23,7 +21,8 @@ public class LoadingCanvas : MonoBehaviour
             if (SceneLoader.IsLoading())
             {
                 TargetAlpha += Time.deltaTime * 5.0f;
-                if (TargetAlpha >= 0.99f){
+                if (TargetAlpha >= 0.99f)
+                {
                     Debug.Log("Hello");
                     SceneLoader.SwitchToNewScene();
                 }
@@ -42,21 +41,24 @@ public class LoadingCanvas : MonoBehaviour
             canvasGroup.interactable = false;
         }
 
-        else{
+        else
+        {
             canvasGroup.blocksRaycasts = false;
             canvasGroup.alpha = 0.0f;
 
-            #if UNITY_EDITOR
-            if (Selection.activeGameObject){
+#if UNITY_EDITOR
+            if (Selection.activeGameObject)
+            {
                 var selectTransform = Selection.activeGameObject.transform;
 
-                bool selected = selectTransform == this.transform 
+                bool selected = selectTransform == this.transform
                 || selectTransform.IsChildOf(this.transform);
-                if (selected){
+                if (selected)
+                {
                     canvasGroup.alpha = 1.0f;
                 }
             }
-            #endif
+#endif
         }
     }
 }

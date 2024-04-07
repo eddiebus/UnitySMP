@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -32,17 +29,20 @@ public class MenuCanvas : MonoBehaviour
             {
                 switcher.OnCanvasSwitch += () =>
                 {
-                    if (GetIndexInParent() == switcher.ActiveIndex){
+                    if (GetIndexInParent() == switcher.ActiveIndex)
+                    {
                         this.IsOpen = true;
                         OnMenuOpen.Invoke();
                         SetFocusWidget(DefaultObject);
                     }
-                    else{
+                    else
+                    {
                         this.IsOpen = false;
                     }
                 };
             }
-            else{
+            else
+            {
                 this.IsOpen = true;
             }
         }

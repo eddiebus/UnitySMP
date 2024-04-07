@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.LowLevel;
@@ -10,7 +9,8 @@ public enum PlayerConState
     Gamepad,
 }
 
-public struct PlayerConSetting{
+public struct PlayerConSetting
+{
     public float MouseSensitivity;
     public float GamepadSensitivity;
     public float GamepadDeadZone;
@@ -25,7 +25,7 @@ public class PlayerController
     private static PlayerController[] _Instances;
     private int _ControllerIndex = -1;
     private PlayerConState _ControllerState = PlayerConState.KeyboardMouse;
-    public  PlayerConState ControllerState => _ControllerState;
+    public PlayerConState ControllerState => _ControllerState;
     public Vector2 MoveVector => _MoveVector;
     public Vector2 AimPoint => _AimPoint;
     public Vector2 AimVector => _AimVector;
@@ -33,7 +33,7 @@ public class PlayerController
 
     private Vector2 _MoveVector;
     private Vector2 _AimVector;
-    private Vector2 _AimPoint = new Vector2(0.5f,0.5f);
+    private Vector2 _AimPoint = new Vector2(0.5f, 0.5f);
     private float _Fire;
 
     public static PlayerController GetController(int Index)
@@ -46,7 +46,8 @@ public class PlayerController
         return _Instances[Index];
     }
 
-    public static void SetSettings(PlayerConSetting newSettings){
+    public static void SetSettings(PlayerConSetting newSettings)
+    {
         settings = newSettings;
     }
 
@@ -139,19 +140,24 @@ public class PlayerController
                     {
                         _MoveVector = leftStick;
                     }
-                    else{
-                         
-                        if (up) {
+                    else
+                    {
+
+                        if (up)
+                        {
                             _MoveVector += Vector2.up;
                         }
-                        else if (down){
+                        else if (down)
+                        {
                             _MoveVector += Vector2.down;
                         }
 
-                        if (left){
+                        if (left)
+                        {
                             _MoveVector += Vector2.left;
                         }
-                        else if (right){
+                        else if (right)
+                        {
                             _MoveVector += Vector2.right;
                         }
 
@@ -185,21 +191,25 @@ public class PlayerController
 
         // Clamp AimPoint
         float Limit = 1.0f;
-        if (_AimPoint.x  > Limit){
+        if (_AimPoint.x > Limit)
+        {
             _AimPoint.x = Limit;
         }
-        else if (_AimPoint.x < - Limit){
+        else if (_AimPoint.x < -Limit)
+        {
             _AimPoint.x = -Limit;
         }
 
 
-        if (_AimPoint.y  > Limit){
+        if (_AimPoint.y > Limit)
+        {
             _AimPoint.y = Limit;
         }
-        else if (_AimPoint.y < - Limit){
+        else if (_AimPoint.y < -Limit)
+        {
             _AimPoint.y = -Limit;
         }
-        
+
     }
 
     public Gamepad GetGamepad()

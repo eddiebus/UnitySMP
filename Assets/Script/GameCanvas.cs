@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [ExecuteAlways]
@@ -15,7 +13,8 @@ public class GameCanvas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_canvas){
+        if (_canvas)
+        {
             _canvas.renderMode = RenderMode.ScreenSpaceCamera;
             _canvas.worldCamera = GameCamera.Get().CamComponent;
         }

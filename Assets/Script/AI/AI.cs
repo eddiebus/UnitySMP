@@ -1,11 +1,9 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AI : MonoBehaviour
 {
-    [Range(0.1f,1.0f)]
+    [Range(0.1f, 1.0f)]
     public float ThinkTime = 0.5f;
     private float _TimeTillThink;
 
@@ -16,12 +14,13 @@ public class AI : MonoBehaviour
 
     protected void AITick()
     {
-        
+
         if (_TimeTillThink > 0)
         {
             _TimeTillThink -= Time.deltaTime;
         }
-        else{
+        else
+        {
             HandleAICycle();
             _TimeTillThink = ThinkTime;
         }
@@ -32,6 +31,6 @@ public class AI : MonoBehaviour
     protected virtual void HandleAICycle()
     {
         throw new NotImplementedException("AI Cycle State Not Implimented on AI Class");
-    } 
+    }
 
 }

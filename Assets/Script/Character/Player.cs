@@ -1,17 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 
 public class Player : Character
 {
     public static int Score;
-    public float InvisibilityTime = 0;
+    public float InvinTimeOnHit = 1.5f;
+    public float _InvisibilityTime = 0;
 
-    void Start(){
-        this.OnDamage.AddListener( ()=> {
-            this.InvisibilityTime += 3;
+    void Start()
+    {
+        this.OnDamage.AddListener(() =>
+        {
+            this._InvisibilityTime += InvinTimeOnHit;
         });
     }
 
@@ -19,9 +19,9 @@ public class Player : Character
     void Update()
     {
         CharacterTag = CharacterNames.Player;
-        if (InvisibilityTime > 0)
+        if (_InvisibilityTime > 0)
         {
-            InvisibilityTime -= Time.deltaTime;
+            _InvisibilityTime -= Time.deltaTime;
             this.Invincible = true;
         }
         else

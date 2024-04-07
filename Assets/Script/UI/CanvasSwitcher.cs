@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
@@ -11,7 +8,7 @@ using UnityEngine;
 public class CanvasSwitcher : MonoBehaviour
 {
     public int DefaultIndex = 0;
-    public  int ActiveIndex => _ActiveIndex;
+    public int ActiveIndex => _ActiveIndex;
     private int _ActiveIndex = -1;
     public Action OnCanvasSwitch = () => { };
 
@@ -51,11 +48,14 @@ public class CanvasSwitcher : MonoBehaviour
                 return;
             }
             // Keep "DefaultIndex" in range
-            else if (Selection.activeGameObject.transform != this.transform){
-                if (DefaultIndex < 0){
+            else if (Selection.activeGameObject.transform != this.transform)
+            {
+                if (DefaultIndex < 0)
+                {
                     DefaultIndex = 0;
                 }
-                else if (DefaultIndex > this.transform.childCount){
+                else if (DefaultIndex > this.transform.childCount)
+                {
                     DefaultIndex = this.transform.childCount - 1;
                 }
             }

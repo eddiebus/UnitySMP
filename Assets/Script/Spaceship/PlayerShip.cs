@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class PlayerShip : Ship
@@ -17,7 +14,7 @@ public class PlayerShip : Ship
         _ShipSetRigidbody();
         _ShipFixPositionWithinCamera(CameraBoundFixAxis.Both);
         _HandleMoveMent();
-        
+
         _HandleFire();
     }
 

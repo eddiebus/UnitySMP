@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Unity.Mathematics;
 using UnityEngine;
 
 public class WebLevel : MonoBehaviour
@@ -14,7 +13,7 @@ public class WebLevel : MonoBehaviour
 
     public bool completed = false;
     public int ScannedTexture = 0;
-    public int ScannedSites = 0; 
+    public int ScannedSites = 0;
 
 
     public bool TextureBusy;
@@ -37,7 +36,7 @@ public class WebLevel : MonoBehaviour
         CompMaterial.SetTexture("_MainTex", CompTexture);
 
     }
-    
+
     async private Task _init()
     {
         foreach (var url in URLSet)
@@ -47,15 +46,17 @@ public class WebLevel : MonoBehaviour
             foreach (var link in imgLinks)
             {
                 await WebScraper.DownloadWebImage(link).ContinueWith(
-                    tex => {
-                        if (tex.Result != null){
+                    tex =>
+                    {
+                        if (tex.Result != null)
+                        {
                             collection.Add(tex.Result);
                         }
                         ScannedTexture++;
                     }
                 );
             }
-            ScannedTexture++; 
+            ScannedTexture++;
 
         }
         completed = true;
@@ -69,18 +70,21 @@ public class WebLevel : MonoBehaviour
     }
 
     // Texture Get Function
-    public Texture2D GetTexture(int Index){
+    public Texture2D GetTexture(int Index)
+    {
         if (collection.Count == 0) return null;
-        else {
-            return  collection[Index];
+        else
+        {
+            return collection[Index];
         }
     }
 
-    public Texture2D GetRandomTexture(){
+    public Texture2D GetRandomTexture()
+    {
         if (collection.Count == 0) return null;
-        
+
         var numGen = new System.Random();
-        var randomIndex = (int) (numGen.NextDouble() * (collection.Count-1));
+        var randomIndex = (int)(numGen.NextDouble() * (collection.Count - 1));
         return collection[randomIndex];
     }
 

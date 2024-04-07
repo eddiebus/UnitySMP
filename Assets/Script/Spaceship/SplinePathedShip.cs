@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
 using UnityEngine.Splines;
 
@@ -170,7 +167,8 @@ public class SplinePathedShip : Ship
             if (RotateInDirection)
             {
                 Vector3 LookDir = GetCurrentTangent().normalized;
-                if (PathDirection == SplineShipDirection.Backward){
+                if (PathDirection == SplineShipDirection.Backward)
+                {
                     LookDir *= -1;
                 }
                 _ShipRigidbody.transform.rotation = Quaternion.LookRotation(
@@ -188,7 +186,8 @@ public class SplinePathedShip : Ship
 
             if (Loop)
             {
-                if (_DistanceCovered >= GetSplineLength()){
+                if (_DistanceCovered >= GetSplineLength())
+                {
                     _DistanceCovered = 0;
                 }
             }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
@@ -33,11 +31,13 @@ public class ShipGun : MonoBehaviour
         }
     }
 
-    public Vector2 GetDirection(){
+    public Vector2 GetDirection()
+    {
         return transform.rotation * Vector3.up;
     }
 
-    public void Fire(GameObject bulletPrefab){
+    public void Fire(GameObject bulletPrefab)
+    {
         if (bulletPrefab == null) return;
         if (_CheckPrefab() && _CurrentFireDelay <= 0)
         {
@@ -53,7 +53,8 @@ public class ShipGun : MonoBehaviour
                 OnFire.Invoke();
             }
             //Not valid bullet prefab. Destroy
-            else{
+            else
+            {
                 GameObject.Destroy(newBullet);
             }
         }
@@ -75,7 +76,8 @@ public class ShipGun : MonoBehaviour
                 OnFire.Invoke();
             }
             //Not valid bullet prefab. Destroy
-            else{
+            else
+            {
                 GameObject.Destroy(newBullet);
             }
         }
@@ -89,7 +91,7 @@ public class ShipGun : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         if (Selection.activeGameObject == this.gameObject)
         {
             Gizmos.color = Color.yellow;
@@ -98,6 +100,6 @@ public class ShipGun : MonoBehaviour
                 transform.position + (transform.rotation * Vector2.up));
             Gizmos.DrawWireSphere(transform.position, 0.3f);
         }
-        #endif
+#endif
     }
 }

@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,8 +10,10 @@ public class SceneLoader : MonoBehaviour
     public static AsyncOperation loadOp = null;
 
     private float DelayTime;
-    void Start(){
-        SceneManager.activeSceneChanged += (Scene active, Scene Next) => {
+    void Start()
+    {
+        SceneManager.activeSceneChanged += (Scene active, Scene Next) =>
+        {
             OnSceneLoad();
         };
     }
@@ -23,13 +23,15 @@ public class SceneLoader : MonoBehaviour
         if (loadOp != null)
         {
             DelayTime += Time.deltaTime;
-            if (DelayTime >= MinDelay){
+            if (DelayTime >= MinDelay)
+            {
                 //loadOp.allowSceneActivation = true;
             }
         }
     }
 
-    private static void OnSceneLoad(){
+    private static void OnSceneLoad()
+    {
         loadOp = null;
     }
 
@@ -40,13 +42,16 @@ public class SceneLoader : MonoBehaviour
         loadOp.allowSceneActivation = false;
     }
 
-    public static void SwitchToNewScene(){
-        if (IsLoading()){
+    public static void SwitchToNewScene()
+    {
+        if (IsLoading())
+        {
             loadOp.allowSceneActivation = true;
         }
     }
 
-    public static AsyncOperation  GetLoadingOperation(){
+    public static AsyncOperation GetLoadingOperation()
+    {
         return loadOp;
     }
 
@@ -67,5 +72,5 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
-    
+
 }

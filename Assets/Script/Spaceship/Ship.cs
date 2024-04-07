@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -93,7 +91,8 @@ public class Ship : MonoBehaviour
     {
         if (_Guns.Length > 0)
         {
-            foreach (var gun in _Guns){
+            foreach (var gun in _Guns)
+            {
                 gun.Fire();
             }
         }
