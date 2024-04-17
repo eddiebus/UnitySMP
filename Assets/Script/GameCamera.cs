@@ -23,7 +23,6 @@ public class GameCamera : MonoBehaviour
     void Update()
     {
         _UpdateCamera();
-
     }
 
     public static GameCamera Get() => FindFirstObjectByType<GameCamera>();
@@ -40,7 +39,6 @@ public class GameCamera : MonoBehaviour
         );
 
         _CamComponent.farClipPlane = zFar * 1.1f;
-
         _CamComponent.projectionMatrix = ProjMatrix;
         _CamComponent.transform.rotation = Quaternion.LookRotation(Vector3.forward);
 
@@ -55,7 +53,6 @@ public class GameCamera : MonoBehaviour
         transform.position = camPosition;
         float currentWidthRatio = (float)Screen.width / Screen.height;
         float targetWidthRatio = (float)TargetRatio.x / TargetRatio.y;
-
     }
 
     public Bounds GetBounds() => new Bounds(
