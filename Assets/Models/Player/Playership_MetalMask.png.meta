@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 789ec76f96313344498015b5af2575ee
+guid: a81d4b14119be8a48a5ae56a2a425047
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -877033291671109788
-    second: Playership_Tex_0
+      213: 3628762518928638516
+    second: Playership_MetalMask_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -55,9 +55,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 0
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Playership_Tex_0
+      name: Playership_MetalMask_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46f70c13ed624d3f0800000000000000
-      internalID: -877033291671109788
+      spriteID: 4324ef2f844fb5230800000000000000
+      internalID: 3628762518928638516
       vertices: []
       indices: 
       edges: []
@@ -140,8 +140,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Playership_Tex_0: -877033291671109788
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

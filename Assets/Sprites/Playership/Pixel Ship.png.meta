@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 789ec76f96313344498015b5af2575ee
+guid: 897119b66b742964e87dcb3a370d6691
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -877033291671109788
-    second: Playership_Tex_0
+      213: -3297503787104466616
+    second: Pixel Ship_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,22 +110,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Playership_Tex_0
+      name: Pixel Ship_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1024
-        height: 1024
+        y: 3
+        width: 32
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46f70c13ed624d3f0800000000000000
-      internalID: -877033291671109788
+      spriteID: 849022cc6c9ec32d0800000000000000
+      internalID: -3297503787104466616
       vertices: []
       indices: 
       edges: []
@@ -133,15 +133,17 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 523ec41023cc5bb43a6707c54974957c
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: bcb14f2b665e5e34cbd7939a7adbd0eb, type: 3}
+      name: _BumpMap
     nameFileIdTable:
-      Playership_Tex_0: -877033291671109788
+      Pixel Ship_0: -3297503787104466616
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -8,7 +8,12 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Playership_Tex
-    second: {fileID: 2800000, guid: 0c1063a1dd5ecc64ab22c4ba26f04835, type: 3}
+    second: {fileID: 2800000, guid: 789ec76f96313344498015b5af2575ee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nmap
+    second: {fileID: 2800000, guid: 0299c05ecad87ff489032601c717c1a3, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

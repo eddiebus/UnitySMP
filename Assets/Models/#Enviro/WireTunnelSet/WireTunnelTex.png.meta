@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WireTunnelTex_0: -6954673188507455599
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

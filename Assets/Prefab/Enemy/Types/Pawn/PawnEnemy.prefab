@@ -71,6 +71,7 @@ Transform:
   m_Children:
   - {fileID: 5932543047108203314}
   - {fileID: 4798942789427544484}
+  - {fileID: 1455422637450949307}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4128465319775840217
@@ -119,6 +120,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5920516598576454830}
+        m_TargetAssemblyTypeName: ObjectSpawn, Assembly-CSharp
+        m_MethodName: SpawnObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 4128465319775840217}
         m_TargetAssemblyTypeName: Character, Assembly-CSharp
         m_MethodName: DestroyChildren
@@ -147,6 +160,7 @@ MonoBehaviour:
   MoveSpeed: 2
   _Guns: []
   _EnemyComponent: {fileID: 4128465319775840217}
+  AutoFire: 0
   splineContainer: {fileID: 0}
   Loop: 0
   PathDirection: 0
@@ -289,12 +303,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Volume: 0
+  SoundLimit: 10
   Clips:
   - {fileID: 8300000, guid: 59cba03db7de7a84995ffcf91564e8f8, type: 3}
   - {fileID: 8300000, guid: 353c3f97c4216984aa9694873f5a5bd4, type: 3}
   - {fileID: 8300000, guid: 47e3c63fcd9e66e4496bbff1c5a230fb, type: 3}
   - {fileID: 8300000, guid: 9302066bed6795f43a5e43e51a5ed493, type: 3}
   - {fileID: 8300000, guid: 204ff58834da38246b228245011e4ad1, type: 3}
+  SpawnedClips: []
 --- !u!114 &3259169298876487214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,6 +324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Volume: 0
+  SoundLimit: 10
   Clips:
   - {fileID: 8300000, guid: d2fc93e6ae4f54f4386c2b2470568fcc, type: 3}
   - {fileID: 8300000, guid: 7a58dc9395e015d4d928d550fca553a3, type: 3}
@@ -316,6 +333,52 @@ MonoBehaviour:
   - {fileID: 8300000, guid: eb3e7c03c0c75f048a44e86a8bea3f5b, type: 3}
   - {fileID: 8300000, guid: e1d4fd0caf6db0c4e878650d2274b221, type: 3}
   - {fileID: 8300000, guid: d14ac67a8802b8945a3b902208fc6b52, type: 3}
+  SpawnedClips: []
+--- !u!1 &8852879195293931571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1455422637450949307}
+  - component: {fileID: 5920516598576454830}
+  m_Layer: 0
+  m_Name: Death_Effect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1455422637450949307
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8852879195293931571}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2264107777724519212}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5920516598576454830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8852879195293931571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32e9c20ffdc7938458f4b569c91437fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 7283840990096880569, guid: 36fa6b16ea3681d44808d05bd97b294e, type: 3}
 --- !u!1001 &6187410448781178073
 PrefabInstance:
   m_ObjectHideFlags: 0
