@@ -95,7 +95,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 3098683683034653412}
   - component: {fileID: 2151598907148778104}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: Base Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -227,7 +227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1991996096706587963, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 197.21
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1991996096706587963, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
       propertyPath: m_SizeDelta.y
@@ -263,7 +263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1991996096706587963, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1991996096706587963, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -285,54 +285,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerScoreCard
       objectReference: {fileID: 0}
-    - target: {fileID: 8640648324668677287, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
-      propertyPath: m_text
-      value: '1,100,000
-
-'
+    - target: {fileID: 5952402971936493748, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -50
       objectReference: {fileID: 0}
-    - target: {fileID: 8640648324668677287, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
-      propertyPath: m_fontSize
-      value: 25
+    - target: {fileID: 5952402971936493748, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -20
       objectReference: {fileID: 0}
-    - target: {fileID: 8640648324668677287, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 588d483ccb09f6348b4e37611651cf41, type: 2}
-    - target: {fileID: 8640648324668677287, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
-      propertyPath: m_fontStyle
-      value: 1
+    - target: {fileID: 5952402971936493748, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8640648324668677287, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8640648324668677287, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8640648324668677287, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8640648324668677287, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8640648324668677287, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 4802759366080750722, guid: 588d483ccb09f6348b4e37611651cf41, type: 2}
-    - target: {fileID: 8640648324668677287, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
-      propertyPath: m_characterSpacing
+    - target: {fileID: 5952402971936493748, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8640648324668677287, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
+      propertyPath: m_text
+      value: 1,111,111
       objectReference: {fileID: 0}
     - target: {fileID: 8640648324668677287, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
-      propertyPath: m_hasFontAssetChanged
+      propertyPath: m_fontSize
+      value: 32.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8640648324668677287, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8640648324668677287, guid: 79312d6dcb147ae41a9ae4060ac2f84b, type: 3}
+      propertyPath: m_charWidthMaxAdj
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

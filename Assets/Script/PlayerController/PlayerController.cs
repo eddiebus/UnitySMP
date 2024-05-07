@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.LowLevel;
 
 
+// Mode of Input
 public enum PlayerConState
 {
     KeyboardMouse,
@@ -21,14 +22,11 @@ public struct PlayerConSetting
 public class PlayerController
 {
     private static PlayerConSetting settings = new PlayerConSetting();
-
     private static PlayerController[] _Instances;
     private int _ControllerIndex = -1;
     private PlayerConState _ControllerState = PlayerConState.KeyboardMouse;
     public PlayerConState ControllerState => _ControllerState;
     public Vector2 MoveVector => _MoveVector;
-    public Vector2 AimPoint => _AimPoint;
-    public Vector2 AimVector => _AimVector;
     public float Fire => _Fire;
 
     private Vector2 _MoveVector;
@@ -46,6 +44,7 @@ public class PlayerController
         return _Instances[Index];
     }
 
+    
     public static void SetSettings(PlayerConSetting newSettings)
     {
         settings = newSettings;
@@ -75,7 +74,6 @@ public class PlayerController
     {
         _MoveVector = Vector2.zero;
         _AimVector = Vector2.zero;
-
         switch (_ControllerState)
         {
             case PlayerConState.KeyboardMouse:
@@ -117,9 +115,6 @@ public class PlayerController
                     {
                         _Fire = 0.0f;
                     }
-
-                    _AimVector = (_mouse.delta.ReadValue() * 1.0f) / 20;
-                    _AimPoint += _mouse.delta.ReadValue() * 0.02f * Time.deltaTime;
                     break;
                 }
             case PlayerConState.Gamepad:
@@ -142,7 +137,6 @@ public class PlayerController
                     }
                     else
                     {
-
                         if (up)
                         {
                             _MoveVector += Vector2.up;
@@ -160,18 +154,7 @@ public class PlayerController
                         {
                             _MoveVector += Vector2.right;
                         }
-
-
                     }
-                    if (rightStick.magnitude > 0.1f)
-                    {
-                        _AimVector = rightStick * 1.0f * 2;
-                    }
-                    else
-                    {
-                        _AimVector = Vector2.zero;
-                    }
-
                     float triggerDeadZone = 0.1f;
                     if (rightTrigger >= triggerDeadZone)
                     {
@@ -212,6 +195,7 @@ public class PlayerController
 
     }
 
+    // Get gamepad assigned to this player controller
     public Gamepad GetGamepad()
     {
         if (_ControllerIndex < Gamepad.all.Count)
@@ -232,6 +216,7 @@ public class PlayerController
         }
         else if (inputDevice is Gamepad)
         {
+            // Change to gamepad control if gamepad match
             if ((Gamepad)inputDevice == GetGamepad())
                 _ControllerState = PlayerConState.Gamepad;
         }

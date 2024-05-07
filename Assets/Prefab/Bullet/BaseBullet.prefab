@@ -229,6 +229,51 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!1 &6593779801141585854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7040761013993491230}
+  - component: {fileID: 3500816167730219655}
+  m_Layer: 0
+  m_Name: Particle Effect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7040761013993491230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6593779801141585854}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1931102854875303504}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3500816167730219655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6593779801141585854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32e9c20ffdc7938458f4b569c91437fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 5329360941056913325, guid: 767340fc9a0dc8848858ce0afabb1555, type: 3}
 --- !u!1 &8179305122315140722
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,6 +308,7 @@ Transform:
   m_Children:
   - {fileID: 5209684937988861149}
   - {fileID: 6268045710597646980}
+  - {fileID: 7040761013993491230}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5595254233289159228
@@ -283,7 +329,22 @@ MonoBehaviour:
   _Rigibody: {fileID: 8376333213045231924}
   Direction: {x: 0, y: 1}
   Speed: 100
-  MaxLifeTime: 2
+  MaxLifeTime: 7.8
+  OnBulletDestroy:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3500816167730219655}
+        m_TargetAssemblyTypeName: ObjectSpawn, Assembly-CSharp
+        m_MethodName: SpawnObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   FriendlyTag:
   - Player
 --- !u!50 &8376333213045231924

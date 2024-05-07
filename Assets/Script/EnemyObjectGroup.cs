@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEngine;
 
 [ExecuteAlways]
-public class ObjectGroup : MonoBehaviour
+public class EnemyObjectGroup : MonoBehaviour
 {
     // Update is called once per frame
     void Update()

@@ -18,71 +18,40 @@ public class EnemySpawnSet
     }
 }
 
-public enum EnemySpawnerState
-{
-    LevelMode,
-    EndlessMode, // Plays from animation
-    WaitForClear
-}
-
 public class EnemySpawner : MonoBehaviour
 {
-    public EnemySpawnerState State;
-    private EnemySpawnerState _OriginalMode;
     public float TimeDelay = 1.0f;
     protected float _TimeTillSpawn;
     public List<EnemySpawnSet> EnemySets;
+    protected bool _WaitingForClear = false;
 
     void Start()
     {
-
-        _OriginalMode = State;
     }
     // Update is called once per frame
     void Update()
     {
         _SpawnerTick();
-        switch (State)
+        if (_TimeTillSpawn <= 0)
         {
-            case EnemySpawnerState.EndlessMode:
+            if (!_WaitingForClear)
+            {
+                if (EnemySets.Count > 0)
                 {
-                    if (_TimeTillSpawn <= 0)
-                    {
-                        if (EnemySets.Count > 0)
-                        {
-                            // Spawn random set. Do not edit list
-                            int selectIndex = UnityEngine.Random.Range(0, EnemySets.Count);
-                            EnemySets[selectIndex].SpawnSet();
-                            _TimeTillSpawn = EnemySets[selectIndex].SpawnDelay;
-                            if (EnemySets[selectIndex].HaltSpawning) State = EnemySpawnerState.WaitForClear;
-                        }
-                    }
-                    break;
+                    // Spawn random set. Do not edit list
+                    int selectIndex = UnityEngine.Random.Range(0, EnemySets.Count);
+                    EnemySets[selectIndex].SpawnSet();
+                    _TimeTillSpawn = EnemySets[selectIndex].SpawnDelay;
+                    
+                    // Set halts upcoming spawn till wave cleared
+                    if (EnemySets[selectIndex].HaltSpawning) _WaitingForClear = true;
                 }
-            case EnemySpawnerState.LevelMode:
-                {
-                    if (_TimeTillSpawn <= 0)
-                    {
-                        if (EnemySets.Count > 0)
-                        {
-                            // Spawn next set and remove from list
-                            EnemySets[0].SpawnSet();
-                            _TimeTillSpawn = EnemySets[0].SpawnDelay;
-                            if (EnemySets[0].HaltSpawning) State = EnemySpawnerState.WaitForClear;
-                            EnemySets.RemoveAt(0);
-                        }
-                    }
-                    break;
+            }
+            else{
+                if (Enemy.All.Length == 0){
+                    _WaitingForClear = false;
                 }
-            case EnemySpawnerState.WaitForClear:
-                {
-                    if (Enemy.All.Length == 0)
-                    {
-                        // Return to original mode
-                        State = _OriginalMode;
-                    }
-                    break;
-                }
+            }
         }
     }
     protected void _SpawnerTick()
@@ -100,7 +69,7 @@ public class EnemySpawner : MonoBehaviour
 
     public void WaitForClear()
     {
-        State = EnemySpawnerState.WaitForClear;
+        _WaitingForClear = true;
     }
 
 

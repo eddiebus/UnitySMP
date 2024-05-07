@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Bullet : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class Bullet : MonoBehaviour
     [Range(1.0f, 10.0f)]
     public float MaxLifeTime;
     private float _LifeTime;
+
+    public UnityEvent OnBulletDestroy;
+
 
     public string[] FriendlyTag;
     // Start is called before the first frame update
@@ -75,7 +79,11 @@ public class Bullet : MonoBehaviour
                 if (!FriendlyTag.Contains(character.CharacterTag))
                 {
                     character.Damage(DamageValue);
-                    if (!Pierce) GameObject.Destroy(gameObject);
+                    if (!Pierce)
+                    {
+                        OnBulletDestroy.Invoke();
+                        GameObject.Destroy(gameObject);
+                    }
                 }
             }
         }

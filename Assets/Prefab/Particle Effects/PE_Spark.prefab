@@ -53,8 +53,28 @@ PrefabInstance:
       value: PE_Spark
       objectReference: {fileID: 0}
     - target: {fileID: 8948700096012105175, guid: 36fa6b16ea3681d44808d05bd97b294e, type: 3}
+      propertyPath: SizeModule.curve.scalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8948700096012105175, guid: 36fa6b16ea3681d44808d05bd97b294e, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8948700096012105175, guid: 36fa6b16ea3681d44808d05bd97b294e, type: 3}
+      propertyPath: EmissionModule.rateOverTime.minScalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8948700096012105175, guid: 36fa6b16ea3681d44808d05bd97b294e, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime1
+      value: 38936
+      objectReference: {fileID: 0}
+    - target: {fileID: 8948700096012105175, guid: 36fa6b16ea3681d44808d05bd97b294e, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime3
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 8948700096012105175, guid: 36fa6b16ea3681d44808d05bd97b294e, type: 3}
       propertyPath: ColorModule.gradient.maxGradient.ctime1
-      value: 41249
+      value: 25250
       objectReference: {fileID: 0}
     - target: {fileID: 8948700096012105175, guid: 36fa6b16ea3681d44808d05bd97b294e, type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key0.g
