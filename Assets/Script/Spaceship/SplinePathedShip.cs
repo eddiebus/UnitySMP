@@ -172,8 +172,8 @@ public class SplinePathedShip : Ship
                     LookDir *= -1;
                 }
                 _ShipRigidbody.transform.rotation = Quaternion.LookRotation(
-                    LookDir,
-                    Vector3.back
+                    Vector3.forward,
+                    LookDir
                 );
             }
 

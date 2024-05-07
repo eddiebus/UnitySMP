@@ -15,7 +15,8 @@ public class GameCanvas : MonoBehaviour
     {
         if (_canvas)
         {
-            _canvas.renderMode = RenderMode.ScreenSpaceCamera;
+            _canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+            _canvas.planeDistance = 15.0f; 
             _canvas.worldCamera = GameCamera.Get().CamComponent;
         }
     }

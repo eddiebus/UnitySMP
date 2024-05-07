@@ -1,0 +1,2739 @@
+fileFormatVersion: 2
+guid: a748ca82524a2ba4484a4b7240b2233f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1933149217970442582
+    second: OPGA_SpaceShip_0
+  - first:
+      213: -1729239957929805435
+    second: OPGA_SpaceShip_1
+  - first:
+      213: 9209985605384363607
+    second: OPGA_SpaceShip_2
+  - first:
+      213: -7822631270539236964
+    second: OPGA_SpaceShip_3
+  - first:
+      213: 6472673797584749137
+    second: OPGA_SpaceShip_4
+  - first:
+      213: 4044882248824702873
+    second: OPGA_SpaceShip_5
+  - first:
+      213: 4257737421755097996
+    second: OPGA_SpaceShip_6
+  - first:
+      213: 6390508124549565950
+    second: OPGA_SpaceShip_7
+  - first:
+      213: 2061778819370569575
+    second: OPGA_SpaceShip_8
+  - first:
+      213: -3660241920333881556
+    second: OPGA_SpaceShip_9
+  - first:
+      213: -2991465114222792807
+    second: OPGA_SpaceShip_10
+  - first:
+      213: 4793714888125654989
+    second: OPGA_SpaceShip_11
+  - first:
+      213: -5667232191164583750
+    second: OPGA_SpaceShip_12
+  - first:
+      213: -6191464830582674797
+    second: OPGA_SpaceShip_13
+  - first:
+      213: 374128842728851632
+    second: OPGA_SpaceShip_14
+  - first:
+      213: -4248804949292474361
+    second: OPGA_SpaceShip_15
+  - first:
+      213: 2664589672097073845
+    second: OPGA_SpaceShip_16
+  - first:
+      213: 6297109817620190078
+    second: OPGA_SpaceShip_17
+  - first:
+      213: 6479014965872536765
+    second: OPGA_SpaceShip_18
+  - first:
+      213: -2528287853450061808
+    second: OPGA_SpaceShip_19
+  - first:
+      213: 7766765091484913152
+    second: OPGA_SpaceShip_20
+  - first:
+      213: 6158206593211111420
+    second: OPGA_SpaceShip_21
+  - first:
+      213: 913353208814981932
+    second: OPGA_SpaceShip_22
+  - first:
+      213: 5421254223818105755
+    second: OPGA_SpaceShip_23
+  - first:
+      213: -3037537964008462681
+    second: OPGA_SpaceShip_24
+  - first:
+      213: 4768336465385547624
+    second: OPGA_SpaceShip_25
+  - first:
+      213: -5763020816627432883
+    second: OPGA_SpaceShip_26
+  - first:
+      213: 2957036094645108781
+    second: OPGA_SpaceShip_27
+  - first:
+      213: 4003206450502889848
+    second: OPGA_SpaceShip_28
+  - first:
+      213: 8374088669987419489
+    second: OPGA_SpaceShip_29
+  - first:
+      213: -8185044537458933964
+    second: OPGA_SpaceShip_30
+  - first:
+      213: 7106859901585888912
+    second: OPGA_SpaceShip_31
+  - first:
+      213: 4826458469094719766
+    second: OPGA_SpaceShip_32
+  - first:
+      213: -1925473147753308690
+    second: OPGA_SpaceShip_33
+  - first:
+      213: 3931833958593941492
+    second: OPGA_SpaceShip_34
+  - first:
+      213: 4029306756018517179
+    second: OPGA_SpaceShip_35
+  - first:
+      213: -489535652456104422
+    second: OPGA_SpaceShip_36
+  - first:
+      213: -5489306333747574995
+    second: OPGA_SpaceShip_37
+  - first:
+      213: -4067107826606695490
+    second: OPGA_SpaceShip_38
+  - first:
+      213: -6505963337475543151
+    second: OPGA_SpaceShip_39
+  - first:
+      213: -2608622800175110834
+    second: OPGA_SpaceShip_40
+  - first:
+      213: 274797848723028914
+    second: OPGA_SpaceShip_41
+  - first:
+      213: -5873077121628695344
+    second: OPGA_SpaceShip_42
+  - first:
+      213: -9011012538914943745
+    second: OPGA_SpaceShip_43
+  - first:
+      213: 8579409424746098855
+    second: OPGA_SpaceShip_44
+  - first:
+      213: 312083741797786671
+    second: OPGA_SpaceShip_45
+  - first:
+      213: 5371020884604935158
+    second: OPGA_SpaceShip_46
+  - first:
+      213: -4778906741226961529
+    second: OPGA_SpaceShip_47
+  - first:
+      213: 6967316493722561663
+    second: OPGA_SpaceShip_48
+  - first:
+      213: 24841039312195125
+    second: OPGA_SpaceShip_49
+  - first:
+      213: -2958003332232019845
+    second: OPGA_SpaceShip_50
+  - first:
+      213: -6817170390138442717
+    second: OPGA_SpaceShip_51
+  - first:
+      213: 7668223565600124307
+    second: OPGA_SpaceShip_52
+  - first:
+      213: -653528383893059986
+    second: OPGA_SpaceShip_53
+  - first:
+      213: 7799298131763996979
+    second: OPGA_SpaceShip_54
+  - first:
+      213: 2115202301756940359
+    second: OPGA_SpaceShip_55
+  - first:
+      213: 7904941758266481042
+    second: OPGA_SpaceShip_56
+  - first:
+      213: -6734277716556958076
+    second: OPGA_SpaceShip_57
+  - first:
+      213: -1585071938413002312
+    second: OPGA_SpaceShip_58
+  - first:
+      213: 4107911779660532827
+    second: OPGA_SpaceShip_59
+  - first:
+      213: 5821570876601235939
+    second: OPGA_SpaceShip_60
+  - first:
+      213: 935810844574498884
+    second: OPGA_SpaceShip_61
+  - first:
+      213: -6014455758521148561
+    second: OPGA_SpaceShip_62
+  - first:
+      213: 769236544720024050
+    second: OPGA_SpaceShip_63
+  - first:
+      213: -214742071772279991
+    second: OPGA_SpaceShip_64
+  - first:
+      213: -1269553643741862919
+    second: OPGA_SpaceShip_65
+  - first:
+      213: -6814181805332842789
+    second: OPGA_SpaceShip_66
+  - first:
+      213: -5861857895253505616
+    second: OPGA_SpaceShip_67
+  - first:
+      213: -8076155317972548383
+    second: OPGA_SpaceShip_68
+  - first:
+      213: -1845808526485036776
+    second: OPGA_SpaceShip_69
+  - first:
+      213: -1030043604373323909
+    second: OPGA_SpaceShip_70
+  - first:
+      213: -3763424833676891510
+    second: OPGA_SpaceShip_71
+  - first:
+      213: 4443061406270742038
+    second: OPGA_SpaceShip_72
+  - first:
+      213: 5312286844878112033
+    second: OPGA_SpaceShip_73
+  - first:
+      213: 7921598877625508186
+    second: OPGA_SpaceShip_74
+  - first:
+      213: 5547286389135697956
+    second: OPGA_SpaceShip_75
+  - first:
+      213: -8444146462137547936
+    second: OPGA_SpaceShip_76
+  - first:
+      213: 1682001729699797599
+    second: OPGA_SpaceShip_77
+  - first:
+      213: -3972142188188853088
+    second: OPGA_SpaceShip_78
+  - first:
+      213: 1252074182007993266
+    second: OPGA_SpaceShip_79
+  - first:
+      213: 3259790143264171899
+    second: OPGA_SpaceShip_80
+  - first:
+      213: -5612591181252696236
+    second: OPGA_SpaceShip_81
+  - first:
+      213: -5064539369528669222
+    second: OPGA_SpaceShip_82
+  - first:
+      213: 3801124036489063348
+    second: OPGA_SpaceShip_83
+  - first:
+      213: 8017095136959963337
+    second: OPGA_SpaceShip_84
+  - first:
+      213: 1662895140084943029
+    second: OPGA_SpaceShip_85
+  - first:
+      213: -3810203307342908208
+    second: OPGA_SpaceShip_86
+  - first:
+      213: 5171949410009752661
+    second: OPGA_SpaceShip_87
+  - first:
+      213: 8828075571581733488
+    second: OPGA_SpaceShip_88
+  - first:
+      213: 5525527786350259937
+    second: OPGA_SpaceShip_89
+  - first:
+      213: 8164960845316521973
+    second: OPGA_SpaceShip_90
+  - first:
+      213: 7835210069247881480
+    second: OPGA_SpaceShip_91
+  - first:
+      213: -2722119291810944775
+    second: OPGA_SpaceShip_92
+  - first:
+      213: 6791158434215133112
+    second: OPGA_SpaceShip_93
+  - first:
+      213: -7426167321161719984
+    second: OPGA_SpaceShip_94
+  - first:
+      213: -5080370990130642247
+    second: OPGA_SpaceShip_95
+  - first:
+      213: -3054221466332273877
+    second: OPGA_SpaceShip_96
+  - first:
+      213: 86705890339597372
+    second: OPGA_SpaceShip_97
+  - first:
+      213: -5425974379025453763
+    second: OPGA_SpaceShip_98
+  - first:
+      213: -230632277614746135
+    second: OPGA_SpaceShip_99
+  - first:
+      213: -7825423501720621580
+    second: OPGA_SpaceShip_100
+  - first:
+      213: 6147669082929933779
+    second: OPGA_SpaceShip_101
+  - first:
+      213: 4334433977490969703
+    second: OPGA_SpaceShip_102
+  - first:
+      213: 87137420347687391
+    second: OPGA_SpaceShip_103
+  - first:
+      213: 4146468474111294006
+    second: OPGA_SpaceShip_104
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 397
+        width: 43
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae2c0d47031c25e0800000000000000
+      internalID: -1933149217970442582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 396
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 589be209b618008e0800000000000000
+      internalID: -1729239957929805435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_2
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 392
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e556b8c1170df70800000000000000
+      internalID: 9209985605384363607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_3
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 395
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9965a63e4e607390800000000000000
+      internalID: -7822631270539236964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_4
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 393
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1528404768e83d950800000000000000
+      internalID: 6472673797584749137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_5
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 395
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997ca7f79fe422830800000000000000
+      internalID: 4044882248824702873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_6
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 393
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c83a99a60a5861b30800000000000000
+      internalID: 4257737421755097996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_7
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 394
+        width: 59
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd460ae745afa850800000000000000
+      internalID: 6390508124549565950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_8
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 357
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76fc10699e8ec9c10800000000000000
+      internalID: 2061778819370569575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_9
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 357
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f5182cd55343dc0800000000000000
+      internalID: -3660241920333881556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_10
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 357
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99fe6ccf35e2c76d0800000000000000
+      internalID: -2991465114222792807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_11
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 355
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc72b35ea42b68240800000000000000
+      internalID: 4793714888125654989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_12
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 355
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab0f9f13952f951b0800000000000000
+      internalID: -5667232191164583750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_13
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 355
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39aabc55a8f731aa0800000000000000
+      internalID: -6191464830582674797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_14
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 354
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8c413433c213500800000000000000
+      internalID: 374128842728851632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_15
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 354
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7002085e8663905c0800000000000000
+      internalID: -4248804949292474361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_16
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 354
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba458d60368af420800000000000000
+      internalID: 2664589672097073845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_17
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 318
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7350eef304d36750800000000000000
+      internalID: 6297109817620190078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_18
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 318
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbca54fb8c51ae950800000000000000
+      internalID: 6479014965872536765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_19
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 318
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0189c2db797b9ecd0800000000000000
+      internalID: -2528287853450061808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_20
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 318
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00eccdb53b719cb60800000000000000
+      internalID: 7766765091484913152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_21
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 313
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf711d9d448567550800000000000000
+      internalID: 6158206593211111420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_22
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 313
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2351ed77e1ecac00800000000000000
+      internalID: 913353208814981932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_23
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 319
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b93a3c75ef92c3b40800000000000000
+      internalID: 5421254223818105755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_24
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 319
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a62387b05f78d5d0800000000000000
+      internalID: -3037537964008462681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_25
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 317
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 867e8d460c88c2240800000000000000
+      internalID: 4768336465385547624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_26
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 317
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d428dbfd913a500b0800000000000000
+      internalID: -5763020816627432883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_27
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 320
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20845939a0890920800000000000000
+      internalID: 2957036094645108781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_28
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 320
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 871f6cc8e0f3e8730800000000000000
+      internalID: 4003206450502889848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_29
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 313
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165393c074db63470800000000000000
+      internalID: 8374088669987419489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_30
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 313
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f32020c51e86e80800000000000000
+      internalID: -8185044537458933964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_31
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 312
+        width: 8
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0969e7e3d63a0a260800000000000000
+      internalID: 7106859901585888912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_32
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 312
+        width: 8
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 611019de7660bf240800000000000000
+      internalID: 4826458469094719766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_33
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 314
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed5c9baf585745e0800000000000000
+      internalID: -1925473147753308690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_34
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 314
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff4fc1572ea09630800000000000000
+      internalID: 3931833958593941492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_35
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 248
+        width: 43
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb4b09b7529fae730800000000000000
+      internalID: 4029306756018517179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_36
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 247
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ef672fae1d439f0800000000000000
+      internalID: -489535652456104422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_37
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 243
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d278ca919f012d3b0800000000000000
+      internalID: -5489306333747574995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_38
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 246
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebb95ebeafabe87c0800000000000000
+      internalID: -4067107826606695490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_39
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 244
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f2e0c80dc26b5a0800000000000000
+      internalID: -6505963337475543151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_40
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 246
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e45e392626f4ccbd0800000000000000
+      internalID: -2608622800175110834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_41
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 244
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb7d2eff2740d300800000000000000
+      internalID: 274797848723028914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_42
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 245
+        width: 59
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d419da8973ae7ea0800000000000000
+      internalID: -5873077121628695344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_43
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 208
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc426796d372f280800000000000000
+      internalID: -9011012538914943745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_44
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 208
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a031a88a6f201770800000000000000
+      internalID: 8579409424746098855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_45
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 208
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f24280a728eb45400800000000000000
+      internalID: 312083741797786671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_46
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 206
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fbd414a903b98a40800000000000000
+      internalID: 5371020884604935158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_47
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 206
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 785827a73a9edadb0800000000000000
+      internalID: -4778906741226961529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_48
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 206
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7cad06cf61e0b060800000000000000
+      internalID: 6967316493722561663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_49
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 205
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e0e0c2bc0485000800000000000000
+      internalID: 24841039312195125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_50
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 205
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7083e934af03f6d0800000000000000
+      internalID: -2958003332232019845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_51
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 205
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32cac7a26ab8461a0800000000000000
+      internalID: -6817170390138442717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_52
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 169
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39defd574b00b6a60800000000000000
+      internalID: 7668223565600124307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_53
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 169
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e664b6bb5633ee6f0800000000000000
+      internalID: -653528383893059986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_54
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 169
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3392921145cac3c60800000000000000
+      internalID: 7799298131763996979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_55
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 169
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 740af406945ba5d10800000000000000
+      internalID: 2115202301756940359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_56
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 164
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29910af95aef3bd60800000000000000
+      internalID: 7904941758266481042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_57
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 164
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4863bc5b81a0b82a0800000000000000
+      internalID: -6734277716556958076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_58
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 170
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b104775871b00ae0800000000000000
+      internalID: -1585071938413002312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_59
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 170
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c0f4bbffb320930800000000000000
+      internalID: 4107911779660532827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_60
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 168
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e973964edf5ac050800000000000000
+      internalID: 5821570876601235939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_61
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 168
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44042d7410bacfc00800000000000000
+      internalID: 935810844574498884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_62
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 171
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b5b048a5c588ca0800000000000000
+      internalID: -6014455758521148561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_63
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 171
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f13944df80ecaa00800000000000000
+      internalID: 769236544720024050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_64
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 164
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94b8ea53935150df0800000000000000
+      internalID: -214742071772279991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_65
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 164
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3a679ffa3a16ee0800000000000000
+      internalID: -1269553643741862919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_66
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 163
+        width: 8
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd6b43a40c92f61a0800000000000000
+      internalID: -6814181805332842789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_67
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 163
+        width: 8
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b9889d3d4f76aea0800000000000000
+      internalID: -5861857895253505616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_68
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 165
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e44d51178bbbef80800000000000000
+      internalID: -8076155317972548383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_69
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 165
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 811e877bcee5266e0800000000000000
+      internalID: -1845808526485036776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_70
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 100
+        width: 43
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f3a2a9ccc84b1f0800000000000000
+      internalID: -1030043604373323909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_71
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 99
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8a2ec1ad01a5cbc0800000000000000
+      internalID: -3763424833676891510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_72
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 95
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ed3040fcce8ad30800000000000000
+      internalID: 4443061406270742038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_73
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 98
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125c0fd5db809b940800000000000000
+      internalID: 5312286844878112033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_74
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 96
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a516002753c2fed60800000000000000
+      internalID: 7921598877625508186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_75
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 98
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 428eac3849bebfc40800000000000000
+      internalID: 5547286389135697956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_76
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 96
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0638bec188d50da80800000000000000
+      internalID: -8444146462137547936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_77
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 97
+        width: 59
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a595a59aba75710800000000000000
+      internalID: 1682001729699797599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_78
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 60
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac19a3a9bd10e8c0800000000000000
+      internalID: -3972142188188853088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_79
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 60
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b33603b5d2406110800000000000000
+      internalID: 1252074182007993266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_80
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 60
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77a49b3dd91d3d20800000000000000
+      internalID: 3259790143264171899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_81
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 58
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45761f3be021c12b0800000000000000
+      internalID: -5612591181252696236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_82
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 58
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb4348c64427b9b0800000000000000
+      internalID: -5064539369528669222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_83
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 58
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb21260c2e40c430800000000000000
+      internalID: 3801124036489063348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_84
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 57
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c0a209fc81724f60800000000000000
+      internalID: 8017095136959963337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_85
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 57
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b88c7bc15ac31710800000000000000
+      internalID: 1662895140084943029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_86
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 57
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4becf77407f1bc0800000000000000
+      internalID: -3810203307342908208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_87
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 21
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5542ce3169476c740800000000000000
+      internalID: 5171949410009752661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_88
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 21
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ace6e85ff938a70800000000000000
+      internalID: 8828075571581733488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_89
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 21
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee25f50f3e9eac40800000000000000
+      internalID: 5525527786350259937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_90
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 21
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff701601a4cf4170800000000000000
+      internalID: 8164960845316521973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_91
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 16
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80175169b024cbc60800000000000000
+      internalID: 7835210069247881480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_92
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 16
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8ee5f2de6193ad0800000000000000
+      internalID: -2722119291810944775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_93
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 22
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf7ac46d9a0f3e50800000000000000
+      internalID: 6791158434215133112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_94
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 22
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f9a8bba24f0f890800000000000000
+      internalID: -7426167321161719984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_95
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 20
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b2401e5085ee79b0800000000000000
+      internalID: -5080370990130642247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_96
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 20
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2364e122c93d95d0800000000000000
+      internalID: -3054221466332273877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_97
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 23
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c20a14c8a043100800000000000000
+      internalID: 86705890339597372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_98
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 23
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d21d1ec0113b4b0800000000000000
+      internalID: -5425974379025453763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_99
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 16
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5a80b5a21acccf0800000000000000
+      internalID: -230632277614746135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_100
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 16
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fde2fa39c2866390800000000000000
+      internalID: -7825423501720621580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_101
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 15
+        width: 8
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dda0bc8578e05550800000000000000
+      internalID: 6147669082929933779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_102
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 15
+        width: 8
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7649bbadcb0072c30800000000000000
+      internalID: 4334433977490969703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_103
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 17
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd1c77aa503953100800000000000000
+      internalID: 87137420347687391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OPGA_SpaceShip_104
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 17
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a72c7bb173b8930800000000000000
+      internalID: 4146468474111294006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 413b5a16c6aadd845bd3fb0f5092af57
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 2356c8dc8ab0c49469854eefe4d59251, type: 3}
+      name: _BumpMap
+    nameFileIdTable:
+      OPGA_SpaceShip_0: -1933149217970442582
+      OPGA_SpaceShip_1: -1729239957929805435
+      OPGA_SpaceShip_10: -2991465114222792807
+      OPGA_SpaceShip_100: -7825423501720621580
+      OPGA_SpaceShip_101: 6147669082929933779
+      OPGA_SpaceShip_102: 4334433977490969703
+      OPGA_SpaceShip_103: 87137420347687391
+      OPGA_SpaceShip_104: 4146468474111294006
+      OPGA_SpaceShip_11: 4793714888125654989
+      OPGA_SpaceShip_12: -5667232191164583750
+      OPGA_SpaceShip_13: -6191464830582674797
+      OPGA_SpaceShip_14: 374128842728851632
+      OPGA_SpaceShip_15: -4248804949292474361
+      OPGA_SpaceShip_16: 2664589672097073845
+      OPGA_SpaceShip_17: 6297109817620190078
+      OPGA_SpaceShip_18: 6479014965872536765
+      OPGA_SpaceShip_19: -2528287853450061808
+      OPGA_SpaceShip_2: 9209985605384363607
+      OPGA_SpaceShip_20: 7766765091484913152
+      OPGA_SpaceShip_21: 6158206593211111420
+      OPGA_SpaceShip_22: 913353208814981932
+      OPGA_SpaceShip_23: 5421254223818105755
+      OPGA_SpaceShip_24: -3037537964008462681
+      OPGA_SpaceShip_25: 4768336465385547624
+      OPGA_SpaceShip_26: -5763020816627432883
+      OPGA_SpaceShip_27: 2957036094645108781
+      OPGA_SpaceShip_28: 4003206450502889848
+      OPGA_SpaceShip_29: 8374088669987419489
+      OPGA_SpaceShip_3: -7822631270539236964
+      OPGA_SpaceShip_30: -8185044537458933964
+      OPGA_SpaceShip_31: 7106859901585888912
+      OPGA_SpaceShip_32: 4826458469094719766
+      OPGA_SpaceShip_33: -1925473147753308690
+      OPGA_SpaceShip_34: 3931833958593941492
+      OPGA_SpaceShip_35: 4029306756018517179
+      OPGA_SpaceShip_36: -489535652456104422
+      OPGA_SpaceShip_37: -5489306333747574995
+      OPGA_SpaceShip_38: -4067107826606695490
+      OPGA_SpaceShip_39: -6505963337475543151
+      OPGA_SpaceShip_4: 6472673797584749137
+      OPGA_SpaceShip_40: -2608622800175110834
+      OPGA_SpaceShip_41: 274797848723028914
+      OPGA_SpaceShip_42: -5873077121628695344
+      OPGA_SpaceShip_43: -9011012538914943745
+      OPGA_SpaceShip_44: 8579409424746098855
+      OPGA_SpaceShip_45: 312083741797786671
+      OPGA_SpaceShip_46: 5371020884604935158
+      OPGA_SpaceShip_47: -4778906741226961529
+      OPGA_SpaceShip_48: 6967316493722561663
+      OPGA_SpaceShip_49: 24841039312195125
+      OPGA_SpaceShip_5: 4044882248824702873
+      OPGA_SpaceShip_50: -2958003332232019845
+      OPGA_SpaceShip_51: -6817170390138442717
+      OPGA_SpaceShip_52: 7668223565600124307
+      OPGA_SpaceShip_53: -653528383893059986
+      OPGA_SpaceShip_54: 7799298131763996979
+      OPGA_SpaceShip_55: 2115202301756940359
+      OPGA_SpaceShip_56: 7904941758266481042
+      OPGA_SpaceShip_57: -6734277716556958076
+      OPGA_SpaceShip_58: -1585071938413002312
+      OPGA_SpaceShip_59: 4107911779660532827
+      OPGA_SpaceShip_6: 4257737421755097996
+      OPGA_SpaceShip_60: 5821570876601235939
+      OPGA_SpaceShip_61: 935810844574498884
+      OPGA_SpaceShip_62: -6014455758521148561
+      OPGA_SpaceShip_63: 769236544720024050
+      OPGA_SpaceShip_64: -214742071772279991
+      OPGA_SpaceShip_65: -1269553643741862919
+      OPGA_SpaceShip_66: -6814181805332842789
+      OPGA_SpaceShip_67: -5861857895253505616
+      OPGA_SpaceShip_68: -8076155317972548383
+      OPGA_SpaceShip_69: -1845808526485036776
+      OPGA_SpaceShip_7: 6390508124549565950
+      OPGA_SpaceShip_70: -1030043604373323909
+      OPGA_SpaceShip_71: -3763424833676891510
+      OPGA_SpaceShip_72: 4443061406270742038
+      OPGA_SpaceShip_73: 5312286844878112033
+      OPGA_SpaceShip_74: 7921598877625508186
+      OPGA_SpaceShip_75: 5547286389135697956
+      OPGA_SpaceShip_76: -8444146462137547936
+      OPGA_SpaceShip_77: 1682001729699797599
+      OPGA_SpaceShip_78: -3972142188188853088
+      OPGA_SpaceShip_79: 1252074182007993266
+      OPGA_SpaceShip_8: 2061778819370569575
+      OPGA_SpaceShip_80: 3259790143264171899
+      OPGA_SpaceShip_81: -5612591181252696236
+      OPGA_SpaceShip_82: -5064539369528669222
+      OPGA_SpaceShip_83: 3801124036489063348
+      OPGA_SpaceShip_84: 8017095136959963337
+      OPGA_SpaceShip_85: 1662895140084943029
+      OPGA_SpaceShip_86: -3810203307342908208
+      OPGA_SpaceShip_87: 5171949410009752661
+      OPGA_SpaceShip_88: 8828075571581733488
+      OPGA_SpaceShip_89: 5525527786350259937
+      OPGA_SpaceShip_9: -3660241920333881556
+      OPGA_SpaceShip_90: 8164960845316521973
+      OPGA_SpaceShip_91: 7835210069247881480
+      OPGA_SpaceShip_92: -2722119291810944775
+      OPGA_SpaceShip_93: 6791158434215133112
+      OPGA_SpaceShip_94: -7426167321161719984
+      OPGA_SpaceShip_95: -5080370990130642247
+      OPGA_SpaceShip_96: -3054221466332273877
+      OPGA_SpaceShip_97: 86705890339597372
+      OPGA_SpaceShip_98: -5425974379025453763
+      OPGA_SpaceShip_99: -230632277614746135
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

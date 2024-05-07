@@ -1,5 +1,7 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Controls;
 using UnityEngine.InputSystem.LowLevel;
 
 
@@ -8,6 +10,7 @@ public enum PlayerConState
 {
     KeyboardMouse,
     Gamepad,
+    Touch
 }
 
 public struct PlayerConSetting
@@ -44,7 +47,7 @@ public class PlayerController
         return _Instances[Index];
     }
 
-    
+
     public static void SetSettings(PlayerConSetting newSettings)
     {
         settings = newSettings;
@@ -68,6 +71,7 @@ public class PlayerController
         {
             this._CheckState(eventP, device);
         };
+
     }
 
     private void _UpdateValues()
@@ -166,6 +170,31 @@ public class PlayerController
                     }
                     break;
                 }
+            case PlayerConState.Touch:
+                {
+                    TouchControl primaryTouch = Touchscreen.current.touches[0];
+                    TouchControl secondaryTouch = Touchscreen.current.touches[1];
+
+                    
+                    if (primaryTouch.press.ReadValue() > 0.0f) {
+                        
+                        Vector2 StartPos = primaryTouch.startPosition.ReadValue();
+                        Vector2 EndPos = primaryTouch.position.ReadValue();
+
+                        _MoveVector = (EndPos - StartPos) / 200.0f;
+                        
+                        
+                        Debug.Log($"Primary Touch Pos = {_MoveVector}");
+                    }
+
+                    if (secondaryTouch.press.ReadValue() > 0.0f ){
+                        _Fire = secondaryTouch.press.ReadValue();
+                    }
+                    else{
+                        _Fire = 0.0f;
+                    }
+                    break;
+                }
             default:
                 {
                     break;
@@ -182,7 +211,6 @@ public class PlayerController
         {
             _AimPoint.x = -Limit;
         }
-
 
         if (_AimPoint.y > Limit)
         {
@@ -219,6 +247,11 @@ public class PlayerController
             // Change to gamepad control if gamepad match
             if ((Gamepad)inputDevice == GetGamepad())
                 _ControllerState = PlayerConState.Gamepad;
+        }
+        else if (inputDevice is Touchscreen)
+        {
+            _ControllerState = PlayerConState.Touch;
+            Debug.Log("Received touch input");
         }
     }
 
