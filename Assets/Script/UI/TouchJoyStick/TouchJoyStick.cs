@@ -7,6 +7,12 @@ public enum TouchJoystickType
     Move,
     Fire
 }
+
+/*
+Display Touch Thumbstick
+> Controls Animation Controller variable
+> Thumbsticks hide and display from Animation
+*/
 public class UI_TouchJoyStick : MonoBehaviour
 {
     public Animator AnimatorComponent;
@@ -22,7 +28,6 @@ public class UI_TouchJoyStick : MonoBehaviour
         rectTransform = GetComponent<RectTransform>();
         AnimatorComponent = GetComponent<Animator>();
     }
-
 
     void UpdateAnimatorController()
     {
@@ -75,6 +80,8 @@ public class UI_TouchJoyStick : MonoBehaviour
                         this.transform.position = startTouchPos;
                         if (ChildJoystick != null)
                         {
+                            // Base at start position
+                            // End stick at current position
                             if (targetTouch.press.ReadValue() > 0.0f)
                             {
                                 transform.position = startTouchPos;
@@ -89,6 +96,9 @@ public class UI_TouchJoyStick : MonoBehaviour
                     }
                 case TouchJoystickType.Fire:
                     {
+                        if (targetTouch.press.ReadValue() > 0.0){
+                            transform.position  = targetTouch.position.ReadValue();
+                        }
                         break;
                     }
                 default:

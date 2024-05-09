@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public struct SoundSettingsInput
@@ -14,27 +15,12 @@ public class SoundSettings
     protected float _MusicVolume = 0.5f;
     protected float _SFXVolume = 0.5f;
 
-
     public float MasterVolume => _MasterVolume;
     public float SFXVolume => _SFXVolume;
-
-    /* Unmerged change from project 'Assembly-CSharp.Player'
-    Before:
-        public float MusicVolume => _MusicVolume;
-
-
-
-        public  const string Pref_MasterVol = "Setting: MasterVolume";
-    After:
-        public float MusicVolume => _MusicVolume;
-
-
-
-        public  const string Pref_MasterVol = "Setting: MasterVolume";
-    */
     public float MusicVolume => _MusicVolume;
 
 
+    public Action OnSoundSettingChange = new Action( () => {});
 
     public const string Pref_MasterVol = "Setting: MasterVolume";
     public const string Pref_MusicVol = "Setting: Music Volume";
@@ -68,6 +54,8 @@ public class SoundSettings
         _MasterVolume = input.MasterVol;
         _MusicVolume = input.MusicVol;
         _SFXVolume = input.SFXVol;
+
+        OnSoundSettingChange.Invoke();
     }
 
     public void SaveSettings()
