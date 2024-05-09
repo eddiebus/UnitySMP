@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
@@ -37,6 +36,12 @@ public class PlayerController
     private Vector2 _AimPoint = new Vector2(0.5f, 0.5f);
     private float _Fire;
 
+    // For when a player controller has changed device
+    public static System.Action<PlayerController> OnDeviceChange = new System.Action<PlayerController>( 
+        (PlayerController con)=> {}
+    );
+
+
     public static PlayerController GetController(int Index)
     {
         if (_Instances == null)
@@ -46,7 +51,6 @@ public class PlayerController
         _Instances[Index]._UpdateValues();
         return _Instances[Index];
     }
-
 
     public static void SetSettings(PlayerConSetting newSettings)
     {
@@ -174,16 +178,12 @@ public class PlayerController
                 {
                     TouchControl primaryTouch = Touchscreen.current.touches[0];
                     TouchControl secondaryTouch = Touchscreen.current.touches[1];
-
                     
                     if (primaryTouch.press.ReadValue() > 0.0f) {
-                        
                         Vector2 StartPos = primaryTouch.startPosition.ReadValue();
                         Vector2 EndPos = primaryTouch.position.ReadValue();
-
                         _MoveVector = (EndPos - StartPos) / 200.0f;
-                        
-                        
+                        _MoveVector = Vector2.ClampMagnitude(_MoveVector, 1.0f);
                         Debug.Log($"Primary Touch Pos = {_MoveVector}");
                     }
 
@@ -238,6 +238,9 @@ public class PlayerController
 
     private void _CheckState(InputEventPtr @event, InputDevice inputDevice)
     {
+
+        PlayerConState oldState = this._ControllerState;
+
         if (inputDevice is Keyboard)
         {
             _ControllerState = PlayerConState.KeyboardMouse;
@@ -252,6 +255,11 @@ public class PlayerController
         {
             _ControllerState = PlayerConState.Touch;
             Debug.Log("Received touch input");
+        }
+
+        // Device has changed. Invoke event
+        if (oldState != _ControllerState){
+            OnDeviceChange(this);
         }
     }
 

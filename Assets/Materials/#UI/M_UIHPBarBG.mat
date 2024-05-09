@@ -76,7 +76,7 @@ Material:
     - _MaxRadius: 0.6
     - _Metallic: 0
     - _MinAngle: 0.28
-    - _MinRadius: 0.4
+    - _MinRadius: 0.3
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
