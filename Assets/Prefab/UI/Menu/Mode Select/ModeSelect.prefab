@@ -102,7 +102,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3252823305129615822}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -180,15 +180,11 @@ PrefabInstance:
       objectReference: {fileID: 5292862077397332994}
     - target: {fileID: 1351040797204736938, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
-      value: 0.49056602
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1351040797204736938, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_Colors.m_SelectedColor.g
-      value: 0.49056602
-      objectReference: {fileID: 0}
-    - target: {fileID: 1351040797204736938, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
-      propertyPath: m_Colors.m_SelectedColor.r
-      value: 0.49056602
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1351040797204736938, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.a
@@ -196,7 +192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1351040797204736938, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1351040797204736938, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -252,7 +248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5705279001434141455, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4278190080
+      value: 4289572269
       objectReference: {fileID: 0}
     - target: {fileID: 8495628603111242802, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_Pivot.x
@@ -365,24 +361,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 2465544748297965405}
     m_Modifications:
     - target: {fileID: 1351040797204736938, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
-      propertyPath: m_Transition
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1351040797204736938, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1351040797204736938, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
-      propertyPath: m_Colors.m_SelectedColor.b
-      value: 0.49056602
-      objectReference: {fileID: 0}
-    - target: {fileID: 1351040797204736938, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
-      propertyPath: m_Colors.m_SelectedColor.g
-      value: 0.49056602
-      objectReference: {fileID: 0}
-    - target: {fileID: 1351040797204736938, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
-      propertyPath: m_Colors.m_SelectedColor.r
-      value: 0.49056602
       objectReference: {fileID: 0}
     - target: {fileID: 1351040797204736938, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_Navigation.m_SelectOnDown
@@ -426,7 +406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5705279001434141455, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_fontSize
-      value: 72
+      value: 60.85
       objectReference: {fileID: 0}
     - target: {fileID: 5705279001434141455, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_fontColor.a
@@ -434,7 +414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5705279001434141455, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4278190080
+      value: 4289572269
       objectReference: {fileID: 0}
     - target: {fileID: 8495628603111242802, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_Pivot.x
