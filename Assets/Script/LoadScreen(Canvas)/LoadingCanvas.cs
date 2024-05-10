@@ -23,7 +23,6 @@ public class LoadingCanvas : MonoBehaviour
                 TargetAlpha += Time.deltaTime * 5.0f;
                 if (TargetAlpha >= 0.99f)
                 {
-                    Debug.Log("Hello");
                     SceneLoader.SwitchToNewScene();
                 }
             }

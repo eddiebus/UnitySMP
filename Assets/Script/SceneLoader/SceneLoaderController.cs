@@ -18,17 +18,7 @@ public class SceneLoader : MonoBehaviour
         };
     }
 
-    void Update()
-    {
-        if (loadOp != null)
-        {
-            DelayTime += Time.deltaTime;
-            if (DelayTime >= MinDelay)
-            {
-                //loadOp.allowSceneActivation = true;
-            }
-        }
-    }
+
 
     private static void OnSceneLoad()
     {

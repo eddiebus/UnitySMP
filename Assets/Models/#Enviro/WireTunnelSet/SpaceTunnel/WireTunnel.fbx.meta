@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: WireTunnelTex
-    second: {fileID: 2800000, guid: 77a44c1683714dd4f9cadf70cf1c1211, type: 3}
+    second: {fileID: 2800000, guid: 5b0734cbf5d0c3d42be0a8f7356c75c1, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

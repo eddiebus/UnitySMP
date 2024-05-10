@@ -97,7 +97,7 @@ public class UI_TouchJoyStick : MonoBehaviour
                 case TouchJoystickType.Fire:
                     {
                         if (targetTouch.press.ReadValue() > 0.0){
-                            transform.position  = targetTouch.position.ReadValue();
+                            transform.position  = targetTouch.startPosition.ReadValue();
                         }
                         break;
                     }
