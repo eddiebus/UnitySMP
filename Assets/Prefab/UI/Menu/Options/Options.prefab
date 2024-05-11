@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -377,8 +377,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4292269782
+  m_fontColor: {r: 0.8392157, g: 0.8392157, b: 0.8392157, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -454,12 +454,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 141888885832926077}
     - target: {fileID: 2046660390382436612, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046660390382436612, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046660390382436612, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4335009711076982605, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
       propertyPath: m_Name
       value: MusicSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 5272176251817643606, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5272176251817643606, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
       propertyPath: m_AnchorMax.y
@@ -594,12 +606,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 5890935432831051362}
     m_Modifications:
     - target: {fileID: 2046660390382436612, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046660390382436612, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046660390382436612, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4335009711076982605, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
       propertyPath: m_Name
       value: MusicSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 5272176251817643606, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5272176251817643606, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
       propertyPath: m_AnchorMax.y
@@ -729,12 +753,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 5890935432831051362}
     m_Modifications:
     - target: {fileID: 2046660390382436612, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046660390382436612, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046660390382436612, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4335009711076982605, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
       propertyPath: m_Name
       value: SFXSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 5272176251817643606, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5272176251817643606, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
       propertyPath: m_AnchorMax.y
