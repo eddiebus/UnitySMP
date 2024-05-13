@@ -36,10 +36,11 @@ public class UI_TouchJoyStick : MonoBehaviour
         if (controller.ControllerState == PlayerConState.Touch)
         {
             var isActive = Touchscreen.current.touches[TouchIndex].press.ReadValue() > 0.0;
-            AnimatorComponent.SetBool(AnimControl_Active,isActive);
+            AnimatorComponent.SetBool(AnimControl_Active ,isActive &&
+                GameManager.Get().Pause
+                ); ;
         }
     }
-
 
     protected void _UpdateTouchIndex()
     {

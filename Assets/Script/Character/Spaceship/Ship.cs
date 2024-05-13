@@ -103,5 +103,4 @@ public class Ship : MonoBehaviour
     {
         _ShipInit();
     }
-
 }

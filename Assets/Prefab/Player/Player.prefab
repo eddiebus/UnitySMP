@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8841e331ad6d774b9c13c2b01632197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 12
+  MoveSpeed: 20
   _Guns: []
 --- !u!70 &8136141477790241717
 CapsuleCollider2D:
@@ -555,6 +555,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2796064835415822318, guid: 01453d321d8e5914882ab4522987eded, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509957860667528475, guid: 01453d321d8e5914882ab4522987eded, type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509957860667528475, guid: 01453d321d8e5914882ab4522987eded, type: 3}
+      propertyPath: CollisionModule.enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7509957860667528475, guid: 01453d321d8e5914882ab4522987eded, type: 3}

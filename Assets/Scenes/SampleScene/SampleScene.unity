@@ -1356,6 +1356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7170276703583027922, guid: dd8690b8d1780424eba56de6ea9aa72e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7236743466740593028, guid: dd8690b8d1780424eba56de6ea9aa72e, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1438,6 +1442,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7315828840605100936, guid: dd8690b8d1780424eba56de6ea9aa72e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239142185663710989, guid: dd8690b8d1780424eba56de6ea9aa72e, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

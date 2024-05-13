@@ -86,4 +86,13 @@ public class CanvasSwitcher : MonoBehaviour
         OnCanvasSwitch.Invoke();
     }
 
+    public void SwitchToObject(GameObject targetObj)
+    {
+        if (targetObj.transform.parent == this.gameObject.transform)
+        {
+            int newIndex = targetObj.transform.GetSiblingIndex();
+            SetActiveIndex(newIndex);
+        }
+    }
+
 }
