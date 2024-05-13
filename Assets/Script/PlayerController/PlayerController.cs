@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
@@ -41,6 +42,14 @@ public class PlayerController
         (PlayerController con)=> {}
     );
 
+    public static System.Action OnAnyClick = new System.Action(() =>
+    {
+        Debug.Log($"Any Touch/Click Received");
+
+#if !UNITY_EDITOR
+        Screen.fullScreen = true;
+#endif
+    });
 
     public static PlayerController GetController(int Index)
     {
@@ -245,6 +254,14 @@ public class PlayerController
         {
             _ControllerState = PlayerConState.KeyboardMouse;
         }
+        else if (inputDevice is Mouse)
+        {
+            if (Mouse.current.leftButton.isPressed)
+            {
+                _ControllerState = PlayerConState.KeyboardMouse;
+                OnAnyClick.Invoke();
+            }
+        }
         else if (inputDevice is Gamepad)
         {
             // Change to gamepad control if gamepad match
@@ -254,7 +271,7 @@ public class PlayerController
         else if (inputDevice is Touchscreen)
         {
             _ControllerState = PlayerConState.Touch;
-            Debug.Log("Received touch input");
+            OnAnyClick.Invoke();
         }
 
         // Device has changed. Invoke event
