@@ -44,8 +44,6 @@ public class PlayerController
 
     public static System.Action OnAnyClick = new System.Action(() =>
     {
-        Debug.Log($"Any Touch/Click Received");
-
 #if !UNITY_EDITOR
         Screen.fullScreen = true;
 #endif

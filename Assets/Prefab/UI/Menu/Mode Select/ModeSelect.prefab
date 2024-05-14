@@ -57,9 +57,9 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: 0
+  m_Spacing: 40
   m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
@@ -248,7 +248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5705279001434141455, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4289572269
+      value: 4292269782
       objectReference: {fileID: 0}
     - target: {fileID: 8495628603111242802, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_Pivot.x
@@ -406,7 +406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5705279001434141455, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_fontSize
-      value: 60.85
+      value: 63.75
       objectReference: {fileID: 0}
     - target: {fileID: 5705279001434141455, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_fontColor.a
@@ -414,7 +414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5705279001434141455, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4289572269
+      value: 4292269782
       objectReference: {fileID: 0}
     - target: {fileID: 8495628603111242802, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_Pivot.x

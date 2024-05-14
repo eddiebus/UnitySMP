@@ -106,5 +106,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fov: 70
-  zFar: 500
+  zFar: 1000
   _CamComponent: {fileID: 2579452212042895111}

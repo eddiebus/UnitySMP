@@ -72,7 +72,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 1
-  m_Spacing: 64.7
+  m_Spacing: 30
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
@@ -489,7 +489,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8696744241196653329, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
       propertyPath: m_fontSize
-      value: 47.5
+      value: 47.95
       objectReference: {fileID: 0}
     - target: {fileID: 8973095726546293569, guid: 0361e6b5bc8a7db4ababe61f923ca811, type: 3}
       propertyPath: m_Pivot.x

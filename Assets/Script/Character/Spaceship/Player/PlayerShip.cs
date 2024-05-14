@@ -1,7 +1,15 @@
 using UnityEngine;
 
+
+public enum PlayerShipMode
+{
+    Player,
+    AI,
+    None
+}
 public class PlayerShip : Ship
 {
+    public PlayerShipMode ShipMode = PlayerShipMode.None;
     // Start is called before the first frame update
     void Start()
     {
@@ -12,9 +20,21 @@ public class PlayerShip : Ship
     void Update()
     {
         _ShipSetRigidbody();
-        _HandleMoveMent();
-        _ShipFixPositionWithinCamera(CameraBoundFixAxis.Both);
-        _HandleFire();
+
+        switch (ShipMode)
+        {
+            case PlayerShipMode.Player:
+                {
+                    _HandleMoveMent();
+                    _ShipFixPositionWithinCamera(CameraBoundFixAxis.Both);
+                    _HandleFire();
+                    break;
+                }
+            case PlayerShipMode.AI:
+                break;
+            default:
+                break;
+        }
     }
 
     // Keep ship in bounds of GameCamera
