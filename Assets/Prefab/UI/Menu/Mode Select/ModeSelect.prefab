@@ -394,7 +394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1351040797204736938, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: SampleScene
+      value: Lvl1_Asterroid
       objectReference: {fileID: 0}
     - target: {fileID: 1351040797204736938, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -406,7 +406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5705279001434141455, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_fontSize
-      value: 63.75
+      value: 52.45
       objectReference: {fileID: 0}
     - target: {fileID: 5705279001434141455, guid: ea4407e8b10409447860e90eaf0a3b22, type: 3}
       propertyPath: m_fontColor.a

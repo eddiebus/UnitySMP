@@ -35,7 +35,7 @@ public class GameCamera : MonoBehaviour
         var ProjMatrix = Matrix4x4.Perspective(
             fov,
             (float)Screen.width / Screen.height,
-            0.01f, 5000
+            0.01f, 10000
         );
 
         _CamComponent.farClipPlane = zFar * 1.1f;
