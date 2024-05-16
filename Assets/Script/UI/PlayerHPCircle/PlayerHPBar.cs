@@ -51,13 +51,16 @@ public class PlayerHPBar : MonoBehaviour
             if (targetGameCam)
             {
                 RectTransform myTransform = GetComponent<RectTransform>();
+                RectTransform parentTransform = this.gameObject.transform.parent.gameObject.GetComponent<RectTransform>();
                 Vector3 screenPos = targetGameCam.CamComponent.WorldToScreenPoint(
                     currentPlayer.transform.position
                     );
                 Vector3 newPos = Vector2.zero;
-                newPos.x = screenPos.x - Screen.width/2;
-                newPos.y = screenPos.y - Screen.height/2;
+                newPos.x = (screenPos.x * 1.0f) ;
+                newPos.y = (screenPos.y * 1.0f);
                 myTransform.anchoredPosition = newPos;
+
+                Debug.Log($"ParentSize = {parentTransform.sizeDelta}");
             }
         }
     }

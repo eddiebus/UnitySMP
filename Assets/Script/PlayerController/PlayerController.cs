@@ -274,12 +274,6 @@ public class PlayerController
     private void _CheckState(InputEventPtr @event, InputDevice inputDevice)
     {
 
-        if (_CheckForAnyClickDown())
-        {
-            OnAnyClick.Invoke();
-        }
-
-
         PlayerConState oldState = this._ControllerState;
 
         if (inputDevice is Keyboard)

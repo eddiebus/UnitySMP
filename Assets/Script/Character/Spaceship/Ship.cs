@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -26,47 +27,62 @@ public class Ship : MonoBehaviour
         Bounds playarea = GameCamera.Get().GetBounds();
         if (axis == CameraBoundFixAxis.Vertical || axis == CameraBoundFixAxis.Both)
         {
-            if ((ShipBounds.center.y - ShipBounds.extents.y) < (playarea.center.y - playarea.extents.y))
+            if (ShipBounds.min.y < playarea.min.y)
             {
-                float yPos = playarea.center.y - playarea.extents.y + ShipBounds.extents.y;
-                _ShipRigidbody.position = new Vector2(
+                float difference = Mathf.Abs(
+                    playarea.min.y - ShipBounds.min.y
+                    );
+
+                Debug.Log($"Differece y =  {difference}");
+
+                transform.position = new Vector3(
                     _ShipRigidbody.position.x,
-                    yPos
-                );
+                    _ShipRigidbody.position.y + Mathf.Abs(difference),
+                    this.transform.position.z
+                    );
             }
-            else if (
-                (ShipBounds.center.y + ShipBounds.extents.y) >
-                (playarea.center.y + playarea.extents.y)
-            )
+
+            else if (ShipBounds.max.y > playarea.max.y)
             {
-                float yPos = playarea.center.y + playarea.extents.y - ShipBounds.extents.y;
-                _ShipRigidbody.position = new Vector2(
+                float difference = Mathf.Abs(
+                    playarea.max.y - ShipBounds.max.y
+                    );
+
+                transform.position = new Vector3(
                     _ShipRigidbody.position.x,
-                    yPos
-                );
+                    _ShipRigidbody.position.y - Mathf.Abs(difference),
+                    this.transform.position.z
+                    );
             }
         }
 
         if (axis == CameraBoundFixAxis.Vertical || axis == CameraBoundFixAxis.Both)
         {
-            if ((ShipBounds.center.x - ShipBounds.extents.x) < (playarea.center.x - playarea.extents.x))
+            if (ShipBounds.min.x < playarea.min.x)
             {
-                float xPos = playarea.center.x - playarea.extents.x + ShipBounds.extents.y;
-                _ShipRigidbody.position = new Vector2(
-                    xPos,
-                    _ShipRigidbody.position.y
-                );
+                float difference = Mathf.Abs(
+                    playarea.min.x - ShipBounds.min.x
+                    );
+
+                transform.position = new Vector3(
+                    _ShipRigidbody.position.x + Mathf.Abs(difference),
+                    _ShipRigidbody.position.y,
+                    this.transform.position.z
+                    );
             }
             else if (
-                (ShipBounds.center.x + ShipBounds.extents.x) >
-                (playarea.center.x + playarea.extents.x)
+                ShipBounds.max.x > playarea.max.x
             )
             {
-                float xPos = playarea.center.x + playarea.extents.x - ShipBounds.extents.y;
-                _ShipRigidbody.position = new Vector2(
-                    xPos,
-                    _ShipRigidbody.position.y
-                );
+                float difference = Mathf.Abs(
+                    playarea.max.x - ShipBounds.max.x
+                    );
+
+                transform.position = new Vector3(
+                    _ShipRigidbody.position.x - Mathf.Abs(difference),
+                    _ShipRigidbody.position.y,
+                    this.transform.position.z
+                    );
             }
 
         }

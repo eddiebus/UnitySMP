@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 0ecf11df2445e0344bb0e0898fcef379
+timeCreated: 1566886081
+licenseType: Store
+AudioImporter:
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 152797
+  packageName: Shoot'em Up Music Set
+  packageVersion: 1.0
+  assetPath: Assets/ShootEmUpMusicSet/06_Shoot_B_Stage1.wav
+  uploadId: 327017
