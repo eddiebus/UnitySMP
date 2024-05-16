@@ -191,7 +191,6 @@ public class PlayerController
                         Vector2 EndPos = primaryTouch.position.ReadValue();
                         _MoveVector = (EndPos - StartPos) / 200.0f;
                         _MoveVector = Vector2.ClampMagnitude(_MoveVector, 1.0f);
-                        Debug.Log($"Primary Touch Pos = {_MoveVector}");
                     }
 
                     if (secondaryTouch.press.ReadValue() > 0.0f ){
@@ -242,9 +241,44 @@ public class PlayerController
             return null;
         }
     }
+    protected bool _CheckForAnyClickDown()
+    {
+        var currentMouse = Mouse.current;
+        var currentTS = Touchscreen.current;
 
+        if (currentMouse != null)
+        {
+            if (currentMouse.leftButton.wasPressedThisFrame)
+            {
+                return true;
+            }
+        }
+        else
+        {
+            if (currentTS != null)
+            {
+                foreach (var t in currentTS.touches)
+                {
+                    var touchState = t.phase.ReadValue();
+                    if (touchState == UnityEngine.InputSystem.TouchPhase.Began)
+                    {
+                        return true;
+                    }
+                }
+            }
+        }
+
+
+        return false;
+    }
     private void _CheckState(InputEventPtr @event, InputDevice inputDevice)
     {
+
+        if (_CheckForAnyClickDown())
+        {
+            OnAnyClick.Invoke();
+        }
+
 
         PlayerConState oldState = this._ControllerState;
 
@@ -254,7 +288,7 @@ public class PlayerController
         }
         else if (inputDevice is Mouse)
         {
-            if (Mouse.current.leftButton.isPressed)
+            if (Mouse.current.leftButton.wasPressedThisFrame)
             {
                 _ControllerState = PlayerConState.KeyboardMouse;
                 OnAnyClick.Invoke();
@@ -269,7 +303,13 @@ public class PlayerController
         else if (inputDevice is Touchscreen)
         {
             _ControllerState = PlayerConState.Touch;
-            OnAnyClick.Invoke();
+            foreach (var touch in Touchscreen.current.touches)
+            {
+                if (touch.phase.ReadValue() == UnityEngine.InputSystem.TouchPhase.Began)
+                {
+                    OnAnyClick.Invoke();
+                }
+            }
         }
 
         // Device has changed. Invoke event

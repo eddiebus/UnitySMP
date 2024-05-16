@@ -14,7 +14,6 @@ public class GameManagerController : MonoBehaviour
         GameManager.Get().OnGamePause += this.OnGamePause.Invoke;
         GameManager.Get().OnGameResume += this.OnGameResume.Invoke;
 
-
         OnGamePause.AddListener(() =>
         {
             Debug.Log($"Hello");
@@ -24,5 +23,11 @@ public class GameManagerController : MonoBehaviour
     public void TogglePause(bool pause)
     {
         GameManager.Get().Pause = pause;
+    }
+
+
+    public void SayHello()
+    {
+        Debug.Log($"Hello");
     }
 }

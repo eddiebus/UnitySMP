@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.LowLevel;
 
 
 
@@ -45,6 +46,10 @@ public class GameManager
     public System.Action OnGamePause = new System.Action( () => {});
     public System.Action OnGameResume = new System.Action(() => { });
 
+
+    public GameManager() {
+    }
+
     public static GameManager Get()
     {
         if (_Instance == null)
@@ -53,6 +58,7 @@ public class GameManager
         }
         return _Instance;
     }
+
 }
 
 

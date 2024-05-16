@@ -385,6 +385,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: TitleScene
       objectReference: {fileID: 0}
+    - target: {fileID: 2295465738511591066, guid: 3614dd26281c4c8408f982c534d58bd3, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SayHello
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295465738511591066, guid: 3614dd26281c4c8408f982c534d58bd3, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManagerController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295465738511591066, guid: 3614dd26281c4c8408f982c534d58bd3, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3606765629566996252, guid: 3614dd26281c4c8408f982c534d58bd3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
