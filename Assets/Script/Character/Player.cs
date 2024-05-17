@@ -9,6 +9,10 @@ public class Player : Character
 
     void Start()
     {
+        Level.OnLevelQuit += () =>
+        {
+            Score = 0;
+        };
         this.OnDamage.AddListener(() =>
         {
             this._InvisibilityTime += InvinTimeOnHit;

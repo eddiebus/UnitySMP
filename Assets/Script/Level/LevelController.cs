@@ -14,24 +14,27 @@ public class LevelController : MonoBehaviour
     public UnityEvent OnBossStart = new UnityEvent();
     void Awake()
     {
-        Level.Get().OnLevelStart += this.OnLevelStart.Invoke;
-        Level.Get().OnLevelEnd += this.OnLevelEnd.Invoke;
-        Level.Get().OnLevelQuit += this.OnLevelQuit.Invoke;
+        //Subscribe to Level Events
+        Level.OnLevelStart += this.OnLevelStart.Invoke;
+        Level.OnLevelEnd += this.OnLevelEnd.Invoke;
+        Level.OnLevelQuit += this.OnLevelQuit.Invoke;
 
-        Level.Get().OnBossStart += this.OnBossStart.Invoke;
+        Level.OnBossStart += this.OnBossStart.Invoke;
     }
 
     // GameObject Destructor
     private void OnDestroy()
     {
         // Remove event/delegate links
-        Level.Get().OnLevelStart -= this.OnLevelStart.Invoke;
-        Level.Get().OnLevelEnd -= this.OnLevelEnd.Invoke;
-        Level.Get().OnLevelQuit -= this.OnLevelQuit.Invoke;
+        Level.OnLevelStart -= this.OnLevelStart.Invoke;
+        Level.OnLevelEnd -= this.OnLevelEnd.Invoke;
+        Level.OnLevelQuit -= this.OnLevelQuit.Invoke;
 
-        Level.Get().OnBossStart -= this.OnBossStart.Invoke;
+        Level.OnBossStart -= this.OnBossStart.Invoke;
     }
 
-    public void StartLevel() => Level.Get().OnLevelStart.Invoke();
-    public void QuitLevel() => Level.Get().OnLevelQuit.Invoke();
+    public void StartLevel() => Level.OnLevelStart.Invoke();
+    public void EndLevel() => Level.OnLevelEnd.Invoke();
+    public void QuitLevel() => Level.OnLevelQuit.Invoke();
+
 }

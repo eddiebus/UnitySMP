@@ -8,11 +8,11 @@ public class Level
 {
     protected static Level _Instance;
 
-    public Action OnLevelStart = new Action(() => { });
-    public Action OnLevelEnd = new Action(() => { });
-    public Action OnLevelQuit = new Action(() => { });
+    public static Action OnLevelStart = new Action(() => { });
+    public static Action OnLevelEnd = new Action(() => { });
+    public static Action OnLevelQuit = new Action(() => { });
 
-    public Action OnBossStart = new Action(() => { });
+    public static Action OnBossStart = new Action(() => { });
     public static Level Get()
     {
         if (_Instance == null)
@@ -30,12 +30,7 @@ public class LevelComponent : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        Level.Get().OnLevelStart.Invoke();
+        Level.OnLevelStart.Invoke();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

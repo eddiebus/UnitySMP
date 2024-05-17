@@ -1,4 +1,4 @@
-using Unity.VisualScripting;
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
@@ -37,6 +37,7 @@ public class PlayerController
     private Vector2 _AimPoint = new Vector2(0.5f, 0.5f);
     private float _Fire;
 
+    public Action OnPauseButton = new Action(() => { });
     // For when a player controller has changed device
     public static System.Action<PlayerController> OnDeviceChange = new System.Action<PlayerController>( 
         (PlayerController con)=> {}
@@ -130,6 +131,9 @@ public class PlayerController
                     {
                         _Fire = 0.0f;
                     }
+
+                    if (Keyboard.current.pKey.wasPressedThisFrame)
+                        OnPauseButton.Invoke();
                     break;
                 }
             case PlayerConState.Gamepad:
