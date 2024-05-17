@@ -116,6 +116,6 @@ public class HPBar : MonoBehaviour
 
     protected void _HPBarUpdateValue()
     {
-        DisplayValue = Mathf.Lerp(Value, DisplayValue, Speed * Time.deltaTime * 100);
+        DisplayValue = Mathf.Lerp(Value, DisplayValue, (Speed * Time.deltaTime * 10));
     }
 }
