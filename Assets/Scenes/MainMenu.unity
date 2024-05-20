@@ -474,10 +474,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3319129825752903991, guid: e9827803416d3814db9fe0f7f44e9bb1, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4723945079944759680, guid: e9827803416d3814db9fe0f7f44e9bb1, type: 3}
       propertyPath: m_IsActive
       value: 0

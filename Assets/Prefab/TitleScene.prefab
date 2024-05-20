@@ -223,6 +223,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3606765629566996252}
     m_Modifications:
+    - target: {fileID: 2235806200083803268, guid: 6d29a7dc18cc87b40978145fd6b4eaee, type: 3}
+      propertyPath: LightsModule.light
+      value: 
+      objectReference: {fileID: 3548462437329673456, guid: b2ff65afd94c0f844a2083e8df93b2a0, type: 3}
+    - target: {fileID: 2235806200083803268, guid: 6d29a7dc18cc87b40978145fd6b4eaee, type: 3}
+      propertyPath: LightsModule.range
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2235806200083803268, guid: 6d29a7dc18cc87b40978145fd6b4eaee, type: 3}
+      propertyPath: LightsModule.ratio
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2235806200083803268, guid: 6d29a7dc18cc87b40978145fd6b4eaee, type: 3}
+      propertyPath: LightsModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2281355546728435338, guid: 6d29a7dc18cc87b40978145fd6b4eaee, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

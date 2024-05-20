@@ -83,7 +83,6 @@ public class PlayerController
         {
             this._CheckState(eventP, device);
         };
-
     }
 
     private void _UpdateValues()
@@ -288,8 +287,11 @@ public class PlayerController
         {
             if (Mouse.current.leftButton.wasPressedThisFrame)
             {
-                _ControllerState = PlayerConState.KeyboardMouse;
                 OnAnyClick.Invoke();
+            }
+            else if (Mouse.current.leftButton.isPressed)
+            {
+                _ControllerState = PlayerConState.KeyboardMouse;
             }
         }
         else if (inputDevice is Gamepad)
