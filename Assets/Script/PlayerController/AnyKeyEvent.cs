@@ -23,10 +23,16 @@ public class AnyKeyEvent : MonoBehaviour
         {
             this._InvokeEvent();
         }
-        else if( Touchscreen.current.primaryTouch.phase.ReadValue()
-            == UnityEngine.InputSystem.TouchPhase.Began)
+        else
         {
-            this._InvokeEvent();
+            var touchScreen = Touchscreen.current;
+            if (touchScreen != null)
+            {
+                if (touchScreen.touches[0].phase.ReadValue() == UnityEngine.InputSystem.TouchPhase.Began)
+                {
+                    this._InvokeEvent();
+                }
+            }
         }
     }
 
@@ -46,7 +52,6 @@ public class AnyKeyEvent : MonoBehaviour
 
     void OnDestroy()
     {
-        PlayerController.OnAnyClick -= this._InvokeEvent;
     }
 
     

@@ -43,12 +43,7 @@ public class PlayerController
         (PlayerController con)=> {}
     );
 
-    public static System.Action OnAnyClick = new System.Action(() =>
-    {
-#if !UNITY_EDITOR
-        Screen.fullScreen = true;
-#endif
-    });
+
 
     public static PlayerController GetController(int Index)
     {
@@ -287,7 +282,6 @@ public class PlayerController
         {
             if (Mouse.current.leftButton.wasPressedThisFrame)
             {
-                OnAnyClick.Invoke();
             }
             else if (Mouse.current.leftButton.isPressed)
             {
@@ -307,7 +301,6 @@ public class PlayerController
             {
                 if (touch.phase.ReadValue() == UnityEngine.InputSystem.TouchPhase.Began)
                 {
-                    OnAnyClick.Invoke();
                 }
             }
         }

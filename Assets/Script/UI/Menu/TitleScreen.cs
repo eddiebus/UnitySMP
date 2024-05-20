@@ -14,11 +14,8 @@ public class TitleScreen : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        // Init PlayerController
-        // No other object on mainmenu call this
+        GameManager.Get();
         animatorComp = GetComponent<Animator>();
-
-        
     }
 
     // Update is called once per frame

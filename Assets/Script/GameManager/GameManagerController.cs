@@ -16,7 +16,7 @@ public class GameManagerController : MonoBehaviour
 
         OnGamePause.AddListener(() =>
         {
-            Debug.Log($"Hello");
+            Debug.Log($"GameManager : Game Paused");
         });
     }
 
@@ -28,6 +28,5 @@ public class GameManagerController : MonoBehaviour
 
     public void SayHello()
     {
-        Debug.Log($"Hello");
     }
 }
