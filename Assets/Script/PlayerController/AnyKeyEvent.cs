@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 public class AnyKeyEvent : MonoBehaviour
 {
 
@@ -10,7 +12,22 @@ public class AnyKeyEvent : MonoBehaviour
     void Awake()
     {
         PlayerController.GetController(0);
-        PlayerController.OnAnyClick += this._InvokeEvent;
+    }
+
+
+    protected void HandleInput()
+    {
+        var currentMouse = Mouse.current;
+
+        if (currentMouse.leftButton.wasPressedThisFrame)
+        {
+            this._InvokeEvent();
+        }
+        else if( Touchscreen.current.primaryTouch.phase.ReadValue()
+            == UnityEngine.InputSystem.TouchPhase.Began)
+        {
+            this._InvokeEvent();
+        }
     }
 
     private void _InvokeEvent()
@@ -19,6 +36,12 @@ public class AnyKeyEvent : MonoBehaviour
         {
             this.OnAnyTouch.Invoke();
         }
+    }
+
+
+    private void Update()
+    {
+        HandleInput();
     }
 
     void OnDestroy()
