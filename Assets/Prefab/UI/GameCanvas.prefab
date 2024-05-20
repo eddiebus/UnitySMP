@@ -90,7 +90,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Direction: 0
   Value: 1
-  Speed: 0.1
+  Speed: 10.19
 --- !u!1 &1502932029474692847
 GameObject:
   m_ObjectHideFlags: 0
