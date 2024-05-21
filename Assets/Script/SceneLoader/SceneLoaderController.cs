@@ -18,8 +18,6 @@ public class SceneLoader : MonoBehaviour
         };
     }
 
-
-
     private static void OnSceneLoad()
     {
         loadOp = null;

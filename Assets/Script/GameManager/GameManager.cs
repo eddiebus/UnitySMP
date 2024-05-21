@@ -51,15 +51,16 @@ public class GameManager
     private GameManager() {
         InputSystem.onEvent += (eventP, device) =>
         {
-
-            bool fullscreen = false;
             if (device is Mouse)
             {
                 var currentMouse = device as Mouse;
                 if (currentMouse.leftButton.wasPressedThisFrame)
                 {
                     Debug.Log($"Gamamaner any click detrected!!!");
-                    fullscreen = true;
+                    if (!SceneLoader.IsLoading())
+                    {
+                        Screen.fullScreen = true;
+                    }
                 }
             }
             else if (device is Touchscreen)
@@ -69,17 +70,11 @@ public class GameManager
                     == UnityEngine.InputSystem.TouchPhase.Began)
                 {
                     Debug.Log($"Gamamaner any click detrected!!!");
-                    fullscreen = true;
+                    if (!SceneLoader.IsLoading())
+                    {
+                        Screen.fullScreen = true;
+                    }
                 }
-            }
-
-            try
-            {
-                Screen.fullScreen = fullscreen;
-            }
-            catch
-            {
-                Debug.LogWarning($"Warning: Request to enter fullscreen failed");
             }
 
             

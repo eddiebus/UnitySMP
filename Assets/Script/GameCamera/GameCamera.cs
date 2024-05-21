@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 
 
@@ -10,7 +11,7 @@ public class GameCamera : MonoBehaviour
     public float fov;
     [Range(10, 1000)]
     public float zFar;
-    public static Vector2 TargetRatio = new Vector2(9, 18);
+    public static Vector2 TargetRatio = new Vector2(9, 20);
     public Camera _CamComponent;
     public Camera CamComponent => _CamComponent;
     // Start is called before the first frame update
@@ -27,14 +28,51 @@ public class GameCamera : MonoBehaviour
 
     public static GameCamera Get() => FindFirstObjectByType<GameCamera>();
 
+
+    // Update projection matrix
+    // Bse on FOV and target play area
     private void _UpdateCamera()
     {
+
+
+        // Vertical Check
+        // check if screen in thinner than target ratio
+        float targetAspectFloat = TargetRatio.x / TargetRatio.y;
+        float currentAspectRatio = (float)Screen.width / Screen.height;
+        float ratioDifference = Mathf.Abs(currentAspectRatio - targetAspectFloat) / targetAspectFloat;
+
+        float camAspecRatio = currentAspectRatio;
+        // Letterbox Viewport
+        if (currentAspectRatio < targetAspectFloat)
+        {
+            float vertMargin = ratioDifference / 2.0f;
+            _CamComponent.rect = new Rect(
+                0.0f,
+                0.0f  + vertMargin,
+                1.0f,
+                1.0f - (vertMargin * 2.0f)
+                );
+
+            camAspecRatio = targetAspectFloat;
+        }
+        // Default Viewport
+        else
+        {
+            _CamComponent.rect = new Rect(
+                0.0f,
+                0.0f,
+                1.0f,
+                1.0f
+                );
+        }
+
+
         if (!_CamComponent) return;
         _CamComponent.orthographic = false;
 
         var ProjMatrix = Matrix4x4.Perspective(
             fov,
-            (float)Screen.width / Screen.height,
+            camAspecRatio,
             0.01f, 10000
         );
 
@@ -42,6 +80,7 @@ public class GameCamera : MonoBehaviour
         _CamComponent.projectionMatrix = ProjMatrix;
         _CamComponent.transform.rotation = Quaternion.LookRotation(Vector3.forward);
 
+        // Get desired distance from play area to view
         var HeightHalf = TargetRatio.y / 2;
         var TargetDistance = HeightHalf / Mathf.Tan((Mathf.PI / 180.0f) * fov / 2);
 
@@ -51,8 +90,6 @@ public class GameCamera : MonoBehaviour
         );
 
         transform.position = camPosition;
-        float currentWidthRatio = (float)Screen.width / Screen.height;
-        float targetWidthRatio = (float)TargetRatio.x / TargetRatio.y;
     }
 
     public Bounds GetBounds() => new Bounds(
