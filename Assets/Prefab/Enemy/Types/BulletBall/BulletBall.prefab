@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3303817720149501573}
+  - component: {fileID: 9009281477222036556}
   m_Layer: 0
-  m_Name: Guns
+  m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,6 +33,26 @@ Transform:
   - {fileID: 1758893894743681741}
   m_Father: {fileID: 9013182806618474613}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9009281477222036556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145635806876948293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec3ad36527d65834e9ab29fa2669428b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Volume: 0.5
+  SoundLimit: 10
+  Clips:
+  - {fileID: 8300000, guid: db13021382059234b9761369c4d47eac, type: 3}
+  - {fileID: 8300000, guid: 1112f9a849bca91478224568d9758a53, type: 3}
+  - {fileID: 8300000, guid: 9ef4b29e4ae785941a4190c7156e0c00, type: 3}
+  - {fileID: 8300000, guid: d9119f014b28aa945be2952603ced2c3, type: 3}
+  SpawnedClips: []
 --- !u!1 &1182611646878792503
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,7 +295,19 @@ MonoBehaviour:
   _CurrentFireDelay: 0
   OnFire:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9009281477222036556}
+        m_TargetAssemblyTypeName: SoundFXSpeaker, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2996129452719051751
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,7 +390,19 @@ MonoBehaviour:
   _CurrentFireDelay: 0
   OnFire:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9009281477222036556}
+        m_TargetAssemblyTypeName: SoundFXSpeaker, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7165393642735024378
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,7 +446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1758893894743681741}
   m_Layer: 0
-  m_Name: Pair (2)
+  m_Name: Pair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

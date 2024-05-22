@@ -3,16 +3,22 @@ using UnityEngine;
 
 public class Player : Character
 {
+    public const int _DefaultLives = 3;
+    public static int Lives = _DefaultLives;
     public static int Score;
-    public float InvinTimeOnHit = 1.5f;
-    public float _InvisibilityTime = 0;
+    public float InvinTimeOnHit = 3.0f;
+    public float InvinsibilityTime => _InvisibilityTime;
+    protected float _InvisibilityTime = 0;
 
     void Start()
     {
+        // Level Quit. Reset Lives and Score
         Level.OnLevelQuit += () =>
         {
+            Lives = _DefaultLives;
             Score = 0;
         };
+
         this.OnDamage.AddListener(() =>
         {
             this._InvisibilityTime += InvinTimeOnHit;

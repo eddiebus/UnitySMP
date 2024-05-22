@@ -19,15 +19,13 @@ public class Level
         {
             _Instance = new Level();
         }
-
         return _Instance;
     }
 }
 
-
 public class LevelComponent : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Awake. Called soon as gameobject is activated
     void Awake()
     {
         Level.OnLevelStart.Invoke();
