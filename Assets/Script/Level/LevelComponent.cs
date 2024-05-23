@@ -25,6 +25,8 @@ public class Level
 
 public class LevelComponent : MonoBehaviour
 {
+    public int LevelNumber = 0;  
+    public string LevelName = "SomeWhere";
     // Awake. Called soon as gameobject is activated
     void Awake()
     {
