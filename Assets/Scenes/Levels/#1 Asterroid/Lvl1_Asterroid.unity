@@ -247,6 +247,11 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!20 &842858880 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8194746918220999274, guid: 1318d91d35cbbdd4e99c66ebaef13e9c, type: 3}
+  m_PrefabInstance: {fileID: 4074501249668021535}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1292786508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -381,6 +386,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1216413227141894040, guid: 1318d91d35cbbdd4e99c66ebaef13e9c, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 842858880}
     - target: {fileID: 1601291517167404165, guid: 1318d91d35cbbdd4e99c66ebaef13e9c, type: 3}
       propertyPath: ShapeModule.m_Scale.y
       value: 15
@@ -396,6 +405,14 @@ PrefabInstance:
     - target: {fileID: 5996719834284239970, guid: 1318d91d35cbbdd4e99c66ebaef13e9c, type: 3}
       propertyPath: m_Name
       value: Lvl1_Asteroid
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194746918220999274, guid: 1318d91d35cbbdd4e99c66ebaef13e9c, type: 3}
+      propertyPath: m_NormalizedViewPortRect.y
+      value: 0.000561154
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194746918220999274, guid: 1318d91d35cbbdd4e99c66ebaef13e9c, type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 0.9988777
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
