@@ -4878,6 +4878,8 @@ MonoBehaviour:
   Song: {fileID: 8300000, guid: a4454daa584421b4ca53a4a5235299d1, type: 3}
   Volume: 1
   Loop: 0
+  StartLoopPoint: 6.512
+  EndLoopPoint: 76.913
   PlayOnStart: 1
   OnSongEnd:
     m_PersistentCalls:
@@ -14612,11 +14614,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8307658278948751838, guid: 73d5a80806d5dee4dbfcff2cead6ac48, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.000561154
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8307658278948751838, guid: 73d5a80806d5dee4dbfcff2cead6ac48, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.9988777
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

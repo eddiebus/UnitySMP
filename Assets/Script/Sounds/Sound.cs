@@ -13,6 +13,8 @@ public class Sound : MonoBehaviour
 {
     public SoundType Type = SoundType.Generic;
     public bool Loop;
+    public float StartLoopPoint = 0.0f;
+    public float EndLoopPoint = float.MaxValue;
     public float Volume;
     private AudioSource _SourceComp;
     public Action OnSoundDestroy = new Action(() =>
@@ -46,7 +48,10 @@ public class Sound : MonoBehaviour
             this.OnSoundDestroy.Invoke();
             GameObject.Destroy(gameObject);
         }
-
+        else if (_SourceComp.time >= EndLoopPoint)
+        {
+            _SourceComp.time = StartLoopPoint;
+        }
     }
 
     public void UpdateVolume()
@@ -64,6 +69,13 @@ public class Sound : MonoBehaviour
                 _SourceComp.volume = Volume;
                 break;
         }
+    }
+
+    
+    // Set position track is currently at.
+    public void SetAudioTime(float newTime)
+    {
+        _SourceComp.time = newTime;
     }
 
     public static Sound SpawnSound(AudioClip Clip, float Volume, bool Loop, SoundType Type){

@@ -1,3 +1,4 @@
+using NUnit.Framework.Interfaces;
 using UnityEngine;
 
 public class MusicSpeaker : MonoBehaviour
@@ -5,6 +6,8 @@ public class MusicSpeaker : MonoBehaviour
     public AudioClip Song;
     public float Volume = 1.0f;
     public bool Loop;
+    public float StartLoopPoint = 0.0f;
+    public float EndLoopPoint = float.MaxValue;
     public bool PlayOnStart = true;
     protected Sound MusicSound = null;
 
@@ -18,6 +21,7 @@ public class MusicSpeaker : MonoBehaviour
 
     void Update(){
         _UpdateActiveVolume();
+
     }
 
     public void Play(){
@@ -35,6 +39,12 @@ public class MusicSpeaker : MonoBehaviour
                 this.Loop,
                 SoundType.Music
             );
+
+            MusicSound.StartLoopPoint = StartLoopPoint;
+            MusicSound.EndLoopPoint = EndLoopPoint;
+
+            // Testing Line for looping music
+            // MusicSound.SetAudioTime(EndLoopPoint - 10.0f);
 
             MusicSound.OnSoundDestroy += () => {
                 MusicSound = null;
