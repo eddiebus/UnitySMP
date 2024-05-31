@@ -33,8 +33,6 @@ public class Ship : MonoBehaviour
                     playarea.min.y - ShipBounds.min.y
                     );
 
-                Debug.Log($"Differece y =  {difference}");
-
                 transform.position = new Vector3(
                     _ShipRigidbody.position.x,
                     _ShipRigidbody.position.y + Mathf.Abs(difference),

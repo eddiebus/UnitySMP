@@ -5,9 +5,12 @@ public class MusicSpeaker : MonoBehaviour
 {
     public AudioClip Song;
     public float Volume = 1.0f;
+    
     public bool Loop;
+    // Loop Points
     public float StartLoopPoint = 0.0f;
     public float EndLoopPoint = float.MaxValue;
+    
     public bool PlayOnStart = true;
     protected Sound MusicSound = null;
 
@@ -21,13 +24,14 @@ public class MusicSpeaker : MonoBehaviour
 
     void Update(){
         _UpdateActiveVolume();
-
     }
 
     public void Play(){
         if (MusicSound != null) return;
         else {
-            var spawnPos = Vector3.zero;
+            // GetSpawnPosition
+            var spawnPos = Vector3.zero; // Play Audio in mono position
+            // Check for audio listener
             var audioListen = FindFirstObjectByType<AudioListener>();
             if (audioListen){
                 spawnPos = audioListen.transform.position;
@@ -40,17 +44,31 @@ public class MusicSpeaker : MonoBehaviour
                 SoundType.Music
             );
 
-            MusicSound.StartLoopPoint = StartLoopPoint;
-            MusicSound.EndLoopPoint = EndLoopPoint;
+            // Set Loops points in sound
+            MusicSound.SetLoopTime(
+                this.StartLoopPoint,
+                this.EndLoopPoint
+                );
 
             // Testing Line for looping music
-            // MusicSound.SetAudioTime(EndLoopPoint - 10.0f);
+            //MusicSound.SetAudioTime(EndLoopPoint - 10.0f);
 
             MusicSound.OnSoundDestroy += () => {
                 MusicSound = null;
                 OnSongEnd.Invoke();
             };   
         }
+    }
+    public void SetSoundParent(Transform newParent)
+    {
+        if (newParent != null)
+        {
+            transform.SetParent(newParent);
+        }
+    }
+    public void SetPosition(Vector3 newPos)
+    {
+        transform.position = newPos;
     }
 
     public void SetVolume(float newVolume)
