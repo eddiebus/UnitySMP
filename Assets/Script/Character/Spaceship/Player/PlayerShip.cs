@@ -13,8 +13,8 @@ public enum PlayerShipMode
 public class PlayerShip : Ship
 {
     public Animator AnimComponent = null;
-    public string Anim_Steer = "ShipSteer";
-    public string Anim_Idle = "ShipIdle";
+    protected const string Anim_Steer = "ShipSteer";
+    protected const string Anim_Idle = "ShipIdle";
 
     public PlayerShipMode ShipMode = PlayerShipMode.None;
     public Player playerComponent;
@@ -26,8 +26,7 @@ public class PlayerShip : Ship
         _ShipInit();
         playerComponent = GetComponent<Player>();
         shipRenderer = GetComponentInChildren<SpriteRenderer>();
-        shipMaterial = shipRenderer.material;
-        AnimComponent = GetComponent<Animator>();
+        AnimComponent = this.gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -37,10 +36,12 @@ public class PlayerShip : Ship
         _HandleControlState();
         _UpdateLook();
 
-        Debug.Log($"Ship Idle = {PlayerController.GetController(0).MoveVector.magnitude < 0.0f}");
-        AnimComponent.SetFloat(Anim_Steer, PlayerController.GetController(0).MoveVector.x);
-        AnimComponent.SetBool(Anim_Idle,
-            Mathf.Abs( PlayerController.GetController(0).MoveVector.x ) < 0.2f);
+        if (AnimComponent)
+        {
+            AnimComponent.SetFloat(Anim_Steer, PlayerController.GetController(0).MoveVector.x);
+            AnimComponent.SetBool(Anim_Idle,
+                Mathf.Abs(PlayerController.GetController(0).MoveVector.x) < 0.2f);
+        }
 
     }
 
