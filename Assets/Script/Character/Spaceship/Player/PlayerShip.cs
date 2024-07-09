@@ -38,7 +38,10 @@ public class PlayerShip : Ship
 
         if (AnimComponent)
         {
-            AnimComponent.SetFloat(Anim_Steer, PlayerController.GetController(0).MoveVector.x);
+            float moveX = PlayerController.GetController(0).MoveVector.x;
+            AnimComponent.SetFloat(Anim_Steer,
+                0.5f + (moveX / 2.0f)
+                );
             AnimComponent.SetBool(Anim_Idle,
                 Mathf.Abs(PlayerController.GetController(0).MoveVector.x) < 0.2f);
         }

@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: a31a116a324f8074ab834125b0d29240, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: SpaceShipMat
     second: {fileID: 2100000, guid: e031b71e47f0d934db4765d0b382b76e, type: 2}
   - first:
