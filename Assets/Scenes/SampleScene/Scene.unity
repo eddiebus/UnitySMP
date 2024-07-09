@@ -130,11 +130,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2796064835415822318, guid: 01453d321d8e5914882ab4522987eded, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.08
+      value: 0.41
       objectReference: {fileID: 0}
     - target: {fileID: 2796064835415822318, guid: 01453d321d8e5914882ab4522987eded, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.08
+      value: -1.66
       objectReference: {fileID: 0}
     - target: {fileID: 2796064835415822318, guid: 01453d321d8e5914882ab4522987eded, type: 3}
       propertyPath: m_LocalPosition.z
@@ -166,6 +166,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2796064835415822318, guid: 01453d321d8e5914882ab4522987eded, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509957860667528475, guid: 01453d321d8e5914882ab4522987eded, type: 3}
+      propertyPath: InheritVelocityModule.enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7797908840409915077, guid: 01453d321d8e5914882ab4522987eded, type: 3}
