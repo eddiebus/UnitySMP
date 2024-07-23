@@ -1,163 +1,163 @@
 fileFormatVersion: 2
-guid: 824b6c1959c63a14a946d986fd669484
+guid: 01110df829f4bc74194eb72283535bc0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7592375189571304855
-    second: texNMap_0
+      213: -1469765491049709169
+    second: Spaceship_Mmat_0
   - first:
-      213: 7073985446776995731
-    second: texNMap_1
+      213: -890755387129977650
+    second: Spaceship_Mmat_1
   - first:
-      213: 7542752826797801974
-    second: texNMap_2
+      213: -2262081750785163086
+    second: Spaceship_Mmat_2
   - first:
-      213: 5235485944496677492
-    second: texNMap_3
+      213: -8365859129249276748
+    second: Spaceship_Mmat_3
   - first:
-      213: -2490778768253533153
-    second: texNMap_4
+      213: -1617605034733999907
+    second: Spaceship_Mmat_4
   - first:
-      213: 8122389425068946736
-    second: texNMap_5
+      213: -1564782829404443688
+    second: Spaceship_Mmat_5
   - first:
-      213: -6915782289134453793
-    second: texNMap_6
+      213: -3697818208153739618
+    second: Spaceship_Mmat_6
   - first:
-      213: 6198102660391045959
-    second: texNMap_7
+      213: 581349269668173067
+    second: Spaceship_Mmat_7
   - first:
-      213: 3209298729621430487
-    second: texNMap_8
+      213: 5972671704883928156
+    second: Spaceship_Mmat_8
   - first:
-      213: 8516775686544291798
-    second: texNMap_9
+      213: 3236147746967720552
+    second: Spaceship_Mmat_9
   - first:
-      213: -5425239117500215152
-    second: texNMap_10
+      213: 3285933182043540188
+    second: Spaceship_Mmat_10
   - first:
-      213: -4332065934652797732
-    second: texNMap_11
+      213: 6645295045863674457
+    second: Spaceship_Mmat_11
   - first:
-      213: -3285250424242872157
-    second: texNMap_12
+      213: 444162066836297820
+    second: Spaceship_Mmat_12
   - first:
-      213: -8347623667440050227
-    second: texNMap_13
+      213: 2540081451914374423
+    second: Spaceship_Mmat_13
   - first:
-      213: -4905044110409550
-    second: texNMap_14
+      213: 3251598624419173073
+    second: Spaceship_Mmat_14
   - first:
-      213: -1352921926932236431
-    second: texNMap_15
+      213: -6524221963996014568
+    second: Spaceship_Mmat_15
   - first:
-      213: 5964775055074007005
-    second: texNMap_16
+      213: -3288682648761661691
+    second: Spaceship_Mmat_16
   - first:
-      213: 4991827279458885487
-    second: texNMap_17
+      213: -3601856907351735280
+    second: Spaceship_Mmat_17
   - first:
-      213: 8393006757075196569
-    second: texNMap_18
+      213: 2292413587640260924
+    second: Spaceship_Mmat_18
   - first:
-      213: -5881050381669597284
-    second: texNMap_19
+      213: 2381741482893002498
+    second: Spaceship_Mmat_19
   - first:
-      213: -8946249532373984024
-    second: texNMap_20
+      213: 8486266963636876279
+    second: Spaceship_Mmat_20
   - first:
-      213: -193456877136391277
-    second: texNMap_21
+      213: -2797027599278111812
+    second: Spaceship_Mmat_21
   - first:
-      213: 7991588314184218070
-    second: texNMap_22
+      213: -3363494695157411582
+    second: Spaceship_Mmat_22
   - first:
-      213: 8769390880898712095
-    second: texNMap_23
+      213: 2006969319007148155
+    second: Spaceship_Mmat_23
   - first:
-      213: -9145064670847143323
-    second: texNMap_24
+      213: 199209073460466076
+    second: Spaceship_Mmat_24
   - first:
-      213: -5955454106170157337
-    second: texNMap_25
+      213: 6667091530896255320
+    second: Spaceship_Mmat_25
   - first:
-      213: -428301953326714284
-    second: texNMap_26
+      213: -5217764899076593991
+    second: Spaceship_Mmat_26
   - first:
-      213: 2877710820859218542
-    second: texNMap_27
+      213: -6031606480938022129
+    second: Spaceship_Mmat_27
   - first:
-      213: -4526721440168960381
-    second: texNMap_28
+      213: -3647778331720871153
+    second: Spaceship_Mmat_28
   - first:
-      213: -8573292246026447398
-    second: texNMap_29
+      213: -7045166313805007694
+    second: Spaceship_Mmat_29
   - first:
-      213: -3239900044536540871
-    second: texNMap_30
+      213: -5478722204059229756
+    second: Spaceship_Mmat_30
   - first:
-      213: -2099418786954764150
-    second: texNMap_31
+      213: -3033564665853289285
+    second: Spaceship_Mmat_31
   - first:
-      213: 4272516329564283821
-    second: texNMap_32
+      213: -1275344492247364947
+    second: Spaceship_Mmat_32
   - first:
-      213: -3316984703332153343
-    second: texNMap_33
+      213: 5345656435544287631
+    second: Spaceship_Mmat_33
   - first:
-      213: 1196725862249586123
-    second: texNMap_34
+      213: 9164092769384409181
+    second: Spaceship_Mmat_34
   - first:
-      213: -706040745258548197
-    second: texNMap_35
+      213: 9077908818084813974
+    second: Spaceship_Mmat_35
   - first:
-      213: -7695570997716724894
-    second: texNMap_36
+      213: 1905569174724881669
+    second: Spaceship_Mmat_36
   - first:
-      213: 5684088558380436416
-    second: texNMap_37
+      213: 1641824627716152298
+    second: Spaceship_Mmat_37
   - first:
-      213: 7785485376998792148
-    second: texNMap_38
+      213: 407811893964663551
+    second: Spaceship_Mmat_38
   - first:
-      213: 6760571509173596232
-    second: texNMap_39
+      213: 8827811521492124541
+    second: Spaceship_Mmat_39
   - first:
-      213: -5008654253475650493
-    second: texNMap_40
+      213: 9179921062646111549
+    second: Spaceship_Mmat_40
   - first:
-      213: -949652981845107480
-    second: texNMap_41
+      213: 6908443917518134324
+    second: Spaceship_Mmat_41
   - first:
-      213: -7417737347229511819
-    second: texNMap_42
+      213: -7839024754119194975
+    second: Spaceship_Mmat_42
   - first:
-      213: -2737073447727315280
-    second: texNMap_43
+      213: -6519774936818561894
+    second: Spaceship_Mmat_43
   - first:
-      213: 1960524131357871716
-    second: texNMap_44
+      213: 6857846400739587567
+    second: Spaceship_Mmat_44
   - first:
-      213: -1237443701236285750
-    second: texNMap_45
+      213: 410452332596125540
+    second: Spaceship_Mmat_45
   - first:
-      213: -7159307004275140443
-    second: texNMap_46
+      213: 2221876953510470484
+    second: Spaceship_Mmat_46
   - first:
-      213: 3925661413032243191
-    second: texNMap_47
+      213: -4447839139317055094
+    second: Spaceship_Mmat_47
   - first:
-      213: 7595801172941977722
-    second: texNMap_48
+      213: -1284255637706561200
+    second: Spaceship_Mmat_48
   - first:
-      213: -7250883760895484582
-    second: texNMap_49
+      213: 2700112524438129439
+    second: Spaceship_Mmat_49
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
-    sRGBTexture: 0
+    enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -202,9 +202,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 1
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -222,7 +222,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -257,7 +257,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: texNMap_0
+      name: Spaceship_Mmat_0
       rect:
         serializedVersion: 2
         x: 7
@@ -271,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9620d10cdf672a690800000000000000
-      internalID: -7592375189571304855
+      spriteID: f81cad2b2185a9be0800000000000000
+      internalID: -1469765491049709169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_1
+      name: Spaceship_Mmat_1
       rect:
         serializedVersion: 2
         x: 76
@@ -292,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 39ffc65c848db2260800000000000000
-      internalID: 7073985446776995731
+      spriteID: ec42a50e1b663a3f0800000000000000
+      internalID: -890755387129977650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_2
+      name: Spaceship_Mmat_2
       rect:
         serializedVersion: 2
         x: 149
@@ -313,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6f14bd59bbd3da860800000000000000
-      internalID: 7542752826797801974
+      spriteID: 2b08e87f1a87b90e0800000000000000
+      internalID: -2262081750785163086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_3
+      name: Spaceship_Mmat_3
       rect:
         serializedVersion: 2
         x: 222
@@ -334,14 +334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 472664c4abe28a840800000000000000
-      internalID: 5235485944496677492
+      spriteID: 4bc5328327f76eb80800000000000000
+      internalID: -8365859129249276748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_4
+      name: Spaceship_Mmat_4
       rect:
         serializedVersion: 2
         x: 312
@@ -355,14 +355,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f14c92038e9fe6dd0800000000000000
-      internalID: -2490778768253533153
+      spriteID: dd8ebc59acc1d89e0800000000000000
+      internalID: -1617605034733999907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_5
+      name: Spaceship_Mmat_5
       rect:
         serializedVersion: 2
         x: 402
@@ -376,14 +376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 035bf98d52688b070800000000000000
-      internalID: 8122389425068946736
+      spriteID: 8dba7b6ae46c84ae0800000000000000
+      internalID: -1564782829404443688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_6
+      name: Spaceship_Mmat_6
       rect:
         serializedVersion: 2
         x: 492
@@ -397,14 +397,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fdbf33046a43600a0800000000000000
-      internalID: -6915782289134453793
+      spriteID: e9e560b7ee5beacc0800000000000000
+      internalID: -3697818208153739618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_7
+      name: Spaceship_Mmat_7
       rect:
         serializedVersion: 2
         x: 576
@@ -418,14 +418,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 74b030ad785140650800000000000000
-      internalID: 6198102660391045959
+      spriteID: b051105a41e511800800000000000000
+      internalID: 581349269668173067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_8
+      name: Spaceship_Mmat_8
       rect:
         serializedVersion: 2
         x: 654
@@ -439,14 +439,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7d0a235e038b98c20800000000000000
-      internalID: 3209298729621430487
+      spriteID: c5c12a1654133e250800000000000000
+      internalID: 5972671704883928156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_9
+      name: Spaceship_Mmat_9
       rect:
         serializedVersion: 2
         x: 689
@@ -460,14 +460,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d7f724fc5aa13670800000000000000
-      internalID: 8516775686544291798
+      spriteID: 86211b2ea3b19ec20800000000000000
+      internalID: 3236147746967720552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_10
+      name: Spaceship_Mmat_10
       rect:
         serializedVersion: 2
         x: 771
@@ -481,14 +481,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 09098db44cda5b4b0800000000000000
-      internalID: -5425239117500215152
+      spriteID: cdacf57c1daf99d20800000000000000
+      internalID: 3285933182043540188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_11
+      name: Spaceship_Mmat_11
       rect:
         serializedVersion: 2
         x: 865
@@ -502,14 +502,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cdc03751cf861e3c0800000000000000
-      internalID: -4332065934652797732
+      spriteID: 9521e5cc2a4d83c50800000000000000
+      internalID: 6645295045863674457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_12
+      name: Spaceship_Mmat_12
       rect:
         serializedVersion: 2
         x: 981
@@ -523,14 +523,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3a06dc825227862d0800000000000000
-      internalID: -3285250424242872157
+      spriteID: c581b78eb0bf92600800000000000000
+      internalID: 444162066836297820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_13
+      name: Spaceship_Mmat_13
       rect:
         serializedVersion: 2
         x: 7
@@ -544,14 +544,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dcf97978088472c80800000000000000
-      internalID: -8347623667440050227
+      spriteID: 71d2ae16f9e204320800000000000000
+      internalID: 2540081451914374423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_14
+      name: Spaceship_Mmat_14
       rect:
         serializedVersion: 2
         x: 150
@@ -565,14 +565,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b0013c63e29eeff0800000000000000
-      internalID: -4905044110409550
+      spriteID: 1d257a0a8bfff1d20800000000000000
+      internalID: 3251598624419173073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_15
+      name: Spaceship_Mmat_15
       rect:
         serializedVersion: 2
         x: 312
@@ -586,14 +586,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 177fd50fca4793de0800000000000000
-      internalID: -1352921926932236431
+      spriteID: 8185738c0be4575a0800000000000000
+      internalID: -6524221963996014568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_16
+      name: Spaceship_Mmat_16
       rect:
         serializedVersion: 2
         x: 402
@@ -607,14 +607,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd71cc25f4327c250800000000000000
-      internalID: 5964775055074007005
+      spriteID: 507029d1e804c52d0800000000000000
+      internalID: -3288682648761661691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_17
+      name: Spaceship_Mmat_17
       rect:
         serializedVersion: 2
         x: 492
@@ -628,14 +628,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f6f504c7678864540800000000000000
-      internalID: 4991827279458885487
+      spriteID: 0144389e932a30ec0800000000000000
+      internalID: -3601856907351735280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_18
+      name: Spaceship_Mmat_18
       rect:
         serializedVersion: 2
         x: 520
@@ -649,14 +649,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 99a9be07d23f97470800000000000000
-      internalID: 8393006757075196569
+      spriteID: c399391230a40df10800000000000000
+      internalID: 2292413587640260924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_19
+      name: Spaceship_Mmat_19
       rect:
         serializedVersion: 2
         x: 549
@@ -670,14 +670,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c9f786646df426ea0800000000000000
-      internalID: -5881050381669597284
+      spriteID: 20746aa7245ad0120800000000000000
+      internalID: 2381741482893002498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_20
+      name: Spaceship_Mmat_20
       rect:
         serializedVersion: 2
         x: 575
@@ -691,14 +691,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ec18d6137988d380800000000000000
-      internalID: -8946249532373984024
+      spriteID: 7f375bc57d645c570800000000000000
+      internalID: 8486266963636876279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_21
+      name: Spaceship_Mmat_21
       rect:
         serializedVersion: 2
         x: 602
@@ -712,14 +712,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 393dde6cef3b05df0800000000000000
-      internalID: -193456877136391277
+      spriteID: cb3801eb736fe29d0800000000000000
+      internalID: -2797027599278111812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_22
+      name: Spaceship_Mmat_22
       rect:
         serializedVersion: 2
         x: 654
@@ -733,14 +733,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d5fc120b33d7ee60800000000000000
-      internalID: 7991588314184218070
+      spriteID: 2015b3335677251d0800000000000000
+      internalID: -3363494695157411582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_23
+      name: Spaceship_Mmat_23
       rect:
         serializedVersion: 2
         x: 718
@@ -754,14 +754,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f1284804b8223b970800000000000000
-      internalID: 8769390880898712095
+      spriteID: b78578656ff2adb10800000000000000
+      internalID: 2006969319007148155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_24
+      name: Spaceship_Mmat_24
       rect:
         serializedVersion: 2
         x: 771
@@ -775,14 +775,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5627e2e6224361180800000000000000
-      internalID: -9145064670847143323
+      spriteID: c9155abc89bb3c200800000000000000
+      internalID: 199209073460466076
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_25
+      name: Spaceship_Mmat_25
       rect:
         serializedVersion: 2
         x: 865
@@ -796,14 +796,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e616953b0af95da0800000000000000
-      internalID: -5955454106170157337
+      spriteID: 85926107c64468c50800000000000000
+      internalID: 6667091530896255320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_26
+      name: Spaceship_Mmat_26
       rect:
         serializedVersion: 2
         x: 8
@@ -817,14 +817,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 452fa5784ad5e0af0800000000000000
-      internalID: -428301953326714284
+      spriteID: 9b6a90d1876c697b0800000000000000
+      internalID: -5217764899076593991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_27
+      name: Spaceship_Mmat_27
       rect:
         serializedVersion: 2
         x: 160
@@ -838,14 +838,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6a8c9baebeafe720800000000000000
-      internalID: 2877710820859218542
+      spriteID: f0bceb6ccdd6b4ca0800000000000000
+      internalID: -6031606480938022129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_28
+      name: Spaceship_Mmat_28
       rect:
         serializedVersion: 2
         x: 312
@@ -859,14 +859,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38e959175dadd21c0800000000000000
-      internalID: -4526721440168960381
+      spriteID: f03196e1fec706dc0800000000000000
+      internalID: -3647778331720871153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_29
+      name: Spaceship_Mmat_29
       rect:
         serializedVersion: 2
         x: 456
@@ -880,14 +880,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ad59bff102c850980800000000000000
-      internalID: -8573292246026447398
+      spriteID: 2b4ba12809a8a3e90800000000000000
+      internalID: -7045166313805007694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_30
+      name: Spaceship_Mmat_30
       rect:
         serializedVersion: 2
         x: 601
@@ -901,14 +901,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93190a143109903d0800000000000000
-      internalID: -3239900044536540871
+      spriteID: 4c12104de2ba7f3b0800000000000000
+      internalID: -5478722204059229756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_31
+      name: Spaceship_Mmat_31
       rect:
         serializedVersion: 2
         x: 686
@@ -922,14 +922,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a80a7c88cbd5dd2e0800000000000000
-      internalID: -2099418786954764150
+      spriteID: bbc53a8420d96e5d0800000000000000
+      internalID: -3033564665853289285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_32
+      name: Spaceship_Mmat_32
       rect:
         serializedVersion: 2
         x: 771
@@ -943,14 +943,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da32cb807f60b4b30800000000000000
-      internalID: 4272516329564283821
+      spriteID: daa485df0f01d4ee0800000000000000
+      internalID: -1275344492247364947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_33
+      name: Spaceship_Mmat_33
       rect:
         serializedVersion: 2
         x: 865
@@ -964,14 +964,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1088b788cf3b7f1d0800000000000000
-      internalID: -3316984703332153343
+      spriteID: f89e5e3a4369f2a40800000000000000
+      internalID: 5345656435544287631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_34
+      name: Spaceship_Mmat_34
       rect:
         serializedVersion: 2
         x: 7
@@ -985,14 +985,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bcdd8e8c4df9b9010800000000000000
-      internalID: 1196725862249586123
+      spriteID: d5822eff1d56d2f70800000000000000
+      internalID: 9164092769384409181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_35
+      name: Spaceship_Mmat_35
       rect:
         serializedVersion: 2
         x: 431
@@ -1006,14 +1006,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b1489e5dea3a336f0800000000000000
-      internalID: -706040745258548197
+      spriteID: 69cd45529f53bfd70800000000000000
+      internalID: 9077908818084813974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_36
+      name: Spaceship_Mmat_36
       rect:
         serializedVersion: 2
         x: 855
@@ -1027,14 +1027,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 263db4153f6d33590800000000000000
-      internalID: -7695570997716724894
+      spriteID: 50d296a7111f17a10800000000000000
+      internalID: 1905569174724881669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_37
+      name: Spaceship_Mmat_37
       rect:
         serializedVersion: 2
         x: 895
@@ -1048,14 +1048,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0cbc022ad60f1ee40800000000000000
-      internalID: 5684088558380436416
+      spriteID: aeb5286dccee8c610800000000000000
+      internalID: 1641824627716152298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_38
+      name: Spaceship_Mmat_38
       rect:
         serializedVersion: 2
         x: 926
@@ -1069,14 +1069,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4dbd20c73b99b0c60800000000000000
-      internalID: 7785485376998792148
+      spriteID: ffa61f2c1c6d8a500800000000000000
+      internalID: 407811893964663551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_39
+      name: Spaceship_Mmat_39
       rect:
         serializedVersion: 2
         x: 895
@@ -1090,14 +1090,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8403be2f7ff52dd50800000000000000
-      internalID: 6760571509173596232
+      spriteID: d7383aa9ecfa28a70800000000000000
+      internalID: 8827811521492124541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_40
+      name: Spaceship_Mmat_40
       rect:
         serializedVersion: 2
         x: 952
@@ -1111,14 +1111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 344a5d25e7fad7ab0800000000000000
-      internalID: -5008654253475650493
+      spriteID: d3dd525b191a56f70800000000000000
+      internalID: 9179921062646111549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_41
+      name: Spaceship_Mmat_41
       rect:
         serializedVersion: 2
         x: 984
@@ -1132,14 +1132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ec5b3df4a722d2f0800000000000000
-      internalID: -949652981845107480
+      spriteID: 43c5066f329bfdf50800000000000000
+      internalID: 6908443917518134324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_42
+      name: Spaceship_Mmat_42
       rect:
         serializedVersion: 2
         x: 855
@@ -1153,14 +1153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 57f8c3dfe27ee0990800000000000000
-      internalID: -7417737347229511819
+      spriteID: 1a64b31e480363390800000000000000
+      internalID: -7839024754119194975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_43
+      name: Spaceship_Mmat_43
       rect:
         serializedVersion: 2
         x: 895
@@ -1174,14 +1174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0b64f007336f30ad0800000000000000
-      internalID: -2737073447727315280
+      spriteID: a9c4f6bfc3b1585a0800000000000000
+      internalID: -6519774936818561894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_44
+      name: Spaceship_Mmat_44
       rect:
         serializedVersion: 2
         x: 930
@@ -1195,14 +1195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46eca276f4e253b10800000000000000
-      internalID: 1960524131357871716
+      spriteID: fe5364097f6fb2f50800000000000000
+      internalID: 6857846400739587567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_45
+      name: Spaceship_Mmat_45
       rect:
         serializedVersion: 2
         x: 855
@@ -1216,14 +1216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ace344e8287b3dee0800000000000000
-      internalID: -1237443701236285750
+      spriteID: 46f5f99c83832b500800000000000000
+      internalID: 410452332596125540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_46
+      name: Spaceship_Mmat_46
       rect:
         serializedVersion: 2
         x: 895
@@ -1237,14 +1237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5a8d634163805ac90800000000000000
-      internalID: -7159307004275140443
+      spriteID: 4536e943151b5de10800000000000000
+      internalID: 2221876953510470484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_47
+      name: Spaceship_Mmat_47
       rect:
         serializedVersion: 2
         x: 960
@@ -1258,14 +1258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ffae309140ca7630800000000000000
-      internalID: 3925661413032243191
+      spriteID: a818de25ed91642c0800000000000000
+      internalID: -4447839139317055094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_48
+      name: Spaceship_Mmat_48
       rect:
         serializedVersion: 2
         x: 895
@@ -1279,14 +1279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a78b3b92ce4b96960800000000000000
-      internalID: 7595801172941977722
+      spriteID: 05925b14d486d2ee0800000000000000
+      internalID: -1284255637706561200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: texNMap_49
+      name: Spaceship_Mmat_49
       rect:
         serializedVersion: 2
         x: 960
@@ -1300,8 +1300,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5d1d24e2afaf5b90800000000000000
-      internalID: -7250883760895484582
+      spriteID: f1bc7b0090ab87520800000000000000
+      internalID: 2700112524438129439
       vertices: []
       indices: 
       edges: []
