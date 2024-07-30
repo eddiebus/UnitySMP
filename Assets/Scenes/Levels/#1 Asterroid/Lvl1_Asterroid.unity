@@ -178,24 +178,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 842858880}
     - target: {fileID: 1258394867539332139, guid: 1318d91d35cbbdd4e99c66ebaef13e9c, type: 3}
-      propertyPath: m_BoxSize.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1258394867539332139, guid: 1318d91d35cbbdd4e99c66ebaef13e9c, type: 3}
-      propertyPath: m_BoxSize.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1258394867539332139, guid: 1318d91d35cbbdd4e99c66ebaef13e9c, type: 3}
-      propertyPath: m_BoxSize.z
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1258394867539332139, guid: 1318d91d35cbbdd4e99c66ebaef13e9c, type: 3}
       propertyPath: m_Resolution
-      value: 256
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 1258394867539332139, guid: 1318d91d35cbbdd4e99c66ebaef13e9c, type: 3}
       propertyPath: m_TimeSlicingMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3603113273492685151, guid: 1318d91d35cbbdd4e99c66ebaef13e9c, type: 3}
       propertyPath: Volume

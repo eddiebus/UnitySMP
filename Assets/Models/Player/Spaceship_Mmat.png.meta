@@ -1316,7 +1316,57 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Spaceship_Mmat_0: -1469765491049709169
+      Spaceship_Mmat_1: -890755387129977650
+      Spaceship_Mmat_10: 3285933182043540188
+      Spaceship_Mmat_11: 6645295045863674457
+      Spaceship_Mmat_12: 444162066836297820
+      Spaceship_Mmat_13: 2540081451914374423
+      Spaceship_Mmat_14: 3251598624419173073
+      Spaceship_Mmat_15: -6524221963996014568
+      Spaceship_Mmat_16: -3288682648761661691
+      Spaceship_Mmat_17: -3601856907351735280
+      Spaceship_Mmat_18: 2292413587640260924
+      Spaceship_Mmat_19: 2381741482893002498
+      Spaceship_Mmat_2: -2262081750785163086
+      Spaceship_Mmat_20: 8486266963636876279
+      Spaceship_Mmat_21: -2797027599278111812
+      Spaceship_Mmat_22: -3363494695157411582
+      Spaceship_Mmat_23: 2006969319007148155
+      Spaceship_Mmat_24: 199209073460466076
+      Spaceship_Mmat_25: 6667091530896255320
+      Spaceship_Mmat_26: -5217764899076593991
+      Spaceship_Mmat_27: -6031606480938022129
+      Spaceship_Mmat_28: -3647778331720871153
+      Spaceship_Mmat_29: -7045166313805007694
+      Spaceship_Mmat_3: -8365859129249276748
+      Spaceship_Mmat_30: -5478722204059229756
+      Spaceship_Mmat_31: -3033564665853289285
+      Spaceship_Mmat_32: -1275344492247364947
+      Spaceship_Mmat_33: 5345656435544287631
+      Spaceship_Mmat_34: 9164092769384409181
+      Spaceship_Mmat_35: 9077908818084813974
+      Spaceship_Mmat_36: 1905569174724881669
+      Spaceship_Mmat_37: 1641824627716152298
+      Spaceship_Mmat_38: 407811893964663551
+      Spaceship_Mmat_39: 8827811521492124541
+      Spaceship_Mmat_4: -1617605034733999907
+      Spaceship_Mmat_40: 9179921062646111549
+      Spaceship_Mmat_41: 6908443917518134324
+      Spaceship_Mmat_42: -7839024754119194975
+      Spaceship_Mmat_43: -6519774936818561894
+      Spaceship_Mmat_44: 6857846400739587567
+      Spaceship_Mmat_45: 410452332596125540
+      Spaceship_Mmat_46: 2221876953510470484
+      Spaceship_Mmat_47: -4447839139317055094
+      Spaceship_Mmat_48: -1284255637706561200
+      Spaceship_Mmat_49: 2700112524438129439
+      Spaceship_Mmat_5: -1564782829404443688
+      Spaceship_Mmat_6: -3697818208153739618
+      Spaceship_Mmat_7: 581349269668173067
+      Spaceship_Mmat_8: 5972671704883928156
+      Spaceship_Mmat_9: 3236147746967720552
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1340,7 +1340,58 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpaceshipTex_0: -2397754889681148839
+      SpaceshipTex_1: 5947817980682255771
+      SpaceshipTex_10: -157636213705890886
+      SpaceshipTex_11: 841110962279000717
+      SpaceshipTex_12: -6333196787027758442
+      SpaceshipTex_13: -1102754735222059205
+      SpaceshipTex_14: -7092861157176796300
+      SpaceshipTex_15: 5109360163554938823
+      SpaceshipTex_16: -9203649901123456113
+      SpaceshipTex_17: 1628687342615320080
+      SpaceshipTex_18: 3227669856863663525
+      SpaceshipTex_19: -2175980057373351517
+      SpaceshipTex_2: -2855886849680846484
+      SpaceshipTex_20: 857062975547411928
+      SpaceshipTex_21: -5251367831493240874
+      SpaceshipTex_22: 7430616709603026085
+      SpaceshipTex_23: -7590472720715409755
+      SpaceshipTex_24: -8021948788573753405
+      SpaceshipTex_25: -7558864201199962011
+      SpaceshipTex_26: 826812047091009626
+      SpaceshipTex_27: 7480530699371199171
+      SpaceshipTex_28: 1536875318764886893
+      SpaceshipTex_29: -1813841158409472086
+      SpaceshipTex_3: -7456722463503640192
+      SpaceshipTex_30: -6076671306150704446
+      SpaceshipTex_31: 6704798399011721046
+      SpaceshipTex_32: 3097877069827125058
+      SpaceshipTex_33: 916097512962494345
+      SpaceshipTex_34: -3546581569650297561
+      SpaceshipTex_35: -3301893826701834714
+      SpaceshipTex_36: -6848317968522204402
+      SpaceshipTex_37: 1418123915726139678
+      SpaceshipTex_38: -5938394463655084143
+      SpaceshipTex_39: -6770153200400605859
+      SpaceshipTex_4: -2762619097036289157
+      SpaceshipTex_40: 8229511894377671925
+      SpaceshipTex_41: 1736054658579497032
+      SpaceshipTex_42: 1009470532577859725
+      SpaceshipTex_43: 1264077428882487929
+      SpaceshipTex_44: 1862231403613321465
+      SpaceshipTex_45: -5557439569738180609
+      SpaceshipTex_46: -5068866339063700758
+      SpaceshipTex_47: 4575949787066526067
+      SpaceshipTex_48: 2094702583923403937
+      SpaceshipTex_49: 5400289671669660427
+      SpaceshipTex_5: 1048721850427865014
+      SpaceshipTex_50: -1967247552529727875
+      SpaceshipTex_6: 3439320697774898629
+      SpaceshipTex_7: 4197535188122612068
+      SpaceshipTex_8: -3080712451877598509
+      SpaceshipTex_9: 4250891940791357716
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
