@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cb434368e11da9d468452a5abe0600e3
+timeCreated: 1565245822
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 150997
+  packageName: RPG Music Set
+  packageVersion: 1.0
+  assetPath: Assets/RPGMusicSet/README.txt
+  uploadId: 324365

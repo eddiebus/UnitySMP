@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 3b7f91114ca57254585df23f22c8cebc
+timeCreated: 1565245800
+licenseType: Store
+AudioImporter:
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 150997
+  packageName: RPG Music Set
+  packageVersion: 1.0
+  assetPath: Assets/RPGMusicSet/SGB_JRPG_M06.wav
+  uploadId: 324365
