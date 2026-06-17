@@ -1,4 +1,4 @@
-Unity 2023.1.17f1 | SMP Thing
+Unity 2023.1.17f1 | SMP 
 -----
 Download specific unity version through [Unity Archive] (https://unity.com/releases/editor/whats-new/2023.1.17#notes)
 
